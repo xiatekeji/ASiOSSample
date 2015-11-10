@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Root" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bu9-aO-gSb">
+                                <rect key="frame" x="196" y="99" width="208" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="JGh-fN-UnU"/>
+                                    <constraint firstAttribute="width" constant="208" id="Ny6-zr-bNW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Books"/>
+                                <connections>
+                                    <action selector="books:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FHf-XM-K17"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ML-yt-G8c">
+                                <rect key="frame" x="196" y="207" width="208" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Books Size"/>
+                                <connections>
+                                    <action selector="booksize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EXf-7n-51u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfO-6g-idx">
+                                <rect key="frame" x="196" y="313" width="208" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="JEP-mO-O6w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Book Edit"/>
+                                <connections>
+                                    <action selector="bookedit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yuD-Hm-IMn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywx-89-Jff">
+                                <rect key="frame" x="196" y="404" width="208" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="FrameEdit"/>
+                                <connections>
+                                    <action selector="frameEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lw-gJ-Rxr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bu9-aO-gSb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Dr-Bv-8b9"/>
+                            <constraint firstItem="QfO-6g-idx" firstAttribute="leading" secondItem="ywx-89-Jff" secondAttribute="leading" id="4b9-Ib-JVU"/>
+                            <constraint firstItem="QfO-6g-idx" firstAttribute="top" secondItem="2ML-yt-G8c" secondAttribute="bottom" constant="52" id="Dim-aO-7HS"/>
+                            <constraint firstItem="QfO-6g-idx" firstAttribute="trailing" secondItem="2ML-yt-G8c" secondAttribute="trailing" id="FZU-bs-c0W"/>
+                            <constraint firstItem="2ML-yt-G8c" firstAttribute="top" secondItem="Bu9-aO-gSb" secondAttribute="bottom" constant="54" id="OTy-2C-xeC"/>
+                            <constraint firstItem="ywx-89-Jff" firstAttribute="top" secondItem="QfO-6g-idx" secondAttribute="bottom" constant="37" id="QZ7-px-E56"/>
+                            <constraint firstItem="2ML-yt-G8c" firstAttribute="leading" secondItem="Bu9-aO-gSb" secondAttribute="leading" id="URF-dt-twc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ywx-89-Jff" secondAttribute="bottom" constant="142" id="ceG-kd-hXQ"/>
+                            <constraint firstItem="2ML-yt-G8c" firstAttribute="trailing" secondItem="Bu9-aO-gSb" secondAttribute="trailing" id="g1R-QQ-5Qc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2ML-yt-G8c" secondAttribute="bottom" constant="339" id="gqQ-fk-Tmn"/>
+                            <constraint firstItem="Bu9-aO-gSb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="prC-TP-aaj"/>
+                            <constraint firstItem="QfO-6g-idx" firstAttribute="leading" secondItem="2ML-yt-G8c" secondAttribute="leading" id="seN-NN-GAM"/>
+                            <constraint firstItem="ywx-89-Jff" firstAttribute="trailing" secondItem="QfO-6g-idx" secondAttribute="trailing" id="zfN-ly-Ch6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="d7x-Q3-6R2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="47"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		306E62EF1BEC7F6F00650486 /* ASModalCenterBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E62EE1BEC7F6F00650486 /* ASModalCenterBaseController.m */; };
+		3070D2951BF0A63A005D8AC8 /* UINavibook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070D2941BF0A63A005D8AC8 /* UINavibook.m */; };
+		307DEE551BEAFE6A00BF1CCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE541BEAFE6A00BF1CCF /* main.m */; };
+		307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE571BEAFE6A00BF1CCF /* AppDelegate.m */; };
+		307DEE5B1BEAFE6A00BF1CCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE5A1BEAFE6A00BF1CCF /* ViewController.m */; };
+		307DEE5E1BEAFE6A00BF1CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307DEE5C1BEAFE6A00BF1CCF /* Main.storyboard */; };
+		307DEE601BEAFE6A00BF1CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307DEE5F1BEAFE6A00BF1CCF /* Assets.xcassets */; };
+		307DEE631BEAFE6A00BF1CCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307DEE611BEAFE6A00BF1CCF /* LaunchScreen.storyboard */; };
+		307DEE6D1BEAFFBF00BF1CCF /* ModalControllsFile.plist in Resources */ = {isa = PBXBuildFile; fileRef = 307DEE6C1BEAFFBF00BF1CCF /* ModalControllsFile.plist */; };
+		307DEE701BEB099E00BF1CCF /* ASModalCenterControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE6F1BEB099E00BF1CCF /* ASModalCenterControll.m */; };
+		307DEE731BEB1E5100BF1CCF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE721BEB1E5100BF1CCF /* RootViewController.m */; };
+		307DEE7A1BEB482C00BF1CCF /* UIFrameEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE791BEB482C00BF1CCF /* UIFrameEditViewController.m */; };
+		307DEE7D1BEB483B00BF1CCF /* UIBookEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE7C1BEB483B00BF1CCF /* UIBookEditViewController.m */; };
+		307DEE801BEB484600BF1CCF /* UISizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE7F1BEB484600BF1CCF /* UISizeViewController.m */; };
+		307DEE8C1BEB4B3400BF1CCF /* ModalCenterReform.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE8B1BEB4B3400BF1CCF /* ModalCenterReform.m */; };
+		307DEE8F1BEB5E9300BF1CCF /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE8E1BEB5E9300BF1CCF /* BookViewController.m */; };
+		30A1B35B1BF1860C00A6CBE1 /* CSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A1B35A1BF1860C00A6CBE1 /* CSWebViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		306E62ED1BEC7F6F00650486 /* ASModalCenterBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASModalCenterBaseController.h; sourceTree = "<group>"; };
+		306E62EE1BEC7F6F00650486 /* ASModalCenterBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASModalCenterBaseController.m; sourceTree = "<group>"; };
+		3070D2931BF0A63A005D8AC8 /* UINavibook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavibook.h; sourceTree = "<group>"; };
+		3070D2941BF0A63A005D8AC8 /* UINavibook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavibook.m; sourceTree = "<group>"; };
+		307DEE501BEAFE6A00BF1CCF /* ASIOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASIOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		307DEE541BEAFE6A00BF1CCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		307DEE561BEAFE6A00BF1CCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		307DEE571BEAFE6A00BF1CCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		307DEE591BEAFE6A00BF1CCF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		307DEE5A1BEAFE6A00BF1CCF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		307DEE5D1BEAFE6A00BF1CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		307DEE5F1BEAFE6A00BF1CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		307DEE621BEAFE6A00BF1CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		307DEE641BEAFE6A00BF1CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		307DEE6C1BEAFFBF00BF1CCF /* ModalControllsFile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ModalControllsFile.plist; sourceTree = "<group>"; };
+		307DEE6E1BEB099E00BF1CCF /* ASModalCenterControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASModalCenterControll.h; sourceTree = "<group>"; };
+		307DEE6F1BEB099E00BF1CCF /* ASModalCenterControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASModalCenterControll.m; sourceTree = "<group>"; };
+		307DEE711BEB1E5100BF1CCF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		307DEE721BEB1E5100BF1CCF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		307DEE781BEB482C00BF1CCF /* UIFrameEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFrameEditViewController.h; sourceTree = "<group>"; };
+		307DEE791BEB482C00BF1CCF /* UIFrameEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFrameEditViewController.m; sourceTree = "<group>"; };
+		307DEE7B1BEB483B00BF1CCF /* UIBookEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBookEditViewController.h; sourceTree = "<group>"; };
+		307DEE7C1BEB483B00BF1CCF /* UIBookEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBookEditViewController.m; sourceTree = "<group>"; };
+		307DEE7E1BEB484600BF1CCF /* UISizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISizeViewController.h; sourceTree = "<group>"; };
+		307DEE7F1BEB484600BF1CCF /* UISizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISizeViewController.m; sourceTree = "<group>"; };
+		307DEE8A1BEB4B3400BF1CCF /* ModalCenterReform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalCenterReform.h; sourceTree = "<group>"; };
+		307DEE8B1BEB4B3400BF1CCF /* ModalCenterReform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalCenterReform.m; sourceTree = "<group>"; };
+		307DEE8D1BEB5E9300BF1CCF /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		307DEE8E1BEB5E9300BF1CCF /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		30A1B3591BF1860C00A6CBE1 /* CSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSWebViewController.h; sourceTree = "<group>"; };
+		30A1B35A1BF1860C00A6CBE1 /* CSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSWebViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		307DEE4D1BEAFE6A00BF1CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		307DEE471BEAFE6A00BF1CCF = {
+			isa = PBXGroup;
+			children = (
+				30A1B3581BF185E600A6CBE1 /* WebController */,
+				307DEE771BEB480B00BF1CCF /* Controlls */,
+				307DEE6B1BEAFF7D00BF1CCF /* ASModalCenterControl */,
+				307DEE521BEAFE6A00BF1CCF /* UIDemo */,
+				307DEE511BEAFE6A00BF1CCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		307DEE511BEAFE6A00BF1CCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				307DEE501BEAFE6A00BF1CCF /* ASIOSSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		307DEE521BEAFE6A00BF1CCF /* UIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				307DEE561BEAFE6A00BF1CCF /* AppDelegate.h */,
+				307DEE571BEAFE6A00BF1CCF /* AppDelegate.m */,
+				307DEE591BEAFE6A00BF1CCF /* ViewController.h */,
+				307DEE5A1BEAFE6A00BF1CCF /* ViewController.m */,
+				307DEE5C1BEAFE6A00BF1CCF /* Main.storyboard */,
+				307DEE5F1BEAFE6A00BF1CCF /* Assets.xcassets */,
+				307DEE611BEAFE6A00BF1CCF /* LaunchScreen.storyboard */,
+				307DEE641BEAFE6A00BF1CCF /* Info.plist */,
+				307DEE531BEAFE6A00BF1CCF /* Supporting Files */,
+				307DEE711BEB1E5100BF1CCF /* RootViewController.h */,
+				307DEE721BEB1E5100BF1CCF /* RootViewController.m */,
+			);
+			path = UIDemo;
+			sourceTree = "<group>";
+		};
+		307DEE531BEAFE6A00BF1CCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				307DEE541BEAFE6A00BF1CCF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		307DEE6B1BEAFF7D00BF1CCF /* ASModalCenterControl */ = {
+			isa = PBXGroup;
+			children = (
+				307DEE6C1BEAFFBF00BF1CCF /* ModalControllsFile.plist */,
+				307DEE6E1BEB099E00BF1CCF /* ASModalCenterControll.h */,
+				307DEE6F1BEB099E00BF1CCF /* ASModalCenterControll.m */,
+				306E62ED1BEC7F6F00650486 /* ASModalCenterBaseController.h */,
+				306E62EE1BEC7F6F00650486 /* ASModalCenterBaseController.m */,
+			);
+			path = ASModalCenterControl;
+			sourceTree = "<group>";
+		};
+		307DEE771BEB480B00BF1CCF /* Controlls */ = {
+			isa = PBXGroup;
+			children = (
+				307DEE781BEB482C00BF1CCF /* UIFrameEditViewController.h */,
+				307DEE791BEB482C00BF1CCF /* UIFrameEditViewController.m */,
+				307DEE7B1BEB483B00BF1CCF /* UIBookEditViewController.h */,
+				307DEE7C1BEB483B00BF1CCF /* UIBookEditViewController.m */,
+				307DEE7E1BEB484600BF1CCF /* UISizeViewController.h */,
+				307DEE7F1BEB484600BF1CCF /* UISizeViewController.m */,
+				307DEE8A1BEB4B3400BF1CCF /* ModalCenterReform.h */,
+				307DEE8B1BEB4B3400BF1CCF /* ModalCenterReform.m */,
+				307DEE8D1BEB5E9300BF1CCF /* BookViewController.h */,
+				307DEE8E1BEB5E9300BF1CCF /* BookViewController.m */,
+				3070D2931BF0A63A005D8AC8 /* UINavibook.h */,
+				3070D2941BF0A63A005D8AC8 /* UINavibook.m */,
+			);
+			name = Controlls;
+			sourceTree = "<group>";
+		};
+		30A1B3581BF185E600A6CBE1 /* WebController */ = {
+			isa = PBXGroup;
+			children = (
+				30A1B3591BF1860C00A6CBE1 /* CSWebViewController.h */,
+				30A1B35A1BF1860C00A6CBE1 /* CSWebViewController.m */,
+			);
+			name = WebController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		307DEE4F1BEAFE6A00BF1CCF /* ASIOSSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307DEE671BEAFE6A00BF1CCF /* Build configuration list for PBXNativeTarget "ASIOSSample" */;
+			buildPhases = (
+				307DEE4C1BEAFE6A00BF1CCF /* Sources */,
+				307DEE4D1BEAFE6A00BF1CCF /* Frameworks */,
+				307DEE4E1BEAFE6A00BF1CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASIOSSample;
+			productName = UIDemo;
+			productReference = 307DEE501BEAFE6A00BF1CCF /* ASIOSSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		307DEE481BEAFE6A00BF1CCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = XiaoSong;
+				TargetAttributes = {
+					307DEE4F1BEAFE6A00BF1CCF = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 307DEE4B1BEAFE6A00BF1CCF /* Build configuration list for PBXProject "ASIOSSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 307DEE471BEAFE6A00BF1CCF;
+			productRefGroup = 307DEE511BEAFE6A00BF1CCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				307DEE4F1BEAFE6A00BF1CCF /* ASIOSSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		307DEE4E1BEAFE6A00BF1CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307DEE631BEAFE6A00BF1CCF /* LaunchScreen.storyboard in Resources */,
+				307DEE601BEAFE6A00BF1CCF /* Assets.xcassets in Resources */,
+				307DEE5E1BEAFE6A00BF1CCF /* Main.storyboard in Resources */,
+				307DEE6D1BEAFFBF00BF1CCF /* ModalControllsFile.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		307DEE4C1BEAFE6A00BF1CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307DEE801BEB484600BF1CCF /* UISizeViewController.m in Sources */,
+				306E62EF1BEC7F6F00650486 /* ASModalCenterBaseController.m in Sources */,
+				307DEE7A1BEB482C00BF1CCF /* UIFrameEditViewController.m in Sources */,
+				307DEE8C1BEB4B3400BF1CCF /* ModalCenterReform.m in Sources */,
+				307DEE5B1BEAFE6A00BF1CCF /* ViewController.m in Sources */,
+				307DEE701BEB099E00BF1CCF /* ASModalCenterControll.m in Sources */,
+				307DEE8F1BEB5E9300BF1CCF /* BookViewController.m in Sources */,
+				307DEE7D1BEB483B00BF1CCF /* UIBookEditViewController.m in Sources */,
+				307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */,
+				30A1B35B1BF1860C00A6CBE1 /* CSWebViewController.m in Sources */,
+				307DEE551BEAFE6A00BF1CCF /* main.m in Sources */,
+				3070D2951BF0A63A005D8AC8 /* UINavibook.m in Sources */,
+				307DEE731BEB1E5100BF1CCF /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		307DEE5C1BEAFE6A00BF1CCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				307DEE5D1BEAFE6A00BF1CCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		307DEE611BEAFE6A00BF1CCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				307DEE621BEAFE6A00BF1CCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		307DEE651BEAFE6A00BF1CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		307DEE661BEAFE6A00BF1CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		307DEE681BEAFE6A00BF1CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UIDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = artisan.UIDemo;
+				PRODUCT_NAME = ASIOSSample;
+			};
+			name = Debug;
+		};
+		307DEE691BEAFE6A00BF1CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UIDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = artisan.UIDemo;
+				PRODUCT_NAME = ASIOSSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		307DEE4B1BEAFE6A00BF1CCF /* Build configuration list for PBXProject "ASIOSSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307DEE651BEAFE6A00BF1CCF /* Debug */,
+				307DEE661BEAFE6A00BF1CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		307DEE671BEAFE6A00BF1CCF /* Build configuration list for PBXNativeTarget "ASIOSSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307DEE681BEAFE6A00BF1CCF /* Debug */,
+				307DEE691BEAFE6A00BF1CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 307DEE481BEAFE6A00BF1CCF /* Project object */;
+}
