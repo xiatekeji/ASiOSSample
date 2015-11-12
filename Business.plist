@@ -18,6 +18,13 @@
 		<key>title</key>
 		<string>hao</string>
 	</dict>
+	<key>baidu</key>
+	<dict>
+		<key>url</key>
+		<string>http://www.baidu.com</string>
+		<key>title</key>
+		<string>baidu</string>
+	</dict>
 	<key>bookEdit</key>
 	<dict>
 		<key>class</key>

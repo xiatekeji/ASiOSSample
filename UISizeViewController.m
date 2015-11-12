@@ -42,7 +42,7 @@
                     break;
                 case 2:
                     btn.frame = CGRectMake(self.view.frame.size.width/2-75, a*100, 150, 50);
-                    [btn setTitle:@"Present Web" forState:UIControlStateNormal];
+                    [btn setTitle:@"Push Web" forState:UIControlStateNormal];
                     [btn addTarget:self action:@selector(booksize:) forControlEvents:UIControlEventTouchUpInside];
                     break;
                 case 3:

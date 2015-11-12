@@ -65,7 +65,7 @@
 }
 
 - (void)popHomeViewControllerWithAnimation:(BOOL)animation{
-    if (_currentModalViewController == _rootNaviViewController) {
+    if ( [self isUINavigationController:_currentModalViewController]) {
         [_rootNaviViewController popToRootViewControllerAnimated:animation];
         _currentViewController = _rootNaviViewController.topViewController;
    
