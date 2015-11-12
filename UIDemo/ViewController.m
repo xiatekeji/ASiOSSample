@@ -17,17 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-
-    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentiier:@"book" andParameters:@{@"book":@"1"}];
-    NSLog(@"reform ica = %p",reform);
-    NSMutableArray <ModalCenterReform *>*array = [[NSMutableArray alloc]initWithArray:@[reform]];
-    for (ModalCenterReform *reform in array) {
-        reform.modalParameters = @{@"OK":@"true"};
-    }
-    NSLog(@"array = %@ p = %@",array[0],reform.modalParameters);
-    UISizeViewController *vc = [[UISizeViewController alloc]init];
-    [self addChildViewController:vc];
     int a = 0;
     while (a < 5) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -62,22 +51,22 @@
 }
 - (void)books:(UIButton *)sender {
    
-    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentiier:@"book" andParameters:@{@"Modal":@"book"}];
-    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParameters isAnimation:YES];
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"book" andParameters:nil];
+    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 
 }
 - (void)booksize:(UIButton *)sender {
-    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentiier:@"size" andParameters:@{@"Modal":@"size"}];
-    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParameters isAnimation:YES];
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"size" andParameters:nil];
+    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 - (void)bookedit:(UIButton *)sender {
-    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentiier:@"bookEdit" andParameters:@{@"Modal":@"bookEdit"}];
-    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParameters isAnimation:YES];
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"bookEdit" andParameters:nil];
+    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 
 }
 - (void)frameEdit:(UIButton *)sender {
-    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentiier:@"frameEdit" andParameters:@{@"Modal":@"FrameEdit"}];
-    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParameters isAnimation:YES];
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"frameEdit" andParameters:nil];
+       [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 
 - (void)didReceiveMemoryWarning {

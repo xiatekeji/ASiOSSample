@@ -15,11 +15,15 @@
 
 @implementation BookViewController
 - (void)pushControllerWithParameters:(NSDictionary *)parameters{
+    if ( [parameters objectForKey:@"title"]) {
+        self.title = [parameters objectForKey:@"title"];
+    }
+    
     NSLog(@"p = %@",parameters);
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title  = @"Book";
+   
 }
 
 - (void)didReceiveMemoryWarning {

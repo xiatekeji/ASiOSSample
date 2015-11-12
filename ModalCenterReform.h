@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "ASModalCenterControll.h"
 @interface ModalCenterReform : NSObject
-@property (strong ,nonatomic) NSDictionary *modalParameters;
-@property (strong ,nonatomic) UIViewController <ASModalCenterControllProtocol>*controller;
-- (instancetype)initWithIdentiier:(NSString *)identifier andParameters:(NSDictionary *)parameter;
+@property (strong, nonatomic) NSDictionary *modalParamter;
+@property (strong, nonatomic) UIViewController <ASModalCenterControllProtocol>*controller;
+
+- (instancetype)initWithIdentifer:(NSString *)identifer
+                    andParameters:(NSDictionary *)parameter;
 
 
 @end

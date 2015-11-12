@@ -47,8 +47,7 @@
 
 -(void)popself
 {
-
-    [self popViewControllerAnimated:YES];
+    [[ASModalCenterControll shareModalCenter] popFormerlyViewControllerWithAnimation:YES];
     
 } // 出栈动画
 @end

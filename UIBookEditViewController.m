@@ -16,12 +16,15 @@
     NSDictionary *_p;
 }
 - (void)pushControllerWithParameters:(NSDictionary *)parameters{
-    _p = parameters;
+    if ( [parameters objectForKey:@"title"]) {
+        self.title = [parameters objectForKey:@"title"];
+    }
+ 
     NSLog(@"p = %@",parameters);
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = [_p objectForKey:@"Modal"];
+ 
 }
 /*
 #pragma mark - Navigation

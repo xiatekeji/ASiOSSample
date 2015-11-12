@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>book</key>
+	<dict>
+		<key>title</key>
+		<string>Book</string>
+		<key>class</key>
+		<string>BookViewController</string>
+	</dict>
+	<key>hao123</key>
+	<dict>
+		<key>url</key>
+		<string>http://www.hao123.com</string>
+		<key>title</key>
+		<string>hao</string>
+	</dict>
+	<key>bookEdit</key>
+	<dict>
+		<key>class</key>
+		<string>UIBookEditViewController</string>
+		<key>title</key>
+		<string>BookEdit</string>
+	</dict>
+	<key>frameEdit</key>
+	<dict>
+		<key>class</key>
+		<string>UIFrameEditViewController</string>
+		<key>title</key>
+		<string>FrameEdit</string>
+	</dict>
+	<key>size</key>
+	<dict>
+		<key>class</key>
+		<string>UISizeViewController</string>
+		<key>title</key>
+		<string>Size</string>
+	</dict>
+</dict>
+</plist>

@@ -44,7 +44,7 @@
         _currentModalViewController = _rootNaviViewController;
         [_currentModalViewControllers addObject:_rootNaviViewController];
     }
- 
+   
    
 }
 - (void)popToViewController:(UIViewController *)controller isAnimation:(BOOL)animation{
@@ -55,7 +55,8 @@
     if (_currentModalViewController) {
         if ([self isUINavigationController:_currentModalViewController]) {
             UINavigationController *navi =  (UINavigationController *) _currentModalViewController ;
-            [navi popToRootViewControllerAnimated:YES];
+            [navi popViewControllerAnimated:animation];
+            _currentViewController = [navi.viewControllers lastObject];
         }else{
             NSLog(@"非导航栏控制器");
         }

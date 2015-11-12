@@ -17,39 +17,19 @@
     NSDictionary *_p;
 }
 - (void)pushControllerWithParameters:(NSDictionary *)parameters{
-    NSLog(@"p = %@",parameters);
-    _p = parameters;
+    if ( [parameters objectForKey:@"title"]) {
+        self.title = [parameters objectForKey:@"title"];
+        NSLog(@"p = %@",[parameters objectForKey:@"title"]);
+    }
+    
+  
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if ([_p objectForKey:@"present"]) {
-        self.title = [_p objectForKey:@"Modal"];
-        self.view.backgroundColor = [UIColor whiteColor];
-        
-        int a = 0;
-        while (a < 3) {
-            UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-            switch (a) {
-                case 1:
-                    btn.frame = CGRectMake(self.view.frame.size.width/2-50, a*100, 100, 50);
-                    [btn setTitle:@"Book" forState:UIControlStateNormal];
-                    [btn addTarget:self action:@selector(books:) forControlEvents:UIControlEventTouchUpInside];
-                    break;
-                case 2:
-                    btn.frame = CGRectMake(self.view.frame.size.width/2-50, a*100, 100, 50);
-                    [btn setTitle:@"Dismiss" forState:UIControlStateNormal];
-                    [btn addTarget:self action:@selector(dismiss:) forControlEvents:UIControlEventTouchUpInside];
-                    break;
-                    
-                default:
-                    break;
-            }
-            [self.view addSubview:btn];
-            a++;
-        }
-    }else{
-        self.title = [_p objectForKey:@"Modal"];
-        self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+
+      
+   
         
         int a = 0;
         while (a < 6) {
@@ -62,12 +42,12 @@
                     break;
                 case 2:
                     btn.frame = CGRectMake(self.view.frame.size.width/2-75, a*100, 150, 50);
-                    [btn setTitle:@"Present BookSize" forState:UIControlStateNormal];
+                    [btn setTitle:@"Present Web" forState:UIControlStateNormal];
                     [btn addTarget:self action:@selector(booksize:) forControlEvents:UIControlEventTouchUpInside];
                     break;
                 case 3:
                     btn.frame = CGRectMake(self.view.frame.size.width/2-60, a*100, 120, 50);
-                    [btn setTitle:@"Push Size" forState:UIControlStateNormal];
+                    [btn setTitle:@"Present Size" forState:UIControlStateNormal];
                     [btn addTarget:self action:@selector(bookedit:) forControlEvents:UIControlEventTouchUpInside];
                     break;
                 case 4:
@@ -88,29 +68,22 @@
             a++;
         }
 
-    }
-  }
+}
 - (void)books:(UIButton *)sender {
-      if ([_p objectForKey:@"present"]) {
-          ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentiier:@"web" andParameters:@{@"WebView":@"http://www.baidu.com"}];
-          [[ASModalCenterControll shareModalCenter]presentViewController:reform.controller parameters:reform.modalParameters isAnimation:YES completion:^{
-              
-          }];
-      }else{
-          ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentiier:@"book" andParameters:nil];
-          [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParameters isAnimation:YES];
-      }
+
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"bookEdit" andParameters:nil];
+    [[ASModalCenterControll shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 
 }
 - (void)booksize:(UIButton *)sender {
-    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentiier:@"size" andParameters:nil];
-    [[ASModalCenterControll shareModalCenter] presentViewController:reform.controller parameters:@{@"present":@"size"} isAnimation:YES completion:^{
-        
-    }];
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"hao123" andParameters:nil];
+    [[ASModalCenterControll shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 - (void)bookedit:(UIButton *)sender {
-    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentiier:@"size" andParameters:nil];
-    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParameters isAnimation:YES];
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"size" andParameters:nil];
+    [[ASModalCenterControll shareModalCenter]presentViewController:reform.controller parameters:reform.modalParamter isAnimation:YES completion:^{
+        
+    }];
 }
 - (void)frameEdit:(UIButton *)sender {
     [[ASModalCenterControll shareModalCenter] popHomeViewControllerWithAnimation:YES];
