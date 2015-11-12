@@ -8,7 +8,7 @@
 
 #import "ModalCenterReform.h"
 #define URL_PLIST_FILENAME @"Business"
-
+static NSMutableDictionary *identiferDic;
 @implementation ModalCenterReform
 
 -(instancetype)initWithIdentifer:(NSString *)identifer andParameters:(NSDictionary *)parameter
@@ -16,6 +16,8 @@
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:URL_PLIST_FILENAME ofType:@"plist"];
     NSDictionary *dic = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
     NSString *classStr;
+    
+
     if ([dic objectForKey:identifer]) {
         NSDictionary *refromDic = [dic objectForKey:identifer];
         if ([refromDic objectForKey:@"url"]) {
@@ -28,14 +30,32 @@
     }
     Class controller = NSClassFromString(classStr);
     
-    UIViewController <ASModalCenterControllProtocol>*VC = [[controller  alloc] init];
+    UIViewController <ASNavigatable>*VC = [[controller  alloc] init];
     if (VC) {
         _controller = VC;
     }
-    
     if (parameter) {
         _modalParamter = parameter;
     }
+//    if (identiferDic) {
+//        if ( [identiferDic objectForKey:identifer]) {
+//            if ( [[ASNavigator shareModalCenter] fetchVCWithMemoryPath:[identiferDic objectForKey:identifer]]) {
+//               _controller = [[ASNavigator shareModalCenter] fetchVCWithMemoryPath:[identiferDic objectForKey:identifer]];
+//            }else{
+//                
+//                 [identiferDic setValue:[NSString stringWithFormat:@"%p",VC] forKey:identifer];
+//             
+//            }
+//           
+//        }
+//    }else{
+//        identiferDic = [[NSMutableDictionary alloc]init];
+//        [identiferDic setValue:[NSString stringWithFormat:@"%p",VC] forKey:identifer];
+//        
+//    }
+ 
+    
+
     
     return self;
 }

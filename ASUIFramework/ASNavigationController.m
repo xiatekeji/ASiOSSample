@@ -1,18 +1,18 @@
 //
-//  ASModalCenterBaseController.m
-//  UIDemo
+//  ASNavigationController.m
+//  ASIOSSample
 //
-//  Created by XiaoSong on 15/11/6.
+//  Created by XiaoSong on 15/11/13.
 //  Copyright © 2015年 XiaoSong. All rights reserved.
 //
-#import "ASModalCenterControll.h"
-#import "ASModalCenterBaseController.h"
+#import "ASNavigator.h"
+#import "ASNavigationController.h"
 
-@interface ASModalCenterBaseController ()
+@interface ASNavigationController ()
 
 @end
 
-@implementation ASModalCenterBaseController
+@implementation ASNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,7 +36,7 @@
     UIButton *btn= [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     
     btn.frame=CGRectMake(0, 23, 40, 40);
- 
+    
     
     [btn addTarget:self action:@selector(popself) forControlEvents:UIControlEventTouchUpInside];
     
@@ -47,7 +47,7 @@
 
 -(void)popself
 {
-    [[ASModalCenterControll shareModalCenter] popFormerlyViewControllerWithAnimation:YES];
+    [[ASNavigator shareModalCenter] popFormerlyViewControllerWithAnimation:YES];
     
 } // 出栈动画
 @end

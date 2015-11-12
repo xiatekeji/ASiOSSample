@@ -5,18 +5,18 @@
 //  Created by XiaoSong on 15/11/5.
 //  Copyright © 2015年 XiaoSong. All rights reserved.
 //
-#import "ASModalCenterControll.h"
+#import "ASNavigator.h"
 #import "ModalCenterReform.h"
 #import "UISizeViewController.h"
 
-@interface UISizeViewController ()<ASModalCenterControllProtocol>
+@interface UISizeViewController ()<ASNavigatable>
 
 @end
 
 @implementation UISizeViewController{
     NSDictionary *_p;
 }
-- (void)pushControllerWithParameters:(NSDictionary *)parameters{
+- (void)skipPageProtocola:(NSDictionary *)parameters{
     if ( [parameters objectForKey:@"title"]) {
         self.title = [parameters objectForKey:@"title"];
         NSLog(@"p = %@",[parameters objectForKey:@"title"]);
@@ -42,7 +42,7 @@
                     break;
                 case 2:
                     btn.frame = CGRectMake(self.view.frame.size.width/2-75, a*100, 150, 50);
-                    [btn setTitle:@"Present Web" forState:UIControlStateNormal];
+                    [btn setTitle:@"Push Web" forState:UIControlStateNormal];
                     [btn addTarget:self action:@selector(booksize:) forControlEvents:UIControlEventTouchUpInside];
                     break;
                 case 3:
@@ -72,24 +72,24 @@
 - (void)books:(UIButton *)sender {
 
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"bookEdit" andParameters:nil];
-    [[ASModalCenterControll shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 
 }
 - (void)booksize:(UIButton *)sender {
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"hao123" andParameters:nil];
-    [[ASModalCenterControll shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 - (void)bookedit:(UIButton *)sender {
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"size" andParameters:nil];
-    [[ASModalCenterControll shareModalCenter]presentViewController:reform.controller parameters:reform.modalParamter isAnimation:YES completion:^{
+    [[ASNavigator shareModalCenter]presentViewController:reform.controller parameters:reform.modalParamter isAnimation:YES completion:^{
         
     }];
 }
 - (void)frameEdit:(UIButton *)sender {
-    [[ASModalCenterControll shareModalCenter] popHomeViewControllerWithAnimation:YES];
+    [[ASNavigator shareModalCenter] popHomeViewControllerWithAnimation:YES];
 }
 - (void)dismiss:(UIButton *)sender {
-    [[ASModalCenterControll shareModalCenter] dismissCurrentModalViewControlleAnimation:YES completion:nil];
+    [[ASNavigator shareModalCenter] dismissCurrentModalViewControlleAnimation:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

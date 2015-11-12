@@ -7,8 +7,8 @@
 //
 
 #import "CSWebViewController.h"
-#import "ASModalCenterControll.h"
-@interface CSWebViewController ()<ASModalCenterControllProtocol>
+
+@interface CSWebViewController ()
 
 @end
 
@@ -16,12 +16,7 @@
     UIWebView *_mainWebView;
     NSString *_path;
 }
-- (void)pushControllerWithParameters:(NSDictionary *)parameters{
-    if ([parameters objectForKey:@"WebView"]) {
-       _path = [parameters objectForKey:@"WebView"];
-    }
 
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initWebView];

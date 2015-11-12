@@ -8,13 +8,13 @@
 
 #import "BookViewController.h"
 #import "ModalCenterReform.h"
-#import "ASModalCenterControll.h"
-@interface BookViewController ()<ASModalCenterControllProtocol>
+#import "ASNavigator.h"
+@interface BookViewController ()<ASNavigatable>
 
 @end
 
 @implementation BookViewController
-- (void)pushControllerWithParameters:(NSDictionary *)parameters{
+- (void)skipPageProtocola:(NSDictionary *)parameters{
     if ( [parameters objectForKey:@"title"]) {
         self.title = [parameters objectForKey:@"title"];
     }

@@ -7,7 +7,7 @@
 //
 #import "ViewController.h"
 #import "AppDelegate.h"
-#import "ASModalCenterControll.h"
+#import "ASNavigator.h"
 @interface AppDelegate ()
 
 @end
@@ -21,9 +21,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     ViewController *vc = [[ViewController alloc]init];
-    [[ASModalCenterControll shareModalCenter]  setRootViewController:vc];
+   
  
-    self.window.rootViewController = [[ASModalCenterControll shareModalCenter] currentModalViewController];
+    self.window.rootViewController = [[ASNavigator shareModalCenter] innerWithHome:vc];
     //
     [self.window makeKeyAndVisible];
     

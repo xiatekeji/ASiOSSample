@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		306E62EF1BEC7F6F00650486 /* ASModalCenterBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E62EE1BEC7F6F00650486 /* ASModalCenterBaseController.m */; };
+		30005FBE1BF5C536009D2369 /* ASNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30005FBB1BF5C536009D2369 /* ASNavigationController.m */; };
+		30005FBF1BF5C536009D2369 /* ASNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 30005FBD1BF5C536009D2369 /* ASNavigator.m */; };
 		3070D2951BF0A63A005D8AC8 /* UINavibook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070D2941BF0A63A005D8AC8 /* UINavibook.m */; };
 		307DEE551BEAFE6A00BF1CCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE541BEAFE6A00BF1CCF /* main.m */; };
 		307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE571BEAFE6A00BF1CCF /* AppDelegate.m */; };
@@ -15,7 +16,6 @@
 		307DEE5E1BEAFE6A00BF1CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307DEE5C1BEAFE6A00BF1CCF /* Main.storyboard */; };
 		307DEE601BEAFE6A00BF1CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307DEE5F1BEAFE6A00BF1CCF /* Assets.xcassets */; };
 		307DEE631BEAFE6A00BF1CCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307DEE611BEAFE6A00BF1CCF /* LaunchScreen.storyboard */; };
-		307DEE701BEB099E00BF1CCF /* ASModalCenterControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE6F1BEB099E00BF1CCF /* ASModalCenterControll.m */; };
 		307DEE731BEB1E5100BF1CCF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE721BEB1E5100BF1CCF /* RootViewController.m */; };
 		307DEE7A1BEB482C00BF1CCF /* UIFrameEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE791BEB482C00BF1CCF /* UIFrameEditViewController.m */; };
 		307DEE7D1BEB483B00BF1CCF /* UIBookEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE7C1BEB483B00BF1CCF /* UIBookEditViewController.m */; };
@@ -28,8 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		306E62ED1BEC7F6F00650486 /* ASModalCenterBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASModalCenterBaseController.h; sourceTree = "<group>"; };
-		306E62EE1BEC7F6F00650486 /* ASModalCenterBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASModalCenterBaseController.m; sourceTree = "<group>"; };
+		30005FBA1BF5C536009D2369 /* ASNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNavigationController.h; sourceTree = "<group>"; };
+		30005FBB1BF5C536009D2369 /* ASNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNavigationController.m; sourceTree = "<group>"; };
+		30005FBC1BF5C536009D2369 /* ASNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNavigator.h; sourceTree = "<group>"; };
+		30005FBD1BF5C536009D2369 /* ASNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNavigator.m; sourceTree = "<group>"; };
 		3070D2931BF0A63A005D8AC8 /* UINavibook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavibook.h; sourceTree = "<group>"; };
 		3070D2941BF0A63A005D8AC8 /* UINavibook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavibook.m; sourceTree = "<group>"; };
 		307DEE501BEAFE6A00BF1CCF /* ASIOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASIOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,8 +44,6 @@
 		307DEE5F1BEAFE6A00BF1CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307DEE621BEAFE6A00BF1CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		307DEE641BEAFE6A00BF1CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		307DEE6E1BEB099E00BF1CCF /* ASModalCenterControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASModalCenterControll.h; sourceTree = "<group>"; };
-		307DEE6F1BEB099E00BF1CCF /* ASModalCenterControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASModalCenterControll.m; sourceTree = "<group>"; };
 		307DEE711BEB1E5100BF1CCF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		307DEE721BEB1E5100BF1CCF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		307DEE781BEB482C00BF1CCF /* UIFrameEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFrameEditViewController.h; sourceTree = "<group>"; };
@@ -74,12 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30005FB91BF5C536009D2369 /* ASUIFramework */ = {
+			isa = PBXGroup;
+			children = (
+				30005FBA1BF5C536009D2369 /* ASNavigationController.h */,
+				30005FBB1BF5C536009D2369 /* ASNavigationController.m */,
+				30005FBC1BF5C536009D2369 /* ASNavigator.h */,
+				30005FBD1BF5C536009D2369 /* ASNavigator.m */,
+			);
+			path = ASUIFramework;
+			sourceTree = "<group>";
+		};
 		307DEE471BEAFE6A00BF1CCF = {
 			isa = PBXGroup;
 			children = (
+				30005FB91BF5C536009D2369 /* ASUIFramework */,
 				30A1B3581BF185E600A6CBE1 /* WebController */,
 				307DEE771BEB480B00BF1CCF /* Controlls */,
-				307DEE6B1BEAFF7D00BF1CCF /* ASModalCenterControl */,
 				307DEE521BEAFE6A00BF1CCF /* UIDemo */,
 				307DEE511BEAFE6A00BF1CCF /* Products */,
 			);
@@ -117,17 +128,6 @@
 				307DEE541BEAFE6A00BF1CCF /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		307DEE6B1BEAFF7D00BF1CCF /* ASModalCenterControl */ = {
-			isa = PBXGroup;
-			children = (
-				307DEE6E1BEB099E00BF1CCF /* ASModalCenterControll.h */,
-				307DEE6F1BEB099E00BF1CCF /* ASModalCenterControll.m */,
-				306E62ED1BEC7F6F00650486 /* ASModalCenterBaseController.h */,
-				306E62EE1BEC7F6F00650486 /* ASModalCenterBaseController.m */,
-			);
-			path = ASModalCenterControl;
 			sourceTree = "<group>";
 		};
 		307DEE771BEB480B00BF1CCF /* Controlls */ = {
@@ -233,15 +233,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				307DEE801BEB484600BF1CCF /* UISizeViewController.m in Sources */,
-				306E62EF1BEC7F6F00650486 /* ASModalCenterBaseController.m in Sources */,
 				307DEE7A1BEB482C00BF1CCF /* UIFrameEditViewController.m in Sources */,
 				307DEE8C1BEB4B3400BF1CCF /* ModalCenterReform.m in Sources */,
 				307DEE5B1BEAFE6A00BF1CCF /* ViewController.m in Sources */,
 				30EEEB991BF438CE009E3029 /* HTML5ViewController.m in Sources */,
-				307DEE701BEB099E00BF1CCF /* ASModalCenterControll.m in Sources */,
+				30005FBF1BF5C536009D2369 /* ASNavigator.m in Sources */,
 				307DEE8F1BEB5E9300BF1CCF /* BookViewController.m in Sources */,
 				307DEE7D1BEB483B00BF1CCF /* UIBookEditViewController.m in Sources */,
 				307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */,
+				30005FBE1BF5C536009D2369 /* ASNavigationController.m in Sources */,
 				30A1B35B1BF1860C00A6CBE1 /* CSWebViewController.m in Sources */,
 				307DEE551BEAFE6A00BF1CCF /* main.m in Sources */,
 				3070D2951BF0A63A005D8AC8 /* UINavibook.m in Sources */,

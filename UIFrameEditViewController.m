@@ -8,14 +8,14 @@
 
 #import "UIFrameEditViewController.h"
 #import "ModalCenterReform.h"
-@interface UIFrameEditViewController ()<ASModalCenterControllProtocol>
+@interface UIFrameEditViewController ()<ASNavigatable>
 
 @end
 
 @implementation UIFrameEditViewController{
     NSDictionary *_p;
 }
-- (void)pushControllerWithParameters:(NSDictionary *)parameters{
+- (void)skipPageProtocola:(NSDictionary *)parameters{
     if ( [parameters objectForKey:@"title"]) {
         self.title = [parameters objectForKey:@"title"];
     }

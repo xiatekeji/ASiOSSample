@@ -7,7 +7,7 @@
 //
 #import "UISizeViewController.h"
 #import "ViewController.h"
-#import "ASModalCenterControll.h"
+#import "ASNavigator.h"
 #import "ModalCenterReform.h"
 @interface ViewController ()
 
@@ -52,21 +52,21 @@
 - (void)books:(UIButton *)sender {
    
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"book" andParameters:nil];
-    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    [[ASNavigator shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 
 }
 - (void)booksize:(UIButton *)sender {
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"size" andParameters:nil];
-    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    [[ASNavigator shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 - (void)bookedit:(UIButton *)sender {
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"bookEdit" andParameters:nil];
-    [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    [[ASNavigator shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 
 }
 - (void)frameEdit:(UIButton *)sender {
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"frameEdit" andParameters:nil];
-       [[ASModalCenterControll shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+       [[ASNavigator shareModalCenter] pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 
 - (void)didReceiveMemoryWarning {

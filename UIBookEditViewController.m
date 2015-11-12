@@ -7,15 +7,15 @@
 //
 
 #import "UIBookEditViewController.h"
-#import "ASModalCenterControll.h"
-@interface UIBookEditViewController ()<ASModalCenterControllProtocol>
+#import "ASNavigator.h"
+@interface UIBookEditViewController ()<ASNavigatable>
 
 @end
 
 @implementation UIBookEditViewController{
     NSDictionary *_p;
 }
-- (void)pushControllerWithParameters:(NSDictionary *)parameters{
+- (void)skipPageProtocola:(NSDictionary *)parameters{
     if ( [parameters objectForKey:@"title"]) {
         self.title = [parameters objectForKey:@"title"];
     }
