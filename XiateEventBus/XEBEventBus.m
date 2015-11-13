@@ -264,7 +264,7 @@ static XEBEventBus* _defaultInstance;
 	
 	NSArray<Class>* eventClasses = [self lookupAllEventClasses: eventClass];
 	for(Class eventClass in eventClasses) {
-		[self postSingleEvent: event postingState: postingState eventClass: eventClass];
+		subscriptionFound |= [self postSingleEvent: event postingState: postingState eventClass: eventClass];
 	}
 	
 	if(!subscriptionFound) {
