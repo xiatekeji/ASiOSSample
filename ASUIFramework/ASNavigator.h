@@ -14,7 +14,7 @@
 /**
  * @brief 压入视图控制器带参协议
  */
-- (void)skipPageProtocola:(NSDictionary *)parameters;
+- (void)skipPageProtocol:(NSDictionary *)parameters;
 @optional
 
 /**

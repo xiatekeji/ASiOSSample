@@ -14,7 +14,7 @@
 @end
 
 @implementation BookViewController
-- (void)skipPageProtocola:(NSDictionary *)parameters{
+- (void)skipPageProtocol:(NSDictionary *)parameters{
     if ( [parameters objectForKey:@"title"]) {
         self.title = [parameters objectForKey:@"title"];
     }

@@ -16,7 +16,7 @@
 @implementation UISizeViewController{
     NSDictionary *_p;
 }
-- (void)skipPageProtocola:(NSDictionary *)parameters{
+- (void)skipPageProtocol:(NSDictionary *)parameters{
     if ( [parameters objectForKey:@"title"]) {
         self.title = [parameters objectForKey:@"title"];
         NSLog(@"p = %@",[parameters objectForKey:@"title"]);

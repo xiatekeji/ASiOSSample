@@ -17,7 +17,7 @@
     NSString *_path;
 }
 
-- (void)skipPageProtocola:(NSDictionary *)parameters
+- (void)skipPageProtocol:(NSDictionary *)parameters
 {
     if ([parameters objectForKey:@"url"]) {
         _path = [parameters objectForKey:@"url"];
@@ -73,7 +73,9 @@
 - (void)push:(UIButton *)sender{
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"baidu" andParameters:nil];
     [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+
 }
+
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
     

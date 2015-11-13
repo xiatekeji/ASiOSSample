@@ -25,7 +25,26 @@
 		30A1B35B1BF1860C00A6CBE1 /* CSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A1B35A1BF1860C00A6CBE1 /* CSWebViewController.m */; };
 		30EEEB941BF438C7009E3029 /* Business.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30EEEB931BF438C7009E3029 /* Business.plist */; };
 		30EEEB991BF438CE009E3029 /* HTML5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EEEB961BF438CE009E3029 /* HTML5ViewController.m */; };
+		A70060031BF574E10060DAFD /* XEBEventBus.m in Sources */ = {isa = PBXBuildFile; fileRef = A7005FF31BF574E10060DAFD /* XEBEventBus.m */; };
+		A70060041BF574E10060DAFD /* XEBPostingThreadState.m in Sources */ = {isa = PBXBuildFile; fileRef = A7005FF51BF574E10060DAFD /* XEBPostingThreadState.m */; };
+		A70060051BF574E10060DAFD /* XEBSubscriberMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A7005FF81BF574E10060DAFD /* XEBSubscriberMethod.m */; };
+		A70060061BF574E10060DAFD /* XEBSubscriberMethodFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A7005FFA1BF574E10060DAFD /* XEBSubscriberMethodFinder.m */; };
+		A70060071BF574E10060DAFD /* XEBSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = A7005FFC1BF574E10060DAFD /* XEBSubscription.m */; };
+		A70060081BF574E10060DAFD /* XEBThreadLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = A7005FFE1BF574E10060DAFD /* XEBThreadLocal.m */; };
+		A70060091BF574E10060DAFD /* XEBThreadMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A70060001BF574E10060DAFD /* XEBThreadMode.m */; };
+		A70060371BF57B220060DAFD /* EventBusDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70060361BF57B220060DAFD /* EventBusDemoViewController.m */; };
+		A70060391BF57B7F0060DAFD /* EventBusDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70060381BF57B7F0060DAFD /* EventBusDemoViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A70060301BF576D40060DAFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307DEE481BEAFE6A00BF1CCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 307DEE4F1BEAFE6A00BF1CCF;
+			remoteInfo = ASIOSSample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		30005FBA1BF5C536009D2369 /* ASNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNavigationController.h; sourceTree = "<group>"; };
@@ -61,10 +80,37 @@
 		30EEEB931BF438C7009E3029 /* Business.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Business.plist; sourceTree = "<group>"; };
 		30EEEB951BF438CE009E3029 /* HTML5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTML5ViewController.h; sourceTree = "<group>"; };
 		30EEEB961BF438CE009E3029 /* HTML5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTML5ViewController.m; sourceTree = "<group>"; };
+		A7005FF21BF574E10060DAFD /* XEBEventBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEBEventBus.h; sourceTree = "<group>"; };
+		A7005FF31BF574E10060DAFD /* XEBEventBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEBEventBus.m; sourceTree = "<group>"; };
+		A7005FF41BF574E10060DAFD /* XEBPostingThreadState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEBPostingThreadState.h; sourceTree = "<group>"; };
+		A7005FF51BF574E10060DAFD /* XEBPostingThreadState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEBPostingThreadState.m; sourceTree = "<group>"; };
+		A7005FF61BF574E10060DAFD /* XEBSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEBSubscriber.h; sourceTree = "<group>"; };
+		A7005FF71BF574E10060DAFD /* XEBSubscriberMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEBSubscriberMethod.h; sourceTree = "<group>"; };
+		A7005FF81BF574E10060DAFD /* XEBSubscriberMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEBSubscriberMethod.m; sourceTree = "<group>"; };
+		A7005FF91BF574E10060DAFD /* XEBSubscriberMethodFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEBSubscriberMethodFinder.h; sourceTree = "<group>"; };
+		A7005FFA1BF574E10060DAFD /* XEBSubscriberMethodFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEBSubscriberMethodFinder.m; sourceTree = "<group>"; };
+		A7005FFB1BF574E10060DAFD /* XEBSubscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEBSubscription.h; sourceTree = "<group>"; };
+		A7005FFC1BF574E10060DAFD /* XEBSubscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEBSubscription.m; sourceTree = "<group>"; };
+		A7005FFD1BF574E10060DAFD /* XEBThreadLocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEBThreadLocal.h; sourceTree = "<group>"; };
+		A7005FFE1BF574E10060DAFD /* XEBThreadLocal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEBThreadLocal.m; sourceTree = "<group>"; };
+		A7005FFF1BF574E10060DAFD /* XEBThreadMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEBThreadMode.h; sourceTree = "<group>"; };
+		A70060001BF574E10060DAFD /* XEBThreadMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEBThreadMode.m; sourceTree = "<group>"; };
+		A70060011BF574E10060DAFD /* XiateEventBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiateEventBus.h; sourceTree = "<group>"; };
+		A700602B1BF576D40060DAFD /* XiateEventBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XiateEventBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70060351BF57B220060DAFD /* EventBusDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventBusDemoViewController.h; sourceTree = "<group>"; };
+		A70060361BF57B220060DAFD /* EventBusDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventBusDemoViewController.m; sourceTree = "<group>"; };
+		A70060381BF57B7F0060DAFD /* EventBusDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventBusDemoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		307DEE4D1BEAFE6A00BF1CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70060281BF576D40060DAFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,6 +139,9 @@
 				307DEE771BEB480B00BF1CCF /* Controlls */,
 				307DEE521BEAFE6A00BF1CCF /* UIDemo */,
 				307DEE511BEAFE6A00BF1CCF /* Products */,
+				307DEE521BEAFE6A00BF1CCF /* UIDemo */,
+				30A1B3581BF185E600A6CBE1 /* WebController */,
+				A7005FF01BF574E10060DAFD /* XiateEventBus */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				307DEE501BEAFE6A00BF1CCF /* ASIOSSample.app */,
+				A700602B1BF576D40060DAFD /* XiateEventBusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,15 +159,18 @@
 			children = (
 				307DEE561BEAFE6A00BF1CCF /* AppDelegate.h */,
 				307DEE571BEAFE6A00BF1CCF /* AppDelegate.m */,
-				307DEE591BEAFE6A00BF1CCF /* ViewController.h */,
-				307DEE5A1BEAFE6A00BF1CCF /* ViewController.m */,
-				307DEE5C1BEAFE6A00BF1CCF /* Main.storyboard */,
 				307DEE5F1BEAFE6A00BF1CCF /* Assets.xcassets */,
-				307DEE611BEAFE6A00BF1CCF /* LaunchScreen.storyboard */,
+				A70060351BF57B220060DAFD /* EventBusDemoViewController.h */,
+				A70060361BF57B220060DAFD /* EventBusDemoViewController.m */,
+				A70060381BF57B7F0060DAFD /* EventBusDemoViewController.xib */,
 				307DEE641BEAFE6A00BF1CCF /* Info.plist */,
-				307DEE531BEAFE6A00BF1CCF /* Supporting Files */,
+				307DEE611BEAFE6A00BF1CCF /* LaunchScreen.storyboard */,
+				307DEE5C1BEAFE6A00BF1CCF /* Main.storyboard */,
 				307DEE711BEB1E5100BF1CCF /* RootViewController.h */,
 				307DEE721BEB1E5100BF1CCF /* RootViewController.m */,
+				307DEE531BEAFE6A00BF1CCF /* Supporting Files */,
+				307DEE591BEAFE6A00BF1CCF /* ViewController.h */,
+				307DEE5A1BEAFE6A00BF1CCF /* ViewController.m */,
 			);
 			path = UIDemo;
 			sourceTree = "<group>";
@@ -161,6 +214,29 @@
 			name = WebController;
 			sourceTree = "<group>";
 		};
+		A7005FF01BF574E10060DAFD /* XiateEventBus */ = {
+			isa = PBXGroup;
+			children = (
+				A7005FF21BF574E10060DAFD /* XEBEventBus.h */,
+				A7005FF31BF574E10060DAFD /* XEBEventBus.m */,
+				A7005FF41BF574E10060DAFD /* XEBPostingThreadState.h */,
+				A7005FF51BF574E10060DAFD /* XEBPostingThreadState.m */,
+				A7005FF61BF574E10060DAFD /* XEBSubscriber.h */,
+				A7005FF71BF574E10060DAFD /* XEBSubscriberMethod.h */,
+				A7005FF81BF574E10060DAFD /* XEBSubscriberMethod.m */,
+				A7005FF91BF574E10060DAFD /* XEBSubscriberMethodFinder.h */,
+				A7005FFA1BF574E10060DAFD /* XEBSubscriberMethodFinder.m */,
+				A7005FFB1BF574E10060DAFD /* XEBSubscription.h */,
+				A7005FFC1BF574E10060DAFD /* XEBSubscription.m */,
+				A7005FFD1BF574E10060DAFD /* XEBThreadLocal.h */,
+				A7005FFE1BF574E10060DAFD /* XEBThreadLocal.m */,
+				A7005FFF1BF574E10060DAFD /* XEBThreadMode.h */,
+				A70060001BF574E10060DAFD /* XEBThreadMode.m */,
+				A70060011BF574E10060DAFD /* XiateEventBus.h */,
+			);
+			path = XiateEventBus;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,6 +257,24 @@
 			productReference = 307DEE501BEAFE6A00BF1CCF /* ASIOSSample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A700602A1BF576D40060DAFD /* XiateEventBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70060321BF576D40060DAFD /* Build configuration list for PBXNativeTarget "XiateEventBusTests" */;
+			buildPhases = (
+				A70060271BF576D40060DAFD /* Sources */,
+				A70060281BF576D40060DAFD /* Frameworks */,
+				A70060291BF576D40060DAFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A70060311BF576D40060DAFD /* PBXTargetDependency */,
+			);
+			name = XiateEventBusTests;
+			productName = XiateEventBusTests;
+			productReference = A700602B1BF576D40060DAFD /* XiateEventBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,6 +286,10 @@
 				TargetAttributes = {
 					307DEE4F1BEAFE6A00BF1CCF = {
 						CreatedOnToolsVersion = 7.1;
+					};
+					A700602A1BF576D40060DAFD = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 307DEE4F1BEAFE6A00BF1CCF;
 					};
 				};
 			};
@@ -209,6 +307,7 @@
 			projectRoot = "";
 			targets = (
 				307DEE4F1BEAFE6A00BF1CCF /* ASIOSSample */,
+				A700602A1BF576D40060DAFD /* XiateEventBusTests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,9 +318,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				307DEE631BEAFE6A00BF1CCF /* LaunchScreen.storyboard in Resources */,
+				A70060391BF57B7F0060DAFD /* EventBusDemoViewController.xib in Resources */,
 				307DEE601BEAFE6A00BF1CCF /* Assets.xcassets in Resources */,
 				307DEE5E1BEAFE6A00BF1CCF /* Main.storyboard in Resources */,
 				30EEEB941BF438C7009E3029 /* Business.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70060291BF576D40060DAFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,11 +340,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				307DEE801BEB484600BF1CCF /* UISizeViewController.m in Sources */,
+				A70060061BF574E10060DAFD /* XEBSubscriberMethodFinder.m in Sources */,
 				307DEE7A1BEB482C00BF1CCF /* UIFrameEditViewController.m in Sources */,
+				A70060031BF574E10060DAFD /* XEBEventBus.m in Sources */,
+				A70060051BF574E10060DAFD /* XEBSubscriberMethod.m in Sources */,
 				307DEE8C1BEB4B3400BF1CCF /* ModalCenterReform.m in Sources */,
 				307DEE5B1BEAFE6A00BF1CCF /* ViewController.m in Sources */,
 				30EEEB991BF438CE009E3029 /* HTML5ViewController.m in Sources */,
 				30005FBF1BF5C536009D2369 /* ASNavigator.m in Sources */,
+				A70060081BF574E10060DAFD /* XEBThreadLocal.m in Sources */,
+				A70060371BF57B220060DAFD /* EventBusDemoViewController.m in Sources */,
 				307DEE8F1BEB5E9300BF1CCF /* BookViewController.m in Sources */,
 				307DEE7D1BEB483B00BF1CCF /* UIBookEditViewController.m in Sources */,
 				307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */,
@@ -245,11 +357,29 @@
 				30A1B35B1BF1860C00A6CBE1 /* CSWebViewController.m in Sources */,
 				307DEE551BEAFE6A00BF1CCF /* main.m in Sources */,
 				3070D2951BF0A63A005D8AC8 /* UINavibook.m in Sources */,
+				A70060071BF574E10060DAFD /* XEBSubscription.m in Sources */,
+				A70060041BF574E10060DAFD /* XEBPostingThreadState.m in Sources */,
 				307DEE731BEB1E5100BF1CCF /* RootViewController.m in Sources */,
+				A70060091BF574E10060DAFD /* XEBThreadMode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70060271BF576D40060DAFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A70060311BF576D40060DAFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 307DEE4F1BEAFE6A00BF1CCF /* ASIOSSample */;
+			targetProxy = A70060301BF576D40060DAFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		307DEE5C1BEAFE6A00BF1CCF /* Main.storyboard */ = {
@@ -375,6 +505,30 @@
 			};
 			name = Release;
 		};
+		A70060331BF576D40060DAFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XiateEventBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiatekeji.XiateEventBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASIOSSample.app/ASIOSSample";
+			};
+			name = Debug;
+		};
+		A70060341BF576D40060DAFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XiateEventBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiatekeji.XiateEventBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASIOSSample.app/ASIOSSample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,6 +549,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A70060321BF576D40060DAFD /* Build configuration list for PBXNativeTarget "XiateEventBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70060331BF576D40060DAFD /* Debug */,
+				A70060341BF576D40060DAFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -78,7 +78,7 @@
                isAnimation:(BOOL)animation{
     if (controller && [self isUINavigationController:_currentModalViewController] ) {
         _currentViewController = controller;
-        [controller skipPageProtocola:parameter];
+        [controller skipPageProtocol:parameter];
         [_rootNaviViewController pushViewController:controller animated:animation];
     }
 }
@@ -87,7 +87,7 @@
                   isAnimation:(BOOL)animation
                    completion:(void(^)())finish{
     if (_currentViewController) {
-        [controller skipPageProtocola:parameter];
+        [controller skipPageProtocol:parameter];
         [_currentViewController presentViewController:controller animated:animation completion:^{
             if (finish) {
                 finish();
