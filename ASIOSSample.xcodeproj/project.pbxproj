@@ -32,6 +32,8 @@
 		A70060071BF574E10060DAFD /* XEBSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = A7005FFC1BF574E10060DAFD /* XEBSubscription.m */; };
 		A70060081BF574E10060DAFD /* XEBThreadLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = A7005FFE1BF574E10060DAFD /* XEBThreadLocal.m */; };
 		A70060091BF574E10060DAFD /* XEBThreadMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A70060001BF574E10060DAFD /* XEBThreadMode.m */; };
+		A70060371BF57B220060DAFD /* EventBusDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70060361BF57B220060DAFD /* EventBusDemoViewController.m */; };
+		A70060391BF57B7F0060DAFD /* EventBusDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70060381BF57B7F0060DAFD /* EventBusDemoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,9 @@
 		A70060001BF574E10060DAFD /* XEBThreadMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEBThreadMode.m; sourceTree = "<group>"; };
 		A70060011BF574E10060DAFD /* XiateEventBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiateEventBus.h; sourceTree = "<group>"; };
 		A700602B1BF576D40060DAFD /* XiateEventBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XiateEventBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70060351BF57B220060DAFD /* EventBusDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventBusDemoViewController.h; sourceTree = "<group>"; };
+		A70060361BF57B220060DAFD /* EventBusDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventBusDemoViewController.m; sourceTree = "<group>"; };
+		A70060381BF57B7F0060DAFD /* EventBusDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventBusDemoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,15 +146,18 @@
 			children = (
 				307DEE561BEAFE6A00BF1CCF /* AppDelegate.h */,
 				307DEE571BEAFE6A00BF1CCF /* AppDelegate.m */,
-				307DEE591BEAFE6A00BF1CCF /* ViewController.h */,
-				307DEE5A1BEAFE6A00BF1CCF /* ViewController.m */,
-				307DEE5C1BEAFE6A00BF1CCF /* Main.storyboard */,
 				307DEE5F1BEAFE6A00BF1CCF /* Assets.xcassets */,
-				307DEE611BEAFE6A00BF1CCF /* LaunchScreen.storyboard */,
+				A70060351BF57B220060DAFD /* EventBusDemoViewController.h */,
+				A70060361BF57B220060DAFD /* EventBusDemoViewController.m */,
+				A70060381BF57B7F0060DAFD /* EventBusDemoViewController.xib */,
 				307DEE641BEAFE6A00BF1CCF /* Info.plist */,
-				307DEE531BEAFE6A00BF1CCF /* Supporting Files */,
+				307DEE611BEAFE6A00BF1CCF /* LaunchScreen.storyboard */,
+				307DEE5C1BEAFE6A00BF1CCF /* Main.storyboard */,
 				307DEE711BEB1E5100BF1CCF /* RootViewController.h */,
 				307DEE721BEB1E5100BF1CCF /* RootViewController.m */,
+				307DEE531BEAFE6A00BF1CCF /* Supporting Files */,
+				307DEE591BEAFE6A00BF1CCF /* ViewController.h */,
+				307DEE5A1BEAFE6A00BF1CCF /* ViewController.m */,
 			);
 			path = UIDemo;
 			sourceTree = "<group>";
@@ -308,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				307DEE631BEAFE6A00BF1CCF /* LaunchScreen.storyboard in Resources */,
+				A70060391BF57B7F0060DAFD /* EventBusDemoViewController.xib in Resources */,
 				307DEE601BEAFE6A00BF1CCF /* Assets.xcassets in Resources */,
 				307DEE5E1BEAFE6A00BF1CCF /* Main.storyboard in Resources */,
 				30EEEB941BF438C7009E3029 /* Business.plist in Resources */,
@@ -339,6 +348,7 @@
 				30EEEB991BF438CE009E3029 /* HTML5ViewController.m in Sources */,
 				A70060081BF574E10060DAFD /* XEBThreadLocal.m in Sources */,
 				307DEE701BEB099E00BF1CCF /* ASModalCenterControll.m in Sources */,
+				A70060371BF57B220060DAFD /* EventBusDemoViewController.m in Sources */,
 				307DEE8F1BEB5E9300BF1CCF /* BookViewController.m in Sources */,
 				307DEE7D1BEB483B00BF1CCF /* UIBookEditViewController.m in Sources */,
 				307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */,
