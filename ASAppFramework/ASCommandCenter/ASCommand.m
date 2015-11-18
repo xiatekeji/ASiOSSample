@@ -10,4 +10,8 @@
 
 @implementation ASCommand
 
+- (void)executeWithEvent: (id)event {
+	// Do nothing.
+}
+
 @end

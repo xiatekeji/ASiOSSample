@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ASCommand : NSObject
+@protocol ASCommand<NSObject>
+
+@required
+
+- (void)executeWithEvent: (id _Nullable)event;
+
+@end
+
+#pragma mark -
+
+@interface ASCommand : NSObject<ASCommand>
 
 @end
