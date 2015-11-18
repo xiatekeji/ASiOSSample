@@ -54,8 +54,6 @@
     [self initAdeverScrollView:rootSubview];
     [self initHomeCustonNaviBar:rootSubview];
     [self initHomeTableViewIntoView:rootSubview];
-	
-	[self showOrHideProgressHudInTheFuture];
 }
 
 - (void)viewWillAppear: (BOOL)animated {
@@ -139,8 +137,6 @@
     [view addSubview:_customNaviBar];
     [_customNaviBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.equalTo(self.view).offset(0);
-//        make.right.equalTo(self.view);
-//        make.top.equalTo(self.view);
         make.height.equalTo(@60);
     }];
 }
@@ -167,21 +163,6 @@
 }
 #pragma mark Private
 
-- (void)showOrHideProgressHudInTheFuture {
-	RACSignal* signal = [
-		RACObserve(self, viewModel.shouldDisplayProgressHud)
-		distinctUntilChanged
-	];
-	
-	[signal subscribeNext: ^(NSNumber* number) {
-		[self showOrHideProgressHud];
-	}];
-}
-
-- (void)showOrHideProgressHud {
-	BOOL shouldDisplayProgressHud = [_viewModel shouldDisplayProgressHud];
-
-}
 
 - (void)leftSideIn{
     
@@ -189,10 +170,7 @@
     
 }
 
-- (void)openCart {
-	[_sidebarLayout setSideVisible: FALSE animated: TRUE];
-	
-}
+
 
 - (void)signIn {
     [_sidebarLayout setSideVisible: FALSE animated: TRUE];
@@ -235,7 +213,7 @@
 			
 			case 1:
 			{
-				[self goToFrame];
+				[self goToTableTop];
 				
 				break;
 			}
@@ -307,25 +285,41 @@
 }
 
 - (void)goToTrial {
-
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"bookProduct" andParameters:nil];
+    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 
 - (void)goToPhotoBook {
-
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"bookProduct" andParameters:nil];
+    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 
 - (void)goToFrame {
-
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"frameProduct" andParameters:nil];
+    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 
 - (void)goToCanvas {
-
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"canvasProduct" andParameters:nil];
+    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 
 - (void)goToPrints {
-
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"bookProduct" andParameters:nil];
+    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
 }
 - (void)goToUploadPhotos{
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"uploadPhotos" andParameters:nil];
+    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+}
+- (void)goToTableTop{
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"tableTopProduct" andParameters:nil];
+    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+}
+- (void)openCart {
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"openCart" andParameters:nil];
+    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    [_sidebarLayout setSideVisible: FALSE animated: TRUE];
     
 }
 #pragma mark Override

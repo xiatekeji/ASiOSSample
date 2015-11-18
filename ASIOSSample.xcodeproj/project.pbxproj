@@ -25,6 +25,11 @@
 		303856891BFC150300D7FFC4 /* ASTrialViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038567A1BFC150300D7FFC4 /* ASTrialViewModel.m */; };
 		303856971BFC420D00D7FFC4 /* ASHomeAdverScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 303856941BFC420D00D7FFC4 /* ASHomeAdverScrollView.m */; };
 		303856981BFC420D00D7FFC4 /* ASSidebarLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 303856961BFC420D00D7FFC4 /* ASSidebarLayout.m */; };
+		3038569B1BFC4C5000D7FFC4 /* ASBookProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038569A1BFC4C5000D7FFC4 /* ASBookProductViewController.m */; };
+		3038569E1BFC4CAD00D7FFC4 /* ASFrameProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038569D1BFC4CAD00D7FFC4 /* ASFrameProductViewController.m */; };
+		303856A11BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303856A01BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m */; };
+		303856A91BFC4DD800D7FFC4 /* ASTableTopProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303856A81BFC4DD800D7FFC4 /* ASTableTopProductViewController.m */; };
+		303856AC1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303856AB1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m */; };
 		3070D2951BF0A63A005D8AC8 /* UINavibook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070D2941BF0A63A005D8AC8 /* UINavibook.m */; };
 		307DEE551BEAFE6A00BF1CCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE541BEAFE6A00BF1CCF /* main.m */; };
 		307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE571BEAFE6A00BF1CCF /* AppDelegate.m */; };
@@ -96,6 +101,16 @@
 		303856941BFC420D00D7FFC4 /* ASHomeAdverScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHomeAdverScrollView.m; sourceTree = "<group>"; };
 		303856951BFC420D00D7FFC4 /* ASSidebarLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSidebarLayout.h; sourceTree = "<group>"; };
 		303856961BFC420D00D7FFC4 /* ASSidebarLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSidebarLayout.m; sourceTree = "<group>"; };
+		303856991BFC4C5000D7FFC4 /* ASBookProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBookProductViewController.h; sourceTree = "<group>"; };
+		3038569A1BFC4C5000D7FFC4 /* ASBookProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBookProductViewController.m; sourceTree = "<group>"; };
+		3038569C1BFC4CAD00D7FFC4 /* ASFrameProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFrameProductViewController.h; sourceTree = "<group>"; };
+		3038569D1BFC4CAD00D7FFC4 /* ASFrameProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFrameProductViewController.m; sourceTree = "<group>"; };
+		3038569F1BFC4CBF00D7FFC4 /* ASCanvasProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCanvasProductViewController.h; sourceTree = "<group>"; };
+		303856A01BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCanvasProductViewController.m; sourceTree = "<group>"; };
+		303856A71BFC4DD800D7FFC4 /* ASTableTopProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableTopProductViewController.h; sourceTree = "<group>"; };
+		303856A81BFC4DD800D7FFC4 /* ASTableTopProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableTopProductViewController.m; sourceTree = "<group>"; };
+		303856AA1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUploadPhotosViewController.h; sourceTree = "<group>"; };
+		303856AB1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUploadPhotosViewController.m; sourceTree = "<group>"; };
 		3070D2931BF0A63A005D8AC8 /* UINavibook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavibook.h; sourceTree = "<group>"; };
 		3070D2941BF0A63A005D8AC8 /* UINavibook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavibook.m; sourceTree = "<group>"; };
 		307DEE501BEAFE6A00BF1CCF /* ASIOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASIOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +196,7 @@
 		303856591BFC150300D7FFC4 /* View Controllers + View Models */ = {
 			isa = PBXGroup;
 			children = (
+				303856A61BFC4DCF00D7FFC4 /* TableTop */,
 				3038565A1BFC150300D7FFC4 /* Canvas */,
 				3038565B1BFC150300D7FFC4 /* Cart */,
 				303856611BFC150300D7FFC4 /* Frame */,
@@ -197,6 +213,8 @@
 		3038565A1BFC150300D7FFC4 /* Canvas */ = {
 			isa = PBXGroup;
 			children = (
+				3038569F1BFC4CBF00D7FFC4 /* ASCanvasProductViewController.h */,
+				303856A01BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m */,
 			);
 			path = Canvas;
 			sourceTree = "<group>";
@@ -216,6 +234,8 @@
 		303856611BFC150300D7FFC4 /* Frame */ = {
 			isa = PBXGroup;
 			children = (
+				3038569C1BFC4CAD00D7FFC4 /* ASFrameProductViewController.h */,
+				3038569D1BFC4CAD00D7FFC4 /* ASFrameProductViewController.m */,
 			);
 			path = Frame;
 			sourceTree = "<group>";
@@ -223,12 +243,12 @@
 		303856621BFC150300D7FFC4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				303856671BFC150300D7FFC4 /* ASHomeViewController.h */,
+				303856681BFC150300D7FFC4 /* ASHomeViewController.m */,
 				303856631BFC150300D7FFC4 /* ASContactUsDialog.h */,
 				303856641BFC150300D7FFC4 /* ASContactUsDialog.m */,
 				303856651BFC150300D7FFC4 /* ASCustomNaviBar.h */,
 				303856661BFC150300D7FFC4 /* ASCustomNaviBar.m */,
-				303856671BFC150300D7FFC4 /* ASHomeViewController.h */,
-				303856681BFC150300D7FFC4 /* ASHomeViewController.m */,
 				303856691BFC150300D7FFC4 /* ASHomeViewController_SidebarContentView.h */,
 				3038566A1BFC150300D7FFC4 /* ASHomeViewController_SidebarContentView.m */,
 				3038566B1BFC150300D7FFC4 /* ASHomeViewController_SidebarContentView.xib */,
@@ -243,6 +263,8 @@
 		303856701BFC150300D7FFC4 /* Photo Book */ = {
 			isa = PBXGroup;
 			children = (
+				303856991BFC4C5000D7FFC4 /* ASBookProductViewController.h */,
+				3038569A1BFC4C5000D7FFC4 /* ASBookProductViewController.m */,
 			);
 			path = "Photo Book";
 			sourceTree = "<group>";
@@ -278,6 +300,8 @@
 		3038567B1BFC150300D7FFC4 /* Upload */ = {
 			isa = PBXGroup;
 			children = (
+				303856AA1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.h */,
+				303856AB1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m */,
 			);
 			path = Upload;
 			sourceTree = "<group>";
@@ -291,6 +315,15 @@
 				303856961BFC420D00D7FFC4 /* ASSidebarLayout.m */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		303856A61BFC4DCF00D7FFC4 /* TableTop */ = {
+			isa = PBXGroup;
+			children = (
+				303856A71BFC4DD800D7FFC4 /* ASTableTopProductViewController.h */,
+				303856A81BFC4DD800D7FFC4 /* ASTableTopProductViewController.m */,
+			);
+			path = TableTop;
 			sourceTree = "<group>";
 		};
 		307DEE471BEAFE6A00BF1CCF = {
@@ -548,8 +581,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3038569E1BFC4CAD00D7FFC4 /* ASFrameProductViewController.m in Sources */,
 				307DEE801BEB484600BF1CCF /* UISizeViewController.m in Sources */,
 				303856851BFC150300D7FFC4 /* ASProductCell.m in Sources */,
+				303856A91BFC4DD800D7FFC4 /* ASTableTopProductViewController.m in Sources */,
 				303856811BFC150300D7FFC4 /* ASHomeViewController.m in Sources */,
 				A70060061BF574E10060DAFD /* XEBSubscriberMethodFinder.m in Sources */,
 				307DEE7A1BEB482C00BF1CCF /* UIFrameEditViewController.m in Sources */,
@@ -558,13 +593,16 @@
 				A70060051BF574E10060DAFD /* XEBSubscriberMethod.m in Sources */,
 				307DEE8C1BEB4B3400BF1CCF /* ModalCenterReform.m in Sources */,
 				303856891BFC150300D7FFC4 /* ASTrialViewModel.m in Sources */,
+				303856AC1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m in Sources */,
 				307DEE5B1BEAFE6A00BF1CCF /* ViewController.m in Sources */,
 				303856861BFC150300D7FFC4 /* ASSignInViewController.m in Sources */,
 				30EEEB991BF438CE009E3029 /* HTML5ViewController.m in Sources */,
+				303856A11BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m in Sources */,
 				30005FBF1BF5C536009D2369 /* ASNavigator.m in Sources */,
 				303856821BFC150300D7FFC4 /* ASHomeViewController_SidebarContentView.m in Sources */,
 				A70060081BF574E10060DAFD /* XEBThreadLocal.m in Sources */,
 				A70060371BF57B220060DAFD /* EventBusDemoViewController.m in Sources */,
+				3038569B1BFC4C5000D7FFC4 /* ASBookProductViewController.m in Sources */,
 				303856881BFC150300D7FFC4 /* ASTrialViewController.m in Sources */,
 				3038567D1BFC150300D7FFC4 /* ASCartViewModel.m in Sources */,
 				307DEE8F1BEB5E9300BF1CCF /* BookViewController.m in Sources */,

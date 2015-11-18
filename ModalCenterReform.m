@@ -20,11 +20,9 @@ static NSMutableDictionary *identiferDic;
 
     if ([dic objectForKey:identifer]) {
         NSDictionary *refromDic = [dic objectForKey:identifer];
-        if ([refromDic objectForKey:@"url"]) {
-            classStr = @"HTML5ViewController";
-            
-        }else{
+        if ([refromDic objectForKey:@"class"]) {
             classStr = [refromDic objectForKey:@"class"];
+            
         }
         _modalParamter = refromDic;
     }
@@ -33,29 +31,13 @@ static NSMutableDictionary *identiferDic;
     UIViewController <ASNavigatable>*VC = [[controller  alloc] init];
     if (VC) {
         _controller = VC;
+        _controller.view.backgroundColor = [UIColor whiteColor];
     }
     if (parameter) {
         _modalParamter = parameter;
     }
-//    if (identiferDic) {
-//        if ( [identiferDic objectForKey:identifer]) {
-//            if ( [[ASNavigator shareModalCenter] fetchVCWithMemoryPath:[identiferDic objectForKey:identifer]]) {
-//               _controller = [[ASNavigator shareModalCenter] fetchVCWithMemoryPath:[identiferDic objectForKey:identifer]];
-//            }else{
-//                
-//                 [identiferDic setValue:[NSString stringWithFormat:@"%p",VC] forKey:identifer];
-//             
-//            }
-//           
-//        }
-//    }else{
-//        identiferDic = [[NSMutableDictionary alloc]init];
-//        [identiferDic setValue:[NSString stringWithFormat:@"%p",VC] forKey:identifer];
-//        
-//    }
- 
-    
 
+ 
     
     return self;
 }

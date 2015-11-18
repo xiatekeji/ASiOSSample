@@ -11,47 +11,68 @@
 		<key>title</key>
 		<string>SignIn</string>
 	</dict>
-	<key>signIn - 2</key>
+	<key>bookProduct</key>
 	<dict>
 		<key>class</key>
-		<string>ASSignInViewController</string>
+		<string>ASBookProductViewController</string>
 		<key>title</key>
-		<string>SignIn</string>
+		<string>Select Book Type</string>
 	</dict>
-	<key>signIn - 2 - 2</key>
+	<key>frameProduct</key>
 	<dict>
 		<key>class</key>
-		<string>ASSignInViewController</string>
+		<string>ASFrameProductViewController</string>
 		<key>title</key>
-		<string>SignIn</string>
+		<string>Select Frame Type</string>
 	</dict>
-	<key>signIn - 2 - 2 - 2</key>
+	<key>canvasProduct</key>
 	<dict>
 		<key>class</key>
-		<string>ASSignInViewController</string>
+		<string>ASCanvasProductViewController</string>
 		<key>title</key>
-		<string>SignIn</string>
+		<string>Select Canvas Type</string>
 	</dict>
-	<key>signIn - 2 - 2 - 2 - 2</key>
+	<key>prints</key>
 	<dict>
 		<key>class</key>
-		<string>ASSignInViewController</string>
+		<string>ASPrintsViewController</string>
 		<key>title</key>
-		<string>SignIn</string>
+		<string></string>
 	</dict>
-	<key>signIn - 2 - 2 - 2 - 2 - 2</key>
+	<key>uploadPhotos</key>
 	<dict>
 		<key>class</key>
-		<string>ASSignInViewController</string>
+		<string>ASUploadPhotosViewController</string>
 		<key>title</key>
-		<string>SignIn</string>
+		<string>Select Photos</string>
 	</dict>
-	<key>signIn - 2 - 2 - 2 - 2 - 2 - 2</key>
+	<key>openCart</key>
 	<dict>
 		<key>class</key>
-		<string>ASSignInViewController</string>
+		<string>ASCartViewController</string>
 		<key>title</key>
-		<string>SignIn</string>
+		<string>Cart</string>
+	</dict>
+	<key>bookEdit</key>
+	<dict>
+		<key>class</key>
+		<string>ASPhotoEditViewController</string>
+		<key>title</key>
+		<string></string>
+	</dict>
+	<key>frameEdit</key>
+	<dict>
+		<key>class</key>
+		<string>ASFrameEditViewController</string>
+		<key>title</key>
+		<string></string>
+	</dict>
+	<key>tableTopProduct</key>
+	<dict>
+		<key>class</key>
+		<string>ASTableTopProductViewController</string>
+		<key>title</key>
+		<string>Select TableTop Type</string>
 	</dict>
 </dict>
 </plist>

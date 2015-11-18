@@ -16,7 +16,11 @@
 @implementation ASCartViewController{
 
 }
-
+- (void)skipPageProtocol:(NSDictionary *)parameters{
+    if ([parameters objectForKey:@"title"]) {
+        self.title = [parameters objectForKey:@"title"];
+    }
+}
 - (instancetype)initWithViewModel:(ASCartViewModel *)viewModel{
     self = [super init];
     if (self) {
