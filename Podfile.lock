@@ -1,0 +1,32 @@
+PODS:
+  - IQKeyboardManager (3.3.4)
+  - JSONModel (1.1.2)
+  - Masonry (0.6.3)
+  - QBImagePickerController (3.2.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - ReactiveViewModel (0.3):
+    - ReactiveCocoa (~> 2.4)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - JSONModel
+  - Masonry
+  - QBImagePickerController
+  - ReactiveCocoa
+  - ReactiveViewModel
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: ac803e61e5b50efae6b3aeedd95a02c7c7d3b2b3
+  JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  QBImagePickerController: 75b3857b1307a3c01ce486559bc294f802ddec6c
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
+
+COCOAPODS: 0.38.0

@@ -153,6 +153,7 @@
 			NSString* message = [textField text];
 			
 			MessageEvent* messageEvent = [[MessageEvent alloc] initWithMessage: message];
+           
 			[_eventBus post: messageEvent];
 		}
 	]];
@@ -470,6 +471,7 @@
 @implementation EventBusDemoViewController
 
 + (NSArray<Class>*)handleableEventClasses {
+    
 	return @[
 		[NSObject class]
 	];
@@ -565,9 +567,9 @@
 	_alertController = alertController;
 }
 
-- (void)handleMessageEvent: (MessageEvent*)messageEvent {
+- (void)handleMessageEvent: (MessageEvent *)messageEvent {
 	[self ensureThatNoAlertControllerIsPresented];
-	
+    NSLog(@"message Super Class = %@",NSStringFromClass(messageEvent.superclass));
 	NSString* message = [messageEvent message];
 	
 	UIAlertController* alertController = [UIAlertController alertControllerWithTitle: nil message: [[NSString alloc] initWithFormat: @"Received a message:\n%@", message] preferredStyle: UIAlertControllerStyleAlert];
