@@ -4,47 +4,54 @@
 <dict>
 	<key>version</key>
 	<string>1.0</string>
-	<key>book</key>
-	<dict>
-		<key>title</key>
-		<string>Book</string>
-		<key>class</key>
-		<string>BookViewController</string>
-	</dict>
-	<key>hao123</key>
-	<dict>
-		<key>url</key>
-		<string>http://www.hao123.com</string>
-		<key>title</key>
-		<string>hao</string>
-	</dict>
-	<key>baidu</key>
-	<dict>
-		<key>url</key>
-		<string>http://www.baidu.com</string>
-		<key>title</key>
-		<string>baidu</string>
-	</dict>
-	<key>bookEdit</key>
+	<key>signIn</key>
 	<dict>
 		<key>class</key>
-		<string>UIBookEditViewController</string>
+		<string>ASSignInViewController</string>
 		<key>title</key>
-		<string>BookEdit</string>
+		<string>SignIn</string>
 	</dict>
-	<key>frameEdit</key>
+	<key>signIn - 2</key>
 	<dict>
 		<key>class</key>
-		<string>UIFrameEditViewController</string>
+		<string>ASSignInViewController</string>
 		<key>title</key>
-		<string>FrameEdit</string>
+		<string>SignIn</string>
 	</dict>
-	<key>size</key>
+	<key>signIn - 2 - 2</key>
 	<dict>
 		<key>class</key>
-		<string>UISizeViewController</string>
+		<string>ASSignInViewController</string>
 		<key>title</key>
-		<string>Size</string>
+		<string>SignIn</string>
+	</dict>
+	<key>signIn - 2 - 2 - 2</key>
+	<dict>
+		<key>class</key>
+		<string>ASSignInViewController</string>
+		<key>title</key>
+		<string>SignIn</string>
+	</dict>
+	<key>signIn - 2 - 2 - 2 - 2</key>
+	<dict>
+		<key>class</key>
+		<string>ASSignInViewController</string>
+		<key>title</key>
+		<string>SignIn</string>
+	</dict>
+	<key>signIn - 2 - 2 - 2 - 2 - 2</key>
+	<dict>
+		<key>class</key>
+		<string>ASSignInViewController</string>
+		<key>title</key>
+		<string>SignIn</string>
+	</dict>
+	<key>signIn - 2 - 2 - 2 - 2 - 2 - 2</key>
+	<dict>
+		<key>class</key>
+		<string>ASSignInViewController</string>
+		<key>title</key>
+		<string>SignIn</string>
 	</dict>
 </dict>
 </plist>

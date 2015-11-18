@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "AppDelegate.h"
 #import "ASNavigator.h"
+#import "ASHomeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,10 +21,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ViewController *vc = [[ViewController alloc]init];
+    ASHomeViewController *homePage = [[ASHomeViewController alloc]init];
    
  
-    self.window.rootViewController = [[ASNavigator shareModalCenter] innerWithHome:vc];
+    self.window.rootViewController = [[ASNavigator shareModalCenter] innerWithHome:homePage];
     //
     [self.window makeKeyAndVisible];
     

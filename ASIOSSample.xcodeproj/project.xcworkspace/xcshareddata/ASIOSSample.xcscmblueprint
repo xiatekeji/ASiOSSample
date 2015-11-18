@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E2DCE047C6B41E82FE09540C1004DAEA89B6875D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b122416d-c40c-413e-96d2-ed65f96a9d29++516" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E2DCE047C6B41E82FE09540C1004DAEA89B6875D" : 0,
+    "b122416d-c40c-413e-96d2-ed65f96a9d29++516" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "91C6AB5D-D8E9-4991-A1B8-C1739C001964",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E2DCE047C6B41E82FE09540C1004DAEA89B6875D" : "ASiOSSample\/",
+    "b122416d-c40c-413e-96d2-ed65f96a9d29++516" : "Documents\/workspace\/1.6.19_Temp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ASIOSSample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ASIOSSample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xiatekeji\/ASiOSSample",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2DCE047C6B41E82FE09540C1004DAEA89B6875D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.artisanstate.com\/svn\/as2",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b122416d-c40c-413e-96d2-ed65f96a9d29++516"
+    }
+  ]
+}
