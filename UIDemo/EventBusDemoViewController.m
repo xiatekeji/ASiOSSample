@@ -112,19 +112,19 @@
 	_eventBus = [XEBEventBus defaultEventBus];
 	
 	SimpleEventSubscriber* simpleEventSubscriber = [[SimpleEventSubscriber allocWithOwner: self] init];
-	[_eventBus register: simpleEventSubscriber];
+	[_eventBus registerSubscriber: simpleEventSubscriber];
 	_simpleEventSubscriber = simpleEventSubscriber;
 	
 	MessageEventSubscriber* messageEventSubscriber = [[MessageEventSubscriber allocWithOwner: self] init];
-	[_eventBus register: messageEventSubscriber];
+	[_eventBus registerSubscriber: messageEventSubscriber];
 	_messageEventSubscriber = messageEventSubscriber;
 	
 	StartEventSubscriber* startEventSubscriber = [[StartEventSubscriber allocWithOwner: self] init];
-	[_eventBus register: startEventSubscriber];
+	[_eventBus registerSubscriber: startEventSubscriber];
 	_startEventSubscriber = startEventSubscriber;
 	
 	StopEventSubscriber* stopEventSubscriber = [[StopEventSubscriber allocWithOwner: self] init];
-	[_eventBus register: stopEventSubscriber];
+	[_eventBus registerSubscriber: stopEventSubscriber];
 	_stopEventSubscriber = stopEventSubscriber;
 	
 	return self;
@@ -471,7 +471,6 @@
 @implementation EventBusDemoViewController
 
 + (NSArray<Class>*)handleableEventClasses {
-    
 	return @[
 		[NSObject class]
 	];
@@ -482,18 +481,18 @@
 	
 	_eventBus = [XEBEventBus defaultEventBus];
 	
-	[_eventBus register: self];
+	[_eventBus registerSubscriber: self];
 	
 	return self;
 }
 
 - (void)dealloc {
-	[_eventBus unregister: self];
+	[_eventBus unregisterSubscriber: self];
 }
 
 - (IBAction)demonstrateSimpleEvent {
 	SimpleEvent* event = [[SimpleEvent alloc] init];
-	[_eventBus post: event];
+	[_eventBus postEvent: event];
 }
 
 - (IBAction)demonstrateEventWithArguments {
@@ -507,7 +506,7 @@
 			NSString* message = [textField text];
 			
 			MessageEvent* messageEvent = [[MessageEvent alloc] initWithMessage: message];
-			[_eventBus post: messageEvent];
+			[_eventBus postEvent: messageEvent];
 		}
 	]];
 	[alertController addAction: [
@@ -523,7 +522,7 @@
 
 - (IBAction)demonstrateEventOnBackgroundThread {
 	StartEvent* event = [[StartEvent alloc] init];
-	[_eventBus post: event];
+	[_eventBus postEvent: event];
 }
 
 - (void)onEvent: (id)event {
@@ -598,7 +597,7 @@
 	[NSThread sleepForTimeInterval: 5];
 	
 	StopEvent* stopEvent = [[StopEvent alloc] init];
-	[_eventBus post: stopEvent];
+	[_eventBus postEvent: stopEvent];
 }
 
 - (void)handleStopEvent: (StopEvent*)event {

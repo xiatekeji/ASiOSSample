@@ -79,23 +79,23 @@ static XEBEventBus* _defaultInstance;
 	return self;
 }
 
-- (void)register: (NSObject<XEBSubscriber>*)subscriber {
-	[self register: subscriber sticky: false priority: 0];
+- (void)registerSubscriber: (NSObject<XEBSubscriber>*)subscriber {
+	[self registerSubscriber: subscriber sticky: false priority: 0];
 }
 
-- (void)register: (NSObject<XEBSubscriber>*)subscriber priority: (NSInteger)priority {
-	[self register: subscriber sticky: false priority: priority];
+- (void)registerSubscriber: (NSObject<XEBSubscriber>*)subscriber priority: (NSInteger)priority {
+	[self registerSubscriber: subscriber sticky: false priority: priority];
 }
 
-- (void)registerSticky: (NSObject<XEBSubscriber>*)subscriber {
-	[self register: subscriber sticky: true priority: 0];
+- (void)registerStickySubscriber: (NSObject<XEBSubscriber>*)subscriber {
+	[self registerSubscriber: subscriber sticky: true priority: 0];
 }
 
-- (void)registerSticky: (NSObject<XEBSubscriber>*)subscriber priority: (NSInteger)priority {
-	[self register: subscriber sticky: true priority: priority];
+- (void)registerStickySubscriber: (NSObject<XEBSubscriber>*)subscriber priority: (NSInteger)priority {
+	[self registerSubscriber: subscriber sticky: true priority: priority];
 }
 
-- (void)register: (NSObject<XEBSubscriber>*)subscriber sticky: (BOOL)sticky priority: (NSInteger)priority {
+- (void)registerSubscriber: (NSObject<XEBSubscriber>*)subscriber sticky: (BOOL)sticky priority: (NSInteger)priority {
 	@synchronized(self) {
 		NSArray<XEBSubscriberMethod*>* subscriberMethods = [_subscriberMethodFinder findSubscriberMethods: [subscriber class]];
 		for(XEBSubscriberMethod* subscriberMethod in subscriberMethods) {
@@ -173,7 +173,7 @@ static XEBEventBus* _defaultInstance;
 	}
 }
 
-- (void)unregister: (NSObject<XEBSubscriber>*)subscriber {
+- (void)unregisterSubscriber: (NSObject<XEBSubscriber>*)subscriber {
 	@synchronized(self) {
 		NSValue* subscriberKey = [NSValue valueWithNonretainedObject: subscriber];
 		NSMutableArray<Class>* eventClasses = _eventClassesBySubscriber[subscriberKey];
@@ -189,7 +189,7 @@ static XEBEventBus* _defaultInstance;
 	}
 }
 
-- (void)post: (NSObject*)event {
+- (void)postEvent: (NSObject*)event {
 	XEBPostingThreadState* postingState = [_currentPostingThreadState value];
 	NSMutableArray<NSObject*>* eventQueue = [postingState eventQueue];
 	[eventQueue addObject: event];
@@ -234,7 +234,7 @@ static XEBEventBus* _defaultInstance;
 	postingState.canceled = true;
 }
 
-- (void)postSticky: (NSObject*)event {
+- (void)postStickyEvent: (NSObject*)event {
 	// TODO
 }
 

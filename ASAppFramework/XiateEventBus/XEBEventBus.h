@@ -25,31 +25,31 @@
  */
 + (instancetype _Nonnull)defaultEventBus;
 
-- (void)register: (NSObject<XEBSubscriber>* _Nonnull)subscriber;
+- (void)registerSubscriber: (NSObject<XEBSubscriber>* _Nonnull)subscriber;
 
-- (void)register: (NSObject<XEBSubscriber>* _Nonnull)subscriber priority: (NSInteger)priority;
+- (void)registerSubscriber: (NSObject<XEBSubscriber>* _Nonnull)subscriber priority: (NSInteger)priority;
 
-- (void)registerSticky: (NSObject<XEBSubscriber>* _Nonnull)subscriber;
+- (void)registerStickySubscriber: (NSObject<XEBSubscriber>* _Nonnull)subscriber;
 
-- (void)registerSticky: (NSObject<XEBSubscriber>* _Nonnull)subscriber priority: (NSInteger)priority;
+- (void)registerStickySubscriber: (NSObject<XEBSubscriber>* _Nonnull)subscriber priority: (NSInteger)priority;
 
-- (BOOL)isRegistered: (NSObject<XEBSubscriber>* _Nonnull)subscriber;
+- (BOOL)isRegisteredSubscriber: (NSObject<XEBSubscriber>* _Nonnull)subscriber;
 
 /**
  * @brief Unregisters the given subscriber from all event classes.
  */
-- (void)unregister: (NSObject<XEBSubscriber>* _Nonnull)subscriber;
+- (void)unregisterSubscriber: (NSObject<XEBSubscriber>* _Nonnull)subscriber;
 
 - (BOOL)hasSubscriberForEventClass: (Class _Nonnull)eventClass;
 
 /**
  * @brief Posts the given event to the event bus.
  */
-- (void)post: (NSObject* _Nonnull)event;
+- (void)postEvent: (NSObject* _Nonnull)event;
 
 - (void)cancelEventDelivery: (NSObject* _Nonnull)event;
 
-- (void)postSticky: (NSObject* _Nonnull)event;
+- (void)postStickyEvent: (NSObject* _Nonnull)event;
 
 @end
 

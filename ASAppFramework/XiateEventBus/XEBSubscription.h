@@ -24,7 +24,7 @@
 - (instancetype _Nonnull)init __unavailable;
 - (instancetype _Nonnull)initWithSubscriber: (NSObject<XEBSubscriber>* _Nonnull)subscriber subscriberMethod: (XEBSubscriberMethod* _Nonnull)subscriberMethod priority: (NSInteger)priority NS_DESIGNATED_INITIALIZER;
 
-@property(nonatomic, readonly, nonnull) NSObject<XEBSubscriber>* subscriber;
+@property(nonatomic, assign, readonly, nonnull) NSObject<XEBSubscriber>* subscriber;
 @property(nonatomic, readonly, nonnull) XEBSubscriberMethod* subscriberMethod;
 @property(nonatomic, readonly) NSInteger priority;
 
