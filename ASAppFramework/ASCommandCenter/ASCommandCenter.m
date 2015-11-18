@@ -53,7 +53,7 @@ static ASCommandCenter* _defaultInstance;
 	
 	// 此处不使用默认的EventBus，以免外部干涉。
 	XEBEventBus* eventBus = [[XEBEventBus alloc] init];
-	[eventBus register: self];
+	[eventBus registerSubscriber: self];
 	_eventBus = eventBus;
 	
 	_commandClassByEventClassName = [[NSMutableDictionary alloc] init];
@@ -62,7 +62,7 @@ static ASCommandCenter* _defaultInstance;
 }
 
 - (void)dealloc {
-	[_eventBus unregister: self];
+	[_eventBus unregisterSubscriber: self];
 }
 
 - (void)bindCommand: (Class)commandClass toEvent: (Class)eventClass {
@@ -97,7 +97,7 @@ static ASCommandCenter* _defaultInstance;
 }
 
 - (void)postEvent: (id)event {
-	[_eventBus post: event];
+	[_eventBus postEvent: event];
 }
 
 - (void)onEvent: (id)event {
