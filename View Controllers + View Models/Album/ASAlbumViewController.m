@@ -56,8 +56,8 @@
 }
 - (void)next{
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"frameEdit" andParameters:nil];
-    [[ASNavigator shareModalCenter]dismissCurrentModalViewControlleAnimation:YES completion:^{
-        [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    [[ASNavigator shareModalCenter]dismissCurrentModalViewControlleAnimation:NO completion:^{
+        [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:NO];
     }];
 }
 
