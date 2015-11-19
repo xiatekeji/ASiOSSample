@@ -9,7 +9,7 @@
 #import "ASNavigator.h"
 #import "ASNavigationController.h"
 @implementation ASNavigator{
-    ASNavigationController *_rootNaviViewController; // 根导航栏
+    UINavigationController *_rootNaviViewController; // 根导航栏
     UIViewController *_currentViewController; // 当前视图控制器
     UIViewController *_currentModalViewController; //当前模块视图控制器
     NSMutableArray <UIViewController *>*_currentModalViewControllers; // 当前所有导航栏控制器
@@ -95,6 +95,7 @@
             if ([self isUINavigationController:controller]) {
                 UINavigationController *navi =  (UINavigationController *) controller ;
                 _currentViewController =  [navi topViewController];
+                _rootNaviViewController = navi;
             }else{
                 _currentViewController = controller;
             }
@@ -115,16 +116,18 @@
                                        completion:(void(^)())finish{
     if (_currentModalViewController) {
         [_currentModalViewController dismissViewControllerAnimated:animation completion:^{
-            if (finish) {
-                finish();
-            }
+ 
             [_currentModalViewControllers removeLastObject];
             _currentModalViewController = [_currentModalViewControllers lastObject];
             if ([self isUINavigationController:_currentModalViewController]) {
                 UINavigationController *navi =  (UINavigationController *) _currentModalViewController ;
                 _currentViewController = [navi.viewControllers lastObject];
+                _rootNaviViewController = navi;
             }else{
                 _currentViewController = _currentModalViewController;
+            }
+            if (finish) {
+                finish();
             }
         }];
         

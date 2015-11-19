@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ASNavigator.h"
 @interface ModalCenterReform : NSObject
-@property (strong, nonatomic) NSDictionary *modalParamter;
+@property (strong, nonatomic) NSMutableDictionary *modalParamter;
 @property (strong, nonatomic) UIViewController <ASNavigatable>*controller;
 
 - (instancetype)initWithIdentifer:(NSString *)identifer

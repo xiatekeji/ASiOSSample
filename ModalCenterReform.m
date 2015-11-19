@@ -15,31 +15,52 @@ static NSMutableDictionary *identiferDic;
 {
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:URL_PLIST_FILENAME ofType:@"plist"];
     NSDictionary *dic = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-    NSString *classStr;
+
     
 
     if ([dic objectForKey:identifer]) {
         NSDictionary *refromDic = [dic objectForKey:identifer];
-        if ([refromDic objectForKey:@"class"]) {
-            classStr = [refromDic objectForKey:@"class"];
-            
-        }
-        _modalParamter = refromDic;
-    }
-    Class controller = NSClassFromString(classStr);
     
-    UIViewController <ASNavigatable>*VC = [[controller  alloc] init];
-    if (VC) {
-        _controller = VC;
-        _controller.view.backgroundColor = [UIColor whiteColor];
+        if ([refromDic objectForKey:@"rootViewController"] && [refromDic objectForKey:@"class"]) {
+            //有root的规则
+            [self initNavigationControllerWithRootClass:[refromDic objectForKey:@"rootViewController"]
+             andNaviControllerClass:[refromDic objectForKey:@"class"]];
+            
+        }else if([refromDic objectForKey:@"class"]) {
+            
+            [self initControllerWithClassName:[refromDic objectForKey:@"class"]];
+         
+        }
+        _modalParamter = [[NSMutableDictionary alloc]initWithDictionary:refromDic];
     }
+    
+
     if (parameter) {
-        _modalParamter = parameter;
+        [_modalParamter setValuesForKeysWithDictionary:parameter];
     }
 
  
     
     return self;
 }
-
+- (void)initControllerWithClassName:(NSString *)name{
+    Class controller = NSClassFromString(name);
+    UIViewController <ASNavigatable>*VC = [[controller  alloc] init];
+    if (VC) {
+        _controller = VC;
+        _controller.view.backgroundColor = [UIColor whiteColor];
+    }
+}
+- (void)initNavigationControllerWithRootClass:(NSString *)root
+                       andNaviControllerClass:(NSString *)navi{
+    Class controller = NSClassFromString(navi);
+    Class rootController = NSClassFromString(root);
+    UIViewController <ASNavigatable>*VC = [[rootController  alloc] init];
+    UINavigationController *nav = [[controller  alloc] initWithRootViewController:VC];
+    if (nav) {
+        _controller = nav;
+    }
+    
+    
+}
 @end

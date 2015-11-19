@@ -78,8 +78,8 @@
 }
 
 - (void)demonstrateEvents {
-	UIViewController* viewController = [[EventBusDemoViewController alloc] init];
-	[[ASNavigator shareModalCenter] pushViewController: viewController parameters: nil isAnimation: TRUE];
+//	UIViewController* viewController = [[EventBusDemoViewController alloc] init];
+//	[[ASNavigator shareModalCenter] pushViewController: viewController parameters: nil isAnimation: TRUE];
 }
 
 - (void)didReceiveMemoryWarning {

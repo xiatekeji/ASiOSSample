@@ -7,8 +7,9 @@
 //
 
 #import "ASCartViewController.h"
-
-
+#import "ASNavigator.h"
+#import "DemoButton.h"
+#import <Masonry/Masonry.h>
 @interface ASCartViewController ()
 
 @end
@@ -24,15 +25,23 @@
 - (instancetype)initWithViewModel:(ASCartViewModel *)viewModel{
     self = [super init];
     if (self) {
+
         self.viewModel = viewModel;
         self.view.backgroundColor = [UIColor whiteColor];
+ 
     }
     return self;
 }
 #pragma mark  Activity
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initWebView];
+    DemoButton *demo = [[DemoButton alloc]initButtonWithDemo:@"Continue Shopping" action:^{
+        [[ASNavigator shareModalCenter]popHomeViewControllerWithAnimation:YES];
+    }];
+    [self.view addSubview:demo];
+    [demo mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.and.centerY.equalTo(self.view);
+    }];
     [self initItemButton];
 }
 - (void)viewWillAppear: (BOOL)animated {
@@ -53,8 +62,6 @@
     self.mainWebView.delegate = self;
     self.mainWebView.scalesPageToFit = YES;
 	self.mainWebView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-
-
     [self.view addSubview:self.mainWebView];
 
 }

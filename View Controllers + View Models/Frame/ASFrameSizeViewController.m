@@ -1,20 +1,21 @@
 //
-//  ASBookProductViewController.m
+//  ASFrameSizeViewController.m
 //  ASIOSSample
 //
 //  Created by XiaoSong on 15/11/18.
 //  Copyright © 2015年 XiaoSong. All rights reserved.
 //
 
-#import "ASBookProductViewController.h"
+#import "ASFrameSizeViewController.h"
 #import "DemoButton.h"
 #import "ASNavigator.h"
 #import "ModalCenterReform.h"
-@interface ASBookProductViewController ()
+@interface ASFrameSizeViewController ()
 
 @end
 
-@implementation ASBookProductViewController
+@implementation ASFrameSizeViewController
+
 - (void)skipPageProtocol:(NSDictionary *)parameters{
     if ([parameters objectForKey:@"title"]) {
         self.title = [parameters objectForKey:@"title"];
@@ -22,16 +23,11 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    DemoButton *demo = [[DemoButton alloc]initButtonWithDemo:@"bookSize" action:^{
-        ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"bookSize" andParameters:nil];
-        [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    DemoButton *demo = [[DemoButton alloc]initButtonWithDemo:@"Into Album" action:^{
+        ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"album" andParameters:nil];
+        [[ASNavigator shareModalCenter] presentViewController:reform.controller parameters:reform.modalParamter isAnimation:YES completion:nil];
     }];
     [self.view addSubview:demo];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*

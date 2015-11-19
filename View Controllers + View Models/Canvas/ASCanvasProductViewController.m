@@ -7,7 +7,9 @@
 //
 
 #import "ASCanvasProductViewController.h"
-
+#import "DemoButton.h"
+#import "ASNavigator.h"
+#import "ModalCenterReform.h"
 @interface ASCanvasProductViewController ()
 
 @end
@@ -21,7 +23,11 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    DemoButton *demo = [[DemoButton alloc]initButtonWithDemo:@"Canvas Size" action:^{
+        ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"canvasSize" andParameters:nil];
+        [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    }];
+    [self.view addSubview:demo];
 }
 
 - (void)didReceiveMemoryWarning {
