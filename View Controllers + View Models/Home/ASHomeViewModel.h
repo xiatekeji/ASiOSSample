@@ -17,13 +17,13 @@
 
 @property (assign ,nonatomic) BOOL isTrial;
 
-/**
- * @brief 是否需要显示进度指示器。
- */
-@property(nonatomic, readonly) BOOL shouldDisplayProgressHud;
-
 @property(nonatomic, readonly) BOOL signedIn;
 
 @property(nonatomic, readonly, nullable) NSString* account;
+
+@property(nonatomic, readonly) BOOL inProgress;
+@property(nonatomic, copy, readonly, nullable) NSString* progressMessage;
+
+- (void)doSignOut;
 
 @end

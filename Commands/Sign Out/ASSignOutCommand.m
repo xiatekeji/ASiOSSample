@@ -62,6 +62,9 @@ static NSInteger _invocationCount = 0;
 }
 
 - (void)signOutFailedWithError: (NSError*)error {
+	ASUserLocator* userLocator = [ASUserLocator sharedInstance];
+	[userLocator setUser: nil];
+	
 	ASSignOutFailureEvent* failureEvent = [[ASSignOutFailureEvent alloc] init];
 	[failureEvent setError: error];
 	

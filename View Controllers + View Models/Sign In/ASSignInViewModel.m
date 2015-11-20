@@ -8,7 +8,6 @@
 
 #import "ASSignInViewModel.h"
 
-#import <MBProgressHUD/MBProgressHUD.h>
 #import "ASSignInEvent.h"
 #import "ASSignInFailureEvent.h"
 #import "ASSignInSuccessEvent.h"
@@ -81,7 +80,7 @@
 
 #pragma mark XEBSubscriber
 
-- (void)onEventMainThread: (id)event {
+- (void)onEvent: (id)event {
 	if([event isKindOfClass: [ASSignInSuccessEvent class]]) {
 		[self handleSignInSuccessEvent: event];
 		

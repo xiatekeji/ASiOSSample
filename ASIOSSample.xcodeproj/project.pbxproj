@@ -19,8 +19,6 @@
 		303856831BFC150300D7FFC4 /* ASHomeViewController_SidebarContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3038566B1BFC150300D7FFC4 /* ASHomeViewController_SidebarContentView.xib */; };
 		303856841BFC150300D7FFC4 /* ASHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038566D1BFC150300D7FFC4 /* ASHomeViewModel.m */; };
 		303856851BFC150300D7FFC4 /* ASProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038566F1BFC150300D7FFC4 /* ASProductCell.m */; };
-		303856861BFC150300D7FFC4 /* ASSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303856741BFC150300D7FFC4 /* ASSignInViewController.m */; };
-		303856871BFC150300D7FFC4 /* ASSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 303856751BFC150300D7FFC4 /* ASSignInViewController.xib */; };
 		303856881BFC150300D7FFC4 /* ASTrialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303856781BFC150300D7FFC4 /* ASTrialViewController.m */; };
 		303856891BFC150300D7FFC4 /* ASTrialViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038567A1BFC150300D7FFC4 /* ASTrialViewModel.m */; };
 		303856971BFC420D00D7FFC4 /* ASHomeAdverScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 303856941BFC420D00D7FFC4 /* ASHomeAdverScrollView.m */; };
@@ -81,7 +79,10 @@
 		A72BDBDD1BFED035006E84FB /* ASSignOutSuccessEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBDC1BFED035006E84FB /* ASSignOutSuccessEvent.m */; };
 		A72BDBE01BFED066006E84FB /* ASSignOutFailureEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBDF1BFED066006E84FB /* ASSignOutFailureEvent.m */; };
 		A72BDBE41BFED10C006E84FB /* ASSignOutCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBE31BFED10C006E84FB /* ASSignOutCommand.m */; };
-		A72BDBE71BFEE42B006E84FB /* ASSignInViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBE61BFEE42B006E84FB /* ASSignInViewModel.m */; };
+		A72BDBEF1BFEF1E9006E84FB /* ASSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBEA1BFEF1E9006E84FB /* ASSignInViewController.m */; };
+		A72BDBF01BFEF1E9006E84FB /* ASSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A72BDBEB1BFEF1E9006E84FB /* ASSignInViewController.xib */; };
+		A72BDBF11BFEF1E9006E84FB /* ASSignInViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBED1BFEF1E9006E84FB /* ASSignInViewModel.m */; };
+		A72BDBF41BFEF212006E84FB /* ASSignOutViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBF31BFEF212006E84FB /* ASSignOutViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,9 +108,6 @@
 		3038566D1BFC150300D7FFC4 /* ASHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHomeViewModel.m; sourceTree = "<group>"; };
 		3038566E1BFC150300D7FFC4 /* ASProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProductCell.h; sourceTree = "<group>"; };
 		3038566F1BFC150300D7FFC4 /* ASProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASProductCell.m; sourceTree = "<group>"; };
-		303856731BFC150300D7FFC4 /* ASSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignInViewController.h; sourceTree = "<group>"; };
-		303856741BFC150300D7FFC4 /* ASSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInViewController.m; sourceTree = "<group>"; };
-		303856751BFC150300D7FFC4 /* ASSignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASSignInViewController.xib; sourceTree = "<group>"; };
 		303856771BFC150300D7FFC4 /* ASTrialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTrialViewController.h; sourceTree = "<group>"; };
 		303856781BFC150300D7FFC4 /* ASTrialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTrialViewController.m; sourceTree = "<group>"; };
 		303856791BFC150300D7FFC4 /* ASTrialViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTrialViewModel.h; sourceTree = "<group>"; };
@@ -224,8 +222,13 @@
 		A72BDBDF1BFED066006E84FB /* ASSignOutFailureEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignOutFailureEvent.m; sourceTree = "<group>"; };
 		A72BDBE21BFED10C006E84FB /* ASSignOutCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignOutCommand.h; sourceTree = "<group>"; };
 		A72BDBE31BFED10C006E84FB /* ASSignOutCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignOutCommand.m; sourceTree = "<group>"; };
-		A72BDBE51BFEE42B006E84FB /* ASSignInViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignInViewModel.h; sourceTree = "<group>"; };
-		A72BDBE61BFEE42B006E84FB /* ASSignInViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInViewModel.m; sourceTree = "<group>"; };
+		A72BDBE91BFEF1E9006E84FB /* ASSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignInViewController.h; sourceTree = "<group>"; };
+		A72BDBEA1BFEF1E9006E84FB /* ASSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInViewController.m; sourceTree = "<group>"; };
+		A72BDBEB1BFEF1E9006E84FB /* ASSignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASSignInViewController.xib; sourceTree = "<group>"; };
+		A72BDBEC1BFEF1E9006E84FB /* ASSignInViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignInViewModel.h; sourceTree = "<group>"; };
+		A72BDBED1BFEF1E9006E84FB /* ASSignInViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInViewModel.m; sourceTree = "<group>"; };
+		A72BDBF21BFEF212006E84FB /* ASSignOutViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignOutViewModel.h; sourceTree = "<group>"; };
+		A72BDBF31BFEF212006E84FB /* ASSignOutViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignOutViewModel.m; sourceTree = "<group>"; };
 		BD6FF95CFFD6D06D77BAD364 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F85B7F651D312123E5EC568B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,14 +260,15 @@
 			isa = PBXGroup;
 			children = (
 				307ECA031BFC847C0018F38C /* Album */,
-				303856A61BFC4DCF00D7FFC4 /* TableTop */,
 				3038565A1BFC150300D7FFC4 /* Canvas */,
 				3038565B1BFC150300D7FFC4 /* Cart */,
 				303856611BFC150300D7FFC4 /* Frame */,
 				303856621BFC150300D7FFC4 /* Home */,
 				303856701BFC150300D7FFC4 /* Photo Book */,
 				303856711BFC150300D7FFC4 /* Prints */,
-				303856721BFC150300D7FFC4 /* SignIn */,
+				A72BDBE81BFEF1E9006E84FB /* Sign In */,
+				A72BDBEE1BFEF1E9006E84FB /* Sign Out */,
+				303856A61BFC4DCF00D7FFC4 /* TableTop */,
 				303856761BFC150300D7FFC4 /* Trial */,
 				3038567B1BFC150300D7FFC4 /* Upload */,
 			);
@@ -349,18 +353,6 @@
 				308654691BFD6E55000B72C6 /* ASPrintsViewController.m */,
 			);
 			path = Prints;
-			sourceTree = "<group>";
-		};
-		303856721BFC150300D7FFC4 /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-				303856731BFC150300D7FFC4 /* ASSignInViewController.h */,
-				303856741BFC150300D7FFC4 /* ASSignInViewController.m */,
-				303856751BFC150300D7FFC4 /* ASSignInViewController.xib */,
-				A72BDBE51BFEE42B006E84FB /* ASSignInViewModel.h */,
-				A72BDBE61BFEE42B006E84FB /* ASSignInViewModel.m */,
-			);
-			path = SignIn;
 			sourceTree = "<group>";
 		};
 		303856761BFC150300D7FFC4 /* Trial */ = {
@@ -639,6 +631,27 @@
 			path = "Sign Out";
 			sourceTree = "<group>";
 		};
+		A72BDBE81BFEF1E9006E84FB /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				A72BDBE91BFEF1E9006E84FB /* ASSignInViewController.h */,
+				A72BDBEA1BFEF1E9006E84FB /* ASSignInViewController.m */,
+				A72BDBEB1BFEF1E9006E84FB /* ASSignInViewController.xib */,
+				A72BDBEC1BFEF1E9006E84FB /* ASSignInViewModel.h */,
+				A72BDBED1BFEF1E9006E84FB /* ASSignInViewModel.m */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		A72BDBEE1BFEF1E9006E84FB /* Sign Out */ = {
+			isa = PBXGroup;
+			children = (
+				A72BDBF21BFEF212006E84FB /* ASSignOutViewModel.h */,
+				A72BDBF31BFEF212006E84FB /* ASSignOutViewModel.m */,
+			);
+			path = "Sign Out";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -701,12 +714,12 @@
 			files = (
 				307DEE631BEAFE6A00BF1CCF /* LaunchScreen.storyboard in Resources */,
 				3038567E1BFC150300D7FFC4 /* File.xml in Resources */,
+				A72BDBF01BFEF1E9006E84FB /* ASSignInViewController.xib in Resources */,
 				A70060391BF57B7F0060DAFD /* EventBusDemoViewController.xib in Resources */,
 				A72A56DC1BFC0DC100A334FE /* (null) in Resources */,
 				307DEE601BEAFE6A00BF1CCF /* Assets.xcassets in Resources */,
 				307DEE5E1BEAFE6A00BF1CCF /* Main.storyboard in Resources */,
 				30EEEB941BF438C7009E3029 /* Business.plist in Resources */,
-				303856871BFC150300D7FFC4 /* ASSignInViewController.xib in Resources */,
 				A72A57051BFC4D0A00A334FE /* Info.plist in Resources */,
 				303856831BFC150300D7FFC4 /* ASHomeViewController_SidebarContentView.xib in Resources */,
 			);
@@ -770,12 +783,11 @@
 				307DEE5B1BEAFE6A00BF1CCF /* ViewController.m in Sources */,
 				A72BDBD01BFEAFD4006E84FB /* ASSignInFailureEvent.m in Sources */,
 				A72A57041BFC4D0A00A334FE /* ASCommandCenter.m in Sources */,
-				303856861BFC150300D7FFC4 /* ASSignInViewController.m in Sources */,
 				30EEEB991BF438CE009E3029 /* HTML5ViewController.m in Sources */,
 				A702615B1BFD611200A83034 /* ASUserLocator.m in Sources */,
 				303856A11BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m in Sources */,
-				A72BDBE71BFEE42B006E84FB /* ASSignInViewModel.m in Sources */,
 				A72A57071BFC4D0A00A334FE /* XEBPostingThreadState.m in Sources */,
+				A72BDBF11BFEF1E9006E84FB /* ASSignInViewModel.m in Sources */,
 				307EC9FC1BFC7DCC0018F38C /* ASCanvasSizeViewController.m in Sources */,
 				30005FBF1BF5C536009D2369 /* ASNavigator.m in Sources */,
 				303856821BFC150300D7FFC4 /* ASHomeViewController_SidebarContentView.m in Sources */,
@@ -812,9 +824,11 @@
 				307ECA021BFC804C0018F38C /* ASFrameEditViewController.m in Sources */,
 				3038567F1BFC150300D7FFC4 /* ASContactUsDialog.m in Sources */,
 				307EC9F31BFC68800018F38C /* ASBookSizeViewController.m in Sources */,
+				A72BDBEF1BFEF1E9006E84FB /* ASSignInViewController.m in Sources */,
 				307EC9F61BFC69CF0018F38C /* ASBookEditViewController.m in Sources */,
 				A72BDBE01BFED066006E84FB /* ASSignOutFailureEvent.m in Sources */,
 				303856981BFC420D00D7FFC4 /* ASSidebarLayout.m in Sources */,
+				A72BDBF41BFEF212006E84FB /* ASSignOutViewModel.m in Sources */,
 				A72A57081BFC4D0A00A334FE /* XEBSubscriberMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

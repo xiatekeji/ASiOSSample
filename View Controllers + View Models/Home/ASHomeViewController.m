@@ -1,16 +1,16 @@
 #import "ASHomeViewController.h"
 
 #import <Masonry/Masonry.h>
-
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "ASCustomNaviBar.h"
 #import "ASHomeAdverScrollView.h"
 #import "ASHomeViewController_SidebarContentView.h"
 #import "ASHomeViewModel.h"
+#import "ASNavigator.h"
 #import "ASProductCell.h"
 #import "ASSidebarLayout.h"
 #import "ASSignInViewController.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
-#import "ASNavigator.h"
 #import "ModalCenterReform.h"
 #define PREFERRED_SIDEBAR_WIDTH (CGFloat)260
 #define SidebarContentView ASHomeViewController_SidebarContentView
@@ -30,6 +30,8 @@
 
 	
 	UIAlertView* _signOutAlertView;
+	
+	MBProgressHUD* _progressHud;
 	
 }
 
@@ -54,6 +56,8 @@
     [self initAdeverScrollView:rootSubview];
     [self initHomeCustonNaviBar:rootSubview];
     [self initHomeTableViewIntoView:rootSubview];
+	
+	[self bindWithViewModel];
 }
 
 - (void)viewWillAppear: (BOOL)animated {
@@ -159,6 +163,44 @@
     }];
     
 }
+
+#pragma mark View Model
+
+- (void)bindWithViewModel {
+	[self displayOrHideProgressHudInTheFuture];
+	[self setProgressMessageInTheFuture];
+}
+
+- (void)displayOrHideProgressHudInTheFuture {
+	[
+		[RACObserve(self, viewModel.inProgress) deliverOn: [RACScheduler mainThreadScheduler]]
+		subscribeNext: ^(id x) {
+			BOOL inProgress = [x boolValue];
+			if(inProgress) {
+				UIView* container = [[UIApplication sharedApplication] keyWindow];
+				
+				MBProgressHUD* progressHud = [MBProgressHUD showHUDAddedTo: container animated: TRUE];
+				[progressHud setRemoveFromSuperViewOnHide: TRUE];
+				_progressHud = progressHud;
+			}
+			else {
+				[_progressHud hide: TRUE];
+				_progressHud = nil;
+			}
+		}
+	];
+}
+
+- (void)setProgressMessageInTheFuture {
+	[
+		[RACObserve(self, viewModel.progressMessage) deliverOn: [RACScheduler mainThreadScheduler]]
+		subscribeNext: ^(id x) {
+			NSString* progressMessage = x;
+			[_progressHud setLabelText: progressMessage];
+		}
+	];
+}
+
 #pragma mark Private
 
 
@@ -320,6 +362,22 @@
     [_sidebarLayout setSideVisible: FALSE animated: TRUE];
     
 }
+
+- (void)confirmForSigningOut {
+	UIAlertController* alertController = [UIAlertController alertControllerWithTitle: nil message: @"Sure to sign out?" preferredStyle: UIAlertControllerStyleAlert];
+	
+	UIAlertAction* confirmAction = [UIAlertAction actionWithTitle: @"Confirm" style: UIAlertActionStyleDefault handler: ^(UIAlertAction* action) {
+		[_viewModel doSignOut];
+	}];
+	[alertController addAction: confirmAction];
+	
+	UIAlertAction* cancelAction = [UIAlertAction actionWithTitle: @"Cancel" style: UIAlertActionStyleDefault handler: NULL];
+	[alertController addAction: cancelAction];
+	
+	[self presentViewController: alertController animated: TRUE completion: NULL];
+}
+
+
 #pragma mark Override
 //
 //- (NSUInteger)supportedInterfaceOrientations {

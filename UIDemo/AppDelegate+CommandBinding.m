@@ -12,6 +12,8 @@
 
 #import "ASSignInEvent.h"
 #import "ASSignInCommand.h"
+#import "ASSignOutEvent.h"
+#import "ASSignOutCommand.h"
 
 @implementation AppDelegate(CommandBinding)
 
@@ -19,6 +21,7 @@
 	ASCommandCenter* commandCenter = [ASCommandCenter defaultCenter];
 	
 	[commandCenter bindCommand: [ASSignInCommand class] toEvent: [ASSignInEvent class]];
+	[commandCenter bindCommand: [ASSignOutCommand class] toEvent: [ASSignOutEvent class]];
 	
 	// TODO Register other commands.
 }

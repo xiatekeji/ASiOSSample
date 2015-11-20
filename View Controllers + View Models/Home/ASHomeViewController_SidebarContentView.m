@@ -135,7 +135,7 @@
 	
 	if(target == _signInOutLabel) {
 		if([_viewModel signedIn]) {
-//			[_owner confirmForSigningOut];
+			[_owner confirmForSigningOut];
 		}
 		else {
 			[_owner signIn];
