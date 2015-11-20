@@ -29,6 +29,15 @@
 		303856A91BFC4DD800D7FFC4 /* ASTableTopProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303856A81BFC4DD800D7FFC4 /* ASTableTopProductViewController.m */; };
 		303856AC1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303856AB1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m */; };
 		3070D2951BF0A63A005D8AC8 /* UINavibook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070D2941BF0A63A005D8AC8 /* UINavibook.m */; };
+		307D5E5C1BFF1C5E00067616 /* SBDoubleSidedLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 307D5E551BFF1C5E00067616 /* SBDoubleSidedLayer.m */; };
+		307D5E5D1BFF1C5E00067616 /* SBGradientOverlayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 307D5E571BFF1C5E00067616 /* SBGradientOverlayLayer.m */; };
+		307D5E5E1BFF1C5E00067616 /* SBTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 307D5E591BFF1C5E00067616 /* SBTickerView.m */; };
+		307D5E5F1BFF1C5E00067616 /* UIView+SBExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 307D5E5B1BFF1C5E00067616 /* UIView+SBExtras.m */; };
+		307D5E621BFF1D7F00067616 /* back.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 307D5E601BFF1D7F00067616 /* back.jpeg */; };
+		307D5E631BFF1D7F00067616 /* back@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 307D5E611BFF1D7F00067616 /* back@2x.jpeg */; };
+		307D5E661BFF1D8400067616 /* front.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 307D5E641BFF1D8400067616 /* front.jpeg */; };
+		307D5E671BFF1D8400067616 /* front@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 307D5E651BFF1D8400067616 /* front@2x.jpeg */; };
+		307D5E691BFF1D8900067616 /* yongshi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 307D5E681BFF1D8900067616 /* yongshi.jpg */; };
 		307DEE551BEAFE6A00BF1CCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE541BEAFE6A00BF1CCF /* main.m */; };
 		307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE571BEAFE6A00BF1CCF /* AppDelegate.m */; };
 		307DEE5B1BEAFE6A00BF1CCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE5A1BEAFE6A00BF1CCF /* ViewController.m */; };
@@ -128,6 +137,19 @@
 		303856AB1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUploadPhotosViewController.m; sourceTree = "<group>"; };
 		3070D2931BF0A63A005D8AC8 /* UINavibook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavibook.h; sourceTree = "<group>"; };
 		3070D2941BF0A63A005D8AC8 /* UINavibook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavibook.m; sourceTree = "<group>"; };
+		307D5E541BFF1C5E00067616 /* SBDoubleSidedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDoubleSidedLayer.h; sourceTree = "<group>"; };
+		307D5E551BFF1C5E00067616 /* SBDoubleSidedLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDoubleSidedLayer.m; sourceTree = "<group>"; };
+		307D5E561BFF1C5E00067616 /* SBGradientOverlayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBGradientOverlayLayer.h; sourceTree = "<group>"; };
+		307D5E571BFF1C5E00067616 /* SBGradientOverlayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBGradientOverlayLayer.m; sourceTree = "<group>"; };
+		307D5E581BFF1C5E00067616 /* SBTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTickerView.h; sourceTree = "<group>"; };
+		307D5E591BFF1C5E00067616 /* SBTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTickerView.m; sourceTree = "<group>"; };
+		307D5E5A1BFF1C5E00067616 /* UIView+SBExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SBExtras.h"; sourceTree = "<group>"; };
+		307D5E5B1BFF1C5E00067616 /* UIView+SBExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SBExtras.m"; sourceTree = "<group>"; };
+		307D5E601BFF1D7F00067616 /* back.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpeg; sourceTree = "<group>"; };
+		307D5E611BFF1D7F00067616 /* back@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "back@2x.jpeg"; sourceTree = "<group>"; };
+		307D5E641BFF1D8400067616 /* front.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = front.jpeg; sourceTree = "<group>"; };
+		307D5E651BFF1D8400067616 /* front@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "front@2x.jpeg"; sourceTree = "<group>"; };
+		307D5E681BFF1D8900067616 /* yongshi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yongshi.jpg; sourceTree = "<group>"; };
 		307DEE501BEAFE6A00BF1CCF /* ASIOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASIOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		307DEE541BEAFE6A00BF1CCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		307DEE561BEAFE6A00BF1CCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -336,6 +358,11 @@
 		303856701BFC150300D7FFC4 /* Photo Book */ = {
 			isa = PBXGroup;
 			children = (
+				307D5E681BFF1D8900067616 /* yongshi.jpg */,
+				307D5E641BFF1D8400067616 /* front.jpeg */,
+				307D5E651BFF1D8400067616 /* front@2x.jpeg */,
+				307D5E601BFF1D7F00067616 /* back.jpeg */,
+				307D5E611BFF1D7F00067616 /* back@2x.jpeg */,
 				303856991BFC4C5000D7FFC4 /* ASBookProductViewController.h */,
 				3038569A1BFC4C5000D7FFC4 /* ASBookProductViewController.m */,
 				307EC9F11BFC68800018F38C /* ASBookSizeViewController.h */,
@@ -395,9 +422,25 @@
 			path = TableTop;
 			sourceTree = "<group>";
 		};
+		307D5E531BFF1C5E00067616 /* SBTrickerView */ = {
+			isa = PBXGroup;
+			children = (
+				307D5E541BFF1C5E00067616 /* SBDoubleSidedLayer.h */,
+				307D5E551BFF1C5E00067616 /* SBDoubleSidedLayer.m */,
+				307D5E561BFF1C5E00067616 /* SBGradientOverlayLayer.h */,
+				307D5E571BFF1C5E00067616 /* SBGradientOverlayLayer.m */,
+				307D5E581BFF1C5E00067616 /* SBTickerView.h */,
+				307D5E591BFF1C5E00067616 /* SBTickerView.m */,
+				307D5E5A1BFF1C5E00067616 /* UIView+SBExtras.h */,
+				307D5E5B1BFF1C5E00067616 /* UIView+SBExtras.m */,
+			);
+			path = SBTrickerView;
+			sourceTree = "<group>";
+		};
 		307DEE471BEAFE6A00BF1CCF = {
 			isa = PBXGroup;
 			children = (
+				307D5E531BFF1C5E00067616 /* SBTrickerView */,
 				A7005FF01BF574E10060DAFD /* ASAppFramework */,
 				30005FB91BF5C536009D2369 /* ASUIFramework */,
 				A72A570D1BFC6D6500A334FE /* Commands */,
@@ -712,14 +755,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307D5E671BFF1D8400067616 /* front@2x.jpeg in Resources */,
 				307DEE631BEAFE6A00BF1CCF /* LaunchScreen.storyboard in Resources */,
 				3038567E1BFC150300D7FFC4 /* File.xml in Resources */,
+				307D5E661BFF1D8400067616 /* front.jpeg in Resources */,
 				A72BDBF01BFEF1E9006E84FB /* ASSignInViewController.xib in Resources */,
+				307D5E631BFF1D7F00067616 /* back@2x.jpeg in Resources */,
+				307D5E691BFF1D8900067616 /* yongshi.jpg in Resources */,
 				A70060391BF57B7F0060DAFD /* EventBusDemoViewController.xib in Resources */,
 				A72A56DC1BFC0DC100A334FE /* (null) in Resources */,
 				307DEE601BEAFE6A00BF1CCF /* Assets.xcassets in Resources */,
 				307DEE5E1BEAFE6A00BF1CCF /* Main.storyboard in Resources */,
 				30EEEB941BF438C7009E3029 /* Business.plist in Resources */,
+				307D5E621BFF1D7F00067616 /* back.jpeg in Resources */,
 				A72A57051BFC4D0A00A334FE /* Info.plist in Resources */,
 				303856831BFC150300D7FFC4 /* ASHomeViewController_SidebarContentView.xib in Resources */,
 			);
@@ -785,8 +833,10 @@
 				A72A57041BFC4D0A00A334FE /* ASCommandCenter.m in Sources */,
 				30EEEB991BF438CE009E3029 /* HTML5ViewController.m in Sources */,
 				A702615B1BFD611200A83034 /* ASUserLocator.m in Sources */,
+				307D5E5D1BFF1C5E00067616 /* SBGradientOverlayLayer.m in Sources */,
 				303856A11BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m in Sources */,
 				A72A57071BFC4D0A00A334FE /* XEBPostingThreadState.m in Sources */,
+				307D5E5E1BFF1C5E00067616 /* SBTickerView.m in Sources */,
 				A72BDBF11BFEF1E9006E84FB /* ASSignInViewModel.m in Sources */,
 				307EC9FC1BFC7DCC0018F38C /* ASCanvasSizeViewController.m in Sources */,
 				30005FBF1BF5C536009D2369 /* ASNavigator.m in Sources */,
@@ -796,6 +846,7 @@
 				307EC9FF1BFC803F0018F38C /* ASCanvasEditViewController.m in Sources */,
 				A70060371BF57B220060DAFD /* EventBusDemoViewController.m in Sources */,
 				3038569B1BFC4C5000D7FFC4 /* ASBookProductViewController.m in Sources */,
+				307D5E5F1BFF1C5E00067616 /* UIView+SBExtras.m in Sources */,
 				303856881BFC150300D7FFC4 /* ASTrialViewController.m in Sources */,
 				3038567D1BFC150300D7FFC4 /* ASCartViewModel.m in Sources */,
 				A72BDBE41BFED10C006E84FB /* ASSignOutCommand.m in Sources */,
@@ -808,6 +859,7 @@
 				A72A57241BFC6F6A00A334FE /* ASSignInEvent.m in Sources */,
 				A72A572E1BFC6FE900A334FE /* ASSignInCommand.m in Sources */,
 				307EC9F91BFC7DC00018F38C /* ASFrameSizeViewController.m in Sources */,
+				307D5E5C1BFF1C5E00067616 /* SBDoubleSidedLayer.m in Sources */,
 				307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */,
 				30005FBE1BF5C536009D2369 /* ASNavigationController.m in Sources */,
 				A702615E1BFD611F00A83034 /* ASUser.m in Sources */,
