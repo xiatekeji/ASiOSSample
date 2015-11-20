@@ -146,7 +146,7 @@ static XEBEventBus* _defaultInstance;
 	}
 }
 
-- (BOOL)isRegistered: (NSObject<XEBSubscriber>*)subscriber {
+- (BOOL)isRegisteredSubscriber: (NSObject<XEBSubscriber>*)subscriber {
 	@synchronized(self) {
 		NSValue* subscriberKey = [NSValue valueWithNonretainedObject: subscriber];
 		BOOL registered = (_eventClassesBySubscriber[subscriberKey] != nil);

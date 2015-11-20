@@ -7,15 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ASCartViewModel.h"
-@class ASSignInViewController;
-typedef void(^SignInComplete)(id returnVlaue);
-typedef void(^CloseSignIn)(id returnVlaue);
+#import "ASNavigator.h"
 
-@interface ASSignInViewController : UIViewController<UIWebViewDelegate,NSURLConnectionDelegate>
-@property (weak, nonatomic) IBOutlet UIWebView *mainWebView;
-@property (strong ,nonatomic) ASCartViewModel *viewModel;
-@property (strong ,nonatomic)SignInComplete complete;
-@property (strong ,nonatomic)CloseSignIn closedSignIn;
+@class ASSignInViewController;
+
+@interface ASSignInViewController : UIViewController<ASNavigatable>
 
 @end

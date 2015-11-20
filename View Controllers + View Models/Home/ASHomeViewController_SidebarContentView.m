@@ -1,9 +1,12 @@
 #import "ASHomeViewController_SidebarContentView.h"
 
 #import <Masonry/Masonry.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "ASContactUsDialog.h"
 #import "ASHomeViewController.h"
+#import "ASHomeViewModel.h"
 #import "ASSidebarLayout.h"
+
 #define HEADER_IMAGE_WIDTH (CGFloat)1024
 #define HEADER_IMAGE_HEIGHT (CGFloat)500
 #define HEADER_IMAGE_ASPECT_RATIO (CGFloat)(HEADER_IMAGE_HEIGHT / HEADER_IMAGE_WIDTH)
@@ -20,6 +23,7 @@
 
 @interface ASHomeViewController_SidebarContentView()<UIAlertViewDelegate> {
 	ASHomeViewController* __weak _owner;
+	
 	IBOutlet UIImageView* _headerImageView;
 	
 	IBOutlet UIView* _passwordButtonPanel;
@@ -31,6 +35,8 @@
 	IBOutlet UILabel* _versionLabel;
 	IBOutlet UILabel* _signInOutLabel;
 	IBOutlet UILabel* _usernameLabel;
+	
+	ASHomeViewModel* _viewModel;
 	
 	NSInteger _password;
 	
@@ -57,14 +63,28 @@
 - (instancetype)initWithFrame: (CGRect)frame {
 	self = [super initWithFrame: frame];
 	if(self != nil) {
+		_viewModel = [_owner viewModel];
+		
 		[self buildViewHierachy];
 		[self applyGestureRecognizers];
 		
 		[self updateVersionLabel];
 		
+		[self changeSignInStateInTheFuture];
 	}
 	
 	return self;
+}
+
+- (void)changeSignInStateInTheFuture {
+	[[RACObserve(_viewModel, signedIn) deliverOn: [RACScheduler mainThreadScheduler]] subscribeNext: ^(id x) {
+		BOOL signedIn = [x boolValue];
+		[_signInOutLabel setText: signedIn ? @"Sign Out" : @"Sign In"];
+	}];
+	
+	[[RACObserve(_viewModel, account) deliverOn: [RACScheduler mainThreadScheduler]] subscribeNext: ^(NSString* account) {
+		[_usernameLabel setText: account];
+	}];
 }
 
 #pragma mark Layout
@@ -114,8 +134,8 @@
 
 	
 	if(target == _signInOutLabel) {
-		if(_userSignedIn) {
-			[_owner confirmForSigningOut];
+		if([_viewModel signedIn]) {
+//			[_owner confirmForSigningOut];
 		}
 		else {
 			[_owner signIn];

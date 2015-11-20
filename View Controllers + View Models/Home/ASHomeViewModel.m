@@ -1,12 +1,19 @@
 #import "ASHomeViewModel.h"
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "ASSignInViewController.h"
+#import "ASUser.h"
+#import "ASUserLocator.h"
 
 float scale = (540.0/720.0); // 滚动图片比例
 
 @interface ASHomeViewModel()
 
 @property(nonatomic) BOOL shouldDisplayProgressHud;
+
+@property(nonatomic) BOOL signedIn;
+
+@property(nonatomic, nullable) NSString* account;
 
 @end
 
@@ -23,11 +30,29 @@ float scale = (540.0/720.0); // 滚动图片比例
         _productImages = [NSMutableArray arrayWithArray:@[@"icon_home_entry_trial",@"icon_home_entry_photo_book",@"icon_home_entry_canvas",@"icon_home_entry_frame",@"icon_home_entry_prints",@"icon_home_entry_upload"]];
         _productTitles = @[@"$5 Trial",@"Photo Books",@"Canvas",@"Frames",@"Prints",@"Upload Photos"];
        
-       
+		[self changeSignInStateInTheFuture];
     }
     return self;
 }
+
+- (void)changeSignInStateInTheFuture {
+	ASUserLocator* userLocator = [ASUserLocator sharedInstance];
+	[RACObserve(userLocator, user) subscribeNext: ^ (ASUser* user) {
+		if(user == nil) {
+			[self setSignedIn: FALSE];
+			[self setAccount: nil];
+		}
+		else {
+			[self setSignedIn: TRUE];
+			
+			NSString* account = [user account];
+			[self setAccount: account];
+		}
+	}];
+}
+
 #pragma mark ScrollDelegate
+
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     self.pageIndex = scrollView.contentOffset.x/[UIScreen mainScreen].bounds.size.width;
 }
@@ -38,4 +63,5 @@ float scale = (540.0/720.0); // 滚动图片比例
 - (void)setImageArray:(NSMutableArray *)imageArray{
     _imageArray = imageArray;
 }
+
 @end

@@ -48,6 +48,9 @@
 		978F1166FAA33FEA9783DEAF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 901397BA132DEDF63E149262 /* libPods.a */; };
 		A70060371BF57B220060DAFD /* EventBusDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70060361BF57B220060DAFD /* EventBusDemoViewController.m */; };
 		A70060391BF57B7F0060DAFD /* EventBusDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70060381BF57B7F0060DAFD /* EventBusDemoViewController.xib */; };
+		A702615B1BFD611200A83034 /* ASUserLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A702615A1BFD611200A83034 /* ASUserLocator.m */; };
+		A702615E1BFD611F00A83034 /* ASUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A702615D1BFD611F00A83034 /* ASUser.m */; };
+		A70261611BFD6D9600A83034 /* AppDelegate+CommandBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = A70261601BFD6D9600A83034 /* AppDelegate+CommandBinding.m */; };
 		A72A56DC1BFC0DC100A334FE /* (null) in Resources */ = {isa = PBXBuildFile; };
 		A72A57031BFC4D0A00A334FE /* ASCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A56EE1BFC4D0A00A334FE /* ASCommand.m */; };
 		A72A57041BFC4D0A00A334FE /* ASCommandCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A56F01BFC4D0A00A334FE /* ASCommandCenter.m */; };
@@ -59,6 +62,11 @@
 		A72A570A1BFC4D0A00A334FE /* XEBSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A56FD1BFC4D0A00A334FE /* XEBSubscription.m */; };
 		A72A570B1BFC4D0A00A334FE /* XEBThreadLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A56FF1BFC4D0A00A334FE /* XEBThreadLocal.m */; };
 		A72A570C1BFC4D0A00A334FE /* XEBThreadMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A57011BFC4D0A00A334FE /* XEBThreadMode.m */; };
+		A72A57241BFC6F6A00A334FE /* ASSignInEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A57231BFC6F6A00A334FE /* ASSignInEvent.m */; };
+		A72A572E1BFC6FE900A334FE /* ASSignInCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A572D1BFC6FE900A334FE /* ASSignInCommand.m */; };
+		A72BDBCA1BFEAB4D006E84FB /* ASCommandEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBC91BFEAB4D006E84FB /* ASCommandEvent.m */; };
+		A72BDBCD1BFEAFC6006E84FB /* ASSignInSuccessEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBCC1BFEAFC6006E84FB /* ASSignInSuccessEvent.m */; };
+		A72BDBD01BFEAFD4006E84FB /* ASSignInFailureEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBCF1BFEAFD4006E84FB /* ASSignInFailureEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +144,12 @@
 		A70060351BF57B220060DAFD /* EventBusDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventBusDemoViewController.h; sourceTree = "<group>"; };
 		A70060361BF57B220060DAFD /* EventBusDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventBusDemoViewController.m; sourceTree = "<group>"; };
 		A70060381BF57B7F0060DAFD /* EventBusDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventBusDemoViewController.xib; sourceTree = "<group>"; };
+		A70261591BFD611200A83034 /* ASUserLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUserLocator.h; sourceTree = "<group>"; };
+		A702615A1BFD611200A83034 /* ASUserLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUserLocator.m; sourceTree = "<group>"; };
+		A702615C1BFD611F00A83034 /* ASUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUser.h; sourceTree = "<group>"; };
+		A702615D1BFD611F00A83034 /* ASUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUser.m; sourceTree = "<group>"; };
+		A702615F1BFD6D9600A83034 /* AppDelegate+CommandBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+CommandBinding.h"; sourceTree = "<group>"; };
+		A70261601BFD6D9600A83034 /* AppDelegate+CommandBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+CommandBinding.m"; sourceTree = "<group>"; };
 		A72A56ED1BFC4D0A00A334FE /* ASCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommand.h; sourceTree = "<group>"; };
 		A72A56EE1BFC4D0A00A334FE /* ASCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCommand.m; sourceTree = "<group>"; };
 		A72A56EF1BFC4D0A00A334FE /* ASCommandCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommandCenter.h; sourceTree = "<group>"; };
@@ -157,6 +171,16 @@
 		A72A57001BFC4D0A00A334FE /* XEBThreadMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEBThreadMode.h; sourceTree = "<group>"; };
 		A72A57011BFC4D0A00A334FE /* XEBThreadMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEBThreadMode.m; sourceTree = "<group>"; };
 		A72A57021BFC4D0A00A334FE /* XiateEventBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiateEventBus.h; sourceTree = "<group>"; };
+		A72A57221BFC6F6A00A334FE /* ASSignInEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignInEvent.h; sourceTree = "<group>"; };
+		A72A57231BFC6F6A00A334FE /* ASSignInEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInEvent.m; sourceTree = "<group>"; };
+		A72A572C1BFC6FE900A334FE /* ASSignInCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignInCommand.h; sourceTree = "<group>"; };
+		A72A572D1BFC6FE900A334FE /* ASSignInCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInCommand.m; sourceTree = "<group>"; };
+		A72BDBC81BFEAB4D006E84FB /* ASCommandEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommandEvent.h; sourceTree = "<group>"; };
+		A72BDBC91BFEAB4D006E84FB /* ASCommandEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCommandEvent.m; sourceTree = "<group>"; };
+		A72BDBCB1BFEAFC6006E84FB /* ASSignInSuccessEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignInSuccessEvent.h; sourceTree = "<group>"; };
+		A72BDBCC1BFEAFC6006E84FB /* ASSignInSuccessEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInSuccessEvent.m; sourceTree = "<group>"; };
+		A72BDBCE1BFEAFD4006E84FB /* ASSignInFailureEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignInFailureEvent.h; sourceTree = "<group>"; };
+		A72BDBCF1BFEAFD4006E84FB /* ASSignInFailureEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInFailureEvent.m; sourceTree = "<group>"; };
 		BD6FF95CFFD6D06D77BAD364 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F85B7F651D312123E5EC568B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -320,15 +344,18 @@
 		307DEE471BEAFE6A00BF1CCF = {
 			isa = PBXGroup;
 			children = (
-				303856921BFC420D00D7FFC4 /* Custom Views */,
-				303856591BFC150300D7FFC4 /* View Controllers + View Models */,
+				A7005FF01BF574E10060DAFD /* ASAppFramework */,
 				30005FB91BF5C536009D2369 /* ASUIFramework */,
+				A72A570D1BFC6D6500A334FE /* Commands */,
 				307DEE771BEB480B00BF1CCF /* Controlls */,
+				303856921BFC420D00D7FFC4 /* Custom Views */,
+				A72A570E1BFC6D9000A334FE /* Events */,
+				59875BE40101E2D04A239B89 /* Frameworks */,
+				A70261571BFD5ED800A83034 /* Models */,
+				4B2C56D11C4099C3A25497B9 /* Pods */,
 				307DEE511BEAFE6A00BF1CCF /* Products */,
 				307DEE521BEAFE6A00BF1CCF /* UIDemo */,
-				A7005FF01BF574E10060DAFD /* ASAppFramework */,
-				4B2C56D11C4099C3A25497B9 /* Pods */,
-				59875BE40101E2D04A239B89 /* Frameworks */,
+				303856591BFC150300D7FFC4 /* View Controllers + View Models */,
 			);
 			sourceTree = "<group>";
 		};
@@ -357,6 +384,8 @@
 				307DEE531BEAFE6A00BF1CCF /* Supporting Files */,
 				307DEE591BEAFE6A00BF1CCF /* ViewController.h */,
 				307DEE5A1BEAFE6A00BF1CCF /* ViewController.m */,
+				A702615F1BFD6D9600A83034 /* AppDelegate+CommandBinding.h */,
+				A70261601BFD6D9600A83034 /* AppDelegate+CommandBinding.m */,
 			);
 			path = UIDemo;
 			sourceTree = "<group>";
@@ -417,6 +446,25 @@
 			path = ASAppFramework;
 			sourceTree = "<group>";
 		};
+		A70261571BFD5ED800A83034 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A70261581BFD5ED800A83034 /* User */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A70261581BFD5ED800A83034 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A702615C1BFD611F00A83034 /* ASUser.h */,
+				A702615D1BFD611F00A83034 /* ASUser.m */,
+				A70261591BFD611200A83034 /* ASUserLocator.h */,
+				A702615A1BFD611200A83034 /* ASUserLocator.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		A72A56EC1BFC4D0A00A334FE /* ASCommandCenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +472,8 @@
 				A72A56EE1BFC4D0A00A334FE /* ASCommand.m */,
 				A72A56EF1BFC4D0A00A334FE /* ASCommandCenter.h */,
 				A72A56F01BFC4D0A00A334FE /* ASCommandCenter.m */,
+				A72BDBC81BFEAB4D006E84FB /* ASCommandEvent.h */,
+				A72BDBC91BFEAB4D006E84FB /* ASCommandEvent.m */,
 			);
 			path = ASCommandCenter;
 			sourceTree = "<group>";
@@ -450,6 +500,44 @@
 				A72A57021BFC4D0A00A334FE /* XiateEventBus.h */,
 			);
 			path = XiateEventBus;
+			sourceTree = "<group>";
+		};
+		A72A570D1BFC6D6500A334FE /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				A72A572B1BFC6FDF00A334FE /* Sign In */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		A72A570E1BFC6D9000A334FE /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				A72A57121BFC6E2900A334FE /* Sign In */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		A72A57121BFC6E2900A334FE /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				A72A57221BFC6F6A00A334FE /* ASSignInEvent.h */,
+				A72A57231BFC6F6A00A334FE /* ASSignInEvent.m */,
+				A72BDBCE1BFEAFD4006E84FB /* ASSignInFailureEvent.h */,
+				A72BDBCF1BFEAFD4006E84FB /* ASSignInFailureEvent.m */,
+				A72BDBCB1BFEAFC6006E84FB /* ASSignInSuccessEvent.h */,
+				A72BDBCC1BFEAFC6006E84FB /* ASSignInSuccessEvent.m */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		A72A572B1BFC6FDF00A334FE /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				A72A572C1BFC6FE900A334FE /* ASSignInCommand.h */,
+				A72A572D1BFC6FE900A334FE /* ASSignInCommand.m */,
+			);
+			path = "Sign In";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,14 +659,17 @@
 				303856811BFC150300D7FFC4 /* ASHomeViewController.m in Sources */,
 				A72A57061BFC4D0A00A334FE /* XEBEventBus.m in Sources */,
 				307DEE7A1BEB482C00BF1CCF /* UIFrameEditViewController.m in Sources */,
+				A70261611BFD6D9600A83034 /* AppDelegate+CommandBinding.m in Sources */,
 				303856841BFC150300D7FFC4 /* ASHomeViewModel.m in Sources */,
 				307DEE8C1BEB4B3400BF1CCF /* ModalCenterReform.m in Sources */,
 				303856891BFC150300D7FFC4 /* ASTrialViewModel.m in Sources */,
 				303856AC1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m in Sources */,
 				307DEE5B1BEAFE6A00BF1CCF /* ViewController.m in Sources */,
+				A72BDBD01BFEAFD4006E84FB /* ASSignInFailureEvent.m in Sources */,
 				A72A57041BFC4D0A00A334FE /* ASCommandCenter.m in Sources */,
 				303856861BFC150300D7FFC4 /* ASSignInViewController.m in Sources */,
 				30EEEB991BF438CE009E3029 /* HTML5ViewController.m in Sources */,
+				A702615B1BFD611200A83034 /* ASUserLocator.m in Sources */,
 				303856A11BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m in Sources */,
 				A72A57071BFC4D0A00A334FE /* XEBPostingThreadState.m in Sources */,
 				30005FBF1BF5C536009D2369 /* ASNavigator.m in Sources */,
@@ -591,13 +682,18 @@
 				307DEE8F1BEB5E9300BF1CCF /* BookViewController.m in Sources */,
 				303856971BFC420D00D7FFC4 /* ASHomeAdverScrollView.m in Sources */,
 				307DEE7D1BEB483B00BF1CCF /* UIBookEditViewController.m in Sources */,
+				A72BDBCD1BFEAFC6006E84FB /* ASSignInSuccessEvent.m in Sources */,
 				A72A570C1BFC4D0A00A334FE /* XEBThreadMode.m in Sources */,
 				A72A570B1BFC4D0A00A334FE /* XEBThreadLocal.m in Sources */,
+				A72A57241BFC6F6A00A334FE /* ASSignInEvent.m in Sources */,
+				A72A572E1BFC6FE900A334FE /* ASSignInCommand.m in Sources */,
 				307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */,
 				30005FBE1BF5C536009D2369 /* ASNavigationController.m in Sources */,
+				A702615E1BFD611F00A83034 /* ASUser.m in Sources */,
 				307DEE551BEAFE6A00BF1CCF /* main.m in Sources */,
 				3038567C1BFC150300D7FFC4 /* ASCartViewController.m in Sources */,
 				3070D2951BF0A63A005D8AC8 /* UINavibook.m in Sources */,
+				A72BDBCA1BFEAB4D006E84FB /* ASCommandEvent.m in Sources */,
 				A72A57091BFC4D0A00A334FE /* XEBSubscriberMethodFinder.m in Sources */,
 				A72A570A1BFC4D0A00A334FE /* XEBSubscription.m in Sources */,
 				303856801BFC150300D7FFC4 /* ASCustomNaviBar.m in Sources */,

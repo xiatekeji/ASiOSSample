@@ -7,6 +7,7 @@
 //
 #import "ViewController.h"
 #import "AppDelegate.h"
+#import "AppDelegate+CommandBinding.h"
 #import "ASNavigator.h"
 #import "ASHomeViewController.h"
 @interface AppDelegate ()
@@ -17,6 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	[self bindCommands];
+	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];

@@ -11,7 +11,7 @@
 @implementation ASCommand
 
 - (void)executeWithEvent: (id)event {
-	// Do nothing.
+	@throw [NSException exceptionWithName: NSInvalidArgumentException reason: [[NSString alloc] initWithFormat: @"Unrecognizable event class: \"%@\".", NSStringFromClass([event class])] userInfo: nil];
 }
 
 @end

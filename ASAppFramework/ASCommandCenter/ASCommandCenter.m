@@ -9,6 +9,7 @@
 #import "ASCommandCenter.h"
 
 #import "ASCommand.h"
+#import "ASCommandEvent.h"
 #import "XEBEventBus.h"
 #import "XEBSubscriber.h"
 
@@ -19,7 +20,7 @@
 @interface ASCommandCenter()<XEBSubscriber> {
 	XEBEventBus* _eventBus;
 	
-	NSMutableDictionary<NSString*, Class>* _commandClassByEventClassName;
+	NSMutableDictionary<NSValue*, Class>* _commandClassByEventClass;
 }
 
 @end
@@ -30,7 +31,7 @@
 
 + (NSArray<Class>*)handleableEventClasses {
 	return @[
-		[NSObject class]
+		[ASCommandEvent class]
 	];
 }
 
@@ -49,14 +50,20 @@ static ASCommandCenter* _defaultInstance;
 }
 
 - (instancetype)init {
+	return [self initWithEventBus: [XEBEventBus defaultEventBus]];
+}
+
+- (instancetype)initWithEventBus: (XEBEventBus*)eventBus {
 	self = [super init];
 	
-	// 此处不使用默认的EventBus，以免外部干涉。
-	XEBEventBus* eventBus = [[XEBEventBus alloc] init];
-	[eventBus registerSubscriber: self];
+	if(eventBus == nil) {
+		eventBus = [XEBEventBus defaultEventBus];
+	}
 	_eventBus = eventBus;
 	
-	_commandClassByEventClassName = [[NSMutableDictionary alloc] init];
+	_commandClassByEventClass = [[NSMutableDictionary alloc] init];
+	
+	[_eventBus registerSubscriber: self];
 	
 	return self;
 }
@@ -67,49 +74,48 @@ static ASCommandCenter* _defaultInstance;
 
 - (void)bindCommand: (Class)commandClass toEvent: (Class)eventClass {
 	NSParameterAssert([commandClass conformsToProtocol: @protocol(ASCommand)]);
+	NSParameterAssert([eventClass isSubclassOfClass: [ASCommandEvent class]]);
 	
-	NSString* eventClassName = NSStringFromClass(eventClass);
+	NSValue* eventClassPointer = [NSValue valueWithNonretainedObject: eventClass];
 	
-	@synchronized(_commandClassByEventClassName) {
-		Class boundCommandClass = _commandClassByEventClassName[eventClassName];
+	@synchronized(_commandClassByEventClass) {
+		Class boundCommandClass = _commandClassByEventClass[eventClassPointer];
 		if(boundCommandClass != nil) {
-			NSLog(@"[%@]Event class \"%@\" has already been bound with command class \"%@\", so it cannot be bound with command class \"%@\".", TAG, eventClassName, NSStringFromClass(boundCommandClass), NSStringFromClass(commandClass));
+			NSLog(@"[%@]Event class \"%@\" has already been bound with command class \"%@\", so it cannot be bound again with command class \"%@\".", TAG, NSStringFromClass(eventClass), NSStringFromClass(boundCommandClass), NSStringFromClass(commandClass));
 			
 			return;
 		}
 		
-		_commandClassByEventClassName[eventClassName] = commandClass;
+		_commandClassByEventClass[eventClassPointer] = commandClass;
 	}
 }
 
 - (void)unbindCommandFromEvent: (Class)eventClass {
-	NSString* eventClassName = NSStringFromClass(eventClass);
+	NSValue* eventClassPointer = [NSValue valueWithNonretainedObject: eventClass];
 	
-	@synchronized(_commandClassByEventClassName) {
-		if(_commandClassByEventClassName[eventClassName] == nil) {
-			NSLog(@"[%@]Event class \"%@\" has not been bound with any command class!", TAG, eventClassName);
+	@synchronized(_commandClassByEventClass) {
+		if(_commandClassByEventClass[eventClassPointer] == nil) {
+			NSLog(@"[%@]Event class \"%@\" has not been bound with any command class, so there is no need to unbind it.", TAG, NSStringFromClass(eventClass));
 			
 			return;
 		}
 		
-		_commandClassByEventClassName[eventClassName] = nil;
+		_commandClassByEventClass[eventClassPointer] = nil;
 	}
 }
 
-- (void)postEvent: (id)event {
-	[_eventBus postEvent: event];
-}
-
-- (void)onEvent: (id)event {
+- (void)onEvent: (ASCommandEvent*)event {
 	Class eventClass = [event class];
-	NSString* eventClassName = NSStringFromClass(eventClass);
+	NSValue* eventClassPointer = [NSValue valueWithNonretainedObject: eventClass];
 	
 	Class commandClass;
-	@synchronized(_commandClassByEventClassName) {
-		commandClass = _commandClassByEventClassName[eventClassName];
+	@synchronized(_commandClassByEventClass) {
+		commandClass = _commandClassByEventClass[eventClassPointer];
 	}
 	
 	if(commandClass == nil) {
+		NSLog(@"[%@]Event class \"%@\" has not been bound with any command class, so no command will be executed.", TAG, NSStringFromClass(eventClass));
+		
 		return;
 	}
 	

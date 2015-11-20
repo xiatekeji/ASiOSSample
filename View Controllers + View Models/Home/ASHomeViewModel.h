@@ -22,5 +22,8 @@
  */
 @property(nonatomic, readonly) BOOL shouldDisplayProgressHud;
 
+@property(nonatomic, readonly) BOOL signedIn;
+
+@property(nonatomic, readonly, nullable) NSString* account;
 
 @end

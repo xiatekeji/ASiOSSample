@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class XEBEventBus;
+
 @interface ASCommandCenter : NSObject
 
 + (instancetype _Nonnull)defaultCenter;
 
+- (instancetype _Nonnull)initWithEventBus: (XEBEventBus* _Nullable)eventBus NS_DESIGNATED_INITIALIZER;
+
 - (void)bindCommand: (Class _Nonnull)commandClass toEvent: (Class _Nonnull)eventClass;
 - (void)unbindCommandFromEvent: (Class _Nonnull)eventClass;
-
-- (void)postEvent: (id _Nonnull)event;
 
 @end
