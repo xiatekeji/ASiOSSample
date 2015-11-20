@@ -43,6 +43,16 @@
 		307DEE801BEB484600BF1CCF /* UISizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE7F1BEB484600BF1CCF /* UISizeViewController.m */; };
 		307DEE8C1BEB4B3400BF1CCF /* ModalCenterReform.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE8B1BEB4B3400BF1CCF /* ModalCenterReform.m */; };
 		307DEE8F1BEB5E9300BF1CCF /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DEE8E1BEB5E9300BF1CCF /* BookViewController.m */; };
+		307EC9F01BFC5C470018F38C /* DemoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 307EC9EF1BFC5C470018F38C /* DemoButton.m */; };
+		307EC9F31BFC68800018F38C /* ASBookSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307EC9F21BFC68800018F38C /* ASBookSizeViewController.m */; };
+		307EC9F61BFC69CF0018F38C /* ASBookEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307EC9F51BFC69CF0018F38C /* ASBookEditViewController.m */; };
+		307EC9F91BFC7DC00018F38C /* ASFrameSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307EC9F81BFC7DC00018F38C /* ASFrameSizeViewController.m */; };
+		307EC9FC1BFC7DCC0018F38C /* ASCanvasSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307EC9FB1BFC7DCC0018F38C /* ASCanvasSizeViewController.m */; };
+		307EC9FF1BFC803F0018F38C /* ASCanvasEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307EC9FE1BFC803F0018F38C /* ASCanvasEditViewController.m */; };
+		307ECA021BFC804C0018F38C /* ASFrameEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307ECA011BFC804C0018F38C /* ASFrameEditViewController.m */; };
+		307ECA061BFC84940018F38C /* ASAlbumNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307ECA051BFC84940018F38C /* ASAlbumNavigationController.m */; };
+		307ECA091BFC84A30018F38C /* ASAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307ECA081BFC84A30018F38C /* ASAlbumViewController.m */; };
+		3086546A1BFD6E55000B72C6 /* ASPrintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308654691BFD6E55000B72C6 /* ASPrintsViewController.m */; };
 		30EEEB941BF438C7009E3029 /* Business.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30EEEB931BF438C7009E3029 /* Business.plist */; };
 		30EEEB991BF438CE009E3029 /* HTML5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EEEB961BF438CE009E3029 /* HTML5ViewController.m */; };
 		978F1166FAA33FEA9783DEAF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 901397BA132DEDF63E149262 /* libPods.a */; };
@@ -137,6 +147,26 @@
 		307DEE8B1BEB4B3400BF1CCF /* ModalCenterReform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalCenterReform.m; sourceTree = "<group>"; };
 		307DEE8D1BEB5E9300BF1CCF /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
 		307DEE8E1BEB5E9300BF1CCF /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		307EC9EE1BFC5C470018F38C /* DemoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoButton.h; sourceTree = "<group>"; };
+		307EC9EF1BFC5C470018F38C /* DemoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoButton.m; sourceTree = "<group>"; };
+		307EC9F11BFC68800018F38C /* ASBookSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBookSizeViewController.h; sourceTree = "<group>"; };
+		307EC9F21BFC68800018F38C /* ASBookSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBookSizeViewController.m; sourceTree = "<group>"; };
+		307EC9F41BFC69CF0018F38C /* ASBookEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBookEditViewController.h; sourceTree = "<group>"; };
+		307EC9F51BFC69CF0018F38C /* ASBookEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBookEditViewController.m; sourceTree = "<group>"; };
+		307EC9F71BFC7DC00018F38C /* ASFrameSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFrameSizeViewController.h; sourceTree = "<group>"; };
+		307EC9F81BFC7DC00018F38C /* ASFrameSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFrameSizeViewController.m; sourceTree = "<group>"; };
+		307EC9FA1BFC7DCC0018F38C /* ASCanvasSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCanvasSizeViewController.h; sourceTree = "<group>"; };
+		307EC9FB1BFC7DCC0018F38C /* ASCanvasSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCanvasSizeViewController.m; sourceTree = "<group>"; };
+		307EC9FD1BFC803F0018F38C /* ASCanvasEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCanvasEditViewController.h; sourceTree = "<group>"; };
+		307EC9FE1BFC803F0018F38C /* ASCanvasEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCanvasEditViewController.m; sourceTree = "<group>"; };
+		307ECA001BFC804C0018F38C /* ASFrameEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFrameEditViewController.h; sourceTree = "<group>"; };
+		307ECA011BFC804C0018F38C /* ASFrameEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFrameEditViewController.m; sourceTree = "<group>"; };
+		307ECA041BFC84940018F38C /* ASAlbumNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAlbumNavigationController.h; sourceTree = "<group>"; };
+		307ECA051BFC84940018F38C /* ASAlbumNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAlbumNavigationController.m; sourceTree = "<group>"; };
+		307ECA071BFC84A30018F38C /* ASAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAlbumViewController.h; sourceTree = "<group>"; };
+		307ECA081BFC84A30018F38C /* ASAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAlbumViewController.m; sourceTree = "<group>"; };
+		308654681BFD6E55000B72C6 /* ASPrintsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPrintsViewController.h; sourceTree = "<group>"; };
+		308654691BFD6E55000B72C6 /* ASPrintsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPrintsViewController.m; sourceTree = "<group>"; };
 		30EEEB931BF438C7009E3029 /* Business.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Business.plist; sourceTree = "<group>"; };
 		30EEEB951BF438CE009E3029 /* HTML5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTML5ViewController.h; sourceTree = "<group>"; };
 		30EEEB961BF438CE009E3029 /* HTML5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTML5ViewController.m; sourceTree = "<group>"; };
@@ -211,6 +241,7 @@
 		303856591BFC150300D7FFC4 /* View Controllers + View Models */ = {
 			isa = PBXGroup;
 			children = (
+				307ECA031BFC847C0018F38C /* Album */,
 				303856A61BFC4DCF00D7FFC4 /* TableTop */,
 				3038565A1BFC150300D7FFC4 /* Canvas */,
 				3038565B1BFC150300D7FFC4 /* Cart */,
@@ -230,6 +261,10 @@
 			children = (
 				3038569F1BFC4CBF00D7FFC4 /* ASCanvasProductViewController.h */,
 				303856A01BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m */,
+				307EC9FA1BFC7DCC0018F38C /* ASCanvasSizeViewController.h */,
+				307EC9FB1BFC7DCC0018F38C /* ASCanvasSizeViewController.m */,
+				307EC9FD1BFC803F0018F38C /* ASCanvasEditViewController.h */,
+				307EC9FE1BFC803F0018F38C /* ASCanvasEditViewController.m */,
 			);
 			path = Canvas;
 			sourceTree = "<group>";
@@ -251,6 +286,10 @@
 			children = (
 				3038569C1BFC4CAD00D7FFC4 /* ASFrameProductViewController.h */,
 				3038569D1BFC4CAD00D7FFC4 /* ASFrameProductViewController.m */,
+				307EC9F71BFC7DC00018F38C /* ASFrameSizeViewController.h */,
+				307EC9F81BFC7DC00018F38C /* ASFrameSizeViewController.m */,
+				307ECA001BFC804C0018F38C /* ASFrameEditViewController.h */,
+				307ECA011BFC804C0018F38C /* ASFrameEditViewController.m */,
 			);
 			path = Frame;
 			sourceTree = "<group>";
@@ -280,6 +319,10 @@
 			children = (
 				303856991BFC4C5000D7FFC4 /* ASBookProductViewController.h */,
 				3038569A1BFC4C5000D7FFC4 /* ASBookProductViewController.m */,
+				307EC9F11BFC68800018F38C /* ASBookSizeViewController.h */,
+				307EC9F21BFC68800018F38C /* ASBookSizeViewController.m */,
+				307EC9F41BFC69CF0018F38C /* ASBookEditViewController.h */,
+				307EC9F51BFC69CF0018F38C /* ASBookEditViewController.m */,
 			);
 			path = "Photo Book";
 			sourceTree = "<group>";
@@ -287,6 +330,8 @@
 		303856711BFC150300D7FFC4 /* Prints */ = {
 			isa = PBXGroup;
 			children = (
+				308654681BFD6E55000B72C6 /* ASPrintsViewController.h */,
+				308654691BFD6E55000B72C6 /* ASPrintsViewController.m */,
 			);
 			path = Prints;
 			sourceTree = "<group>";
@@ -416,8 +461,21 @@
 				307DEE8E1BEB5E9300BF1CCF /* BookViewController.m */,
 				3070D2931BF0A63A005D8AC8 /* UINavibook.h */,
 				3070D2941BF0A63A005D8AC8 /* UINavibook.m */,
+				307EC9EE1BFC5C470018F38C /* DemoButton.h */,
+				307EC9EF1BFC5C470018F38C /* DemoButton.m */,
 			);
 			name = Controlls;
+			sourceTree = "<group>";
+		};
+		307ECA031BFC847C0018F38C /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				307ECA041BFC84940018F38C /* ASAlbumNavigationController.h */,
+				307ECA051BFC84940018F38C /* ASAlbumNavigationController.m */,
+				307ECA071BFC84A30018F38C /* ASAlbumViewController.h */,
+				307ECA081BFC84A30018F38C /* ASAlbumViewController.m */,
+			);
+			path = Album;
 			sourceTree = "<group>";
 		};
 		4B2C56D11C4099C3A25497B9 /* Pods */ = {
@@ -573,6 +631,7 @@
 				TargetAttributes = {
 					307DEE4F1BEAFE6A00BF1CCF = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = UBTP437Y3Q;
 					};
 				};
 			};
@@ -654,7 +713,9 @@
 			files = (
 				3038569E1BFC4CAD00D7FFC4 /* ASFrameProductViewController.m in Sources */,
 				307DEE801BEB484600BF1CCF /* UISizeViewController.m in Sources */,
+				307ECA061BFC84940018F38C /* ASAlbumNavigationController.m in Sources */,
 				303856851BFC150300D7FFC4 /* ASProductCell.m in Sources */,
+				3086546A1BFD6E55000B72C6 /* ASPrintsViewController.m in Sources */,
 				303856A91BFC4DD800D7FFC4 /* ASTableTopProductViewController.m in Sources */,
 				303856811BFC150300D7FFC4 /* ASHomeViewController.m in Sources */,
 				A72A57061BFC4D0A00A334FE /* XEBEventBus.m in Sources */,
@@ -672,9 +733,12 @@
 				A702615B1BFD611200A83034 /* ASUserLocator.m in Sources */,
 				303856A11BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m in Sources */,
 				A72A57071BFC4D0A00A334FE /* XEBPostingThreadState.m in Sources */,
+				307EC9FC1BFC7DCC0018F38C /* ASCanvasSizeViewController.m in Sources */,
 				30005FBF1BF5C536009D2369 /* ASNavigator.m in Sources */,
 				303856821BFC150300D7FFC4 /* ASHomeViewController_SidebarContentView.m in Sources */,
 				A72A57031BFC4D0A00A334FE /* ASCommand.m in Sources */,
+				307EC9F01BFC5C470018F38C /* DemoButton.m in Sources */,
+				307EC9FF1BFC803F0018F38C /* ASCanvasEditViewController.m in Sources */,
 				A70060371BF57B220060DAFD /* EventBusDemoViewController.m in Sources */,
 				3038569B1BFC4C5000D7FFC4 /* ASBookProductViewController.m in Sources */,
 				303856881BFC150300D7FFC4 /* ASTrialViewController.m in Sources */,
@@ -687,6 +751,7 @@
 				A72A570B1BFC4D0A00A334FE /* XEBThreadLocal.m in Sources */,
 				A72A57241BFC6F6A00A334FE /* ASSignInEvent.m in Sources */,
 				A72A572E1BFC6FE900A334FE /* ASSignInCommand.m in Sources */,
+				307EC9F91BFC7DC00018F38C /* ASFrameSizeViewController.m in Sources */,
 				307DEE581BEAFE6A00BF1CCF /* AppDelegate.m in Sources */,
 				30005FBE1BF5C536009D2369 /* ASNavigationController.m in Sources */,
 				A702615E1BFD611F00A83034 /* ASUser.m in Sources */,
@@ -695,10 +760,14 @@
 				3070D2951BF0A63A005D8AC8 /* UINavibook.m in Sources */,
 				A72BDBCA1BFEAB4D006E84FB /* ASCommandEvent.m in Sources */,
 				A72A57091BFC4D0A00A334FE /* XEBSubscriberMethodFinder.m in Sources */,
+				307ECA091BFC84A30018F38C /* ASAlbumViewController.m in Sources */,
 				A72A570A1BFC4D0A00A334FE /* XEBSubscription.m in Sources */,
 				303856801BFC150300D7FFC4 /* ASCustomNaviBar.m in Sources */,
 				307DEE731BEB1E5100BF1CCF /* RootViewController.m in Sources */,
+				307ECA021BFC804C0018F38C /* ASFrameEditViewController.m in Sources */,
 				3038567F1BFC150300D7FFC4 /* ASContactUsDialog.m in Sources */,
+				307EC9F31BFC68800018F38C /* ASBookSizeViewController.m in Sources */,
+				307EC9F61BFC69CF0018F38C /* ASBookEditViewController.m in Sources */,
 				303856981BFC420D00D7FFC4 /* ASSidebarLayout.m in Sources */,
 				A72A57081BFC4D0A00A334FE /* XEBSubscriberMethod.m in Sources */,
 			);
@@ -813,10 +882,11 @@
 			baseConfigurationReference = BD6FF95CFFD6D06D77BAD364 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = UIDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = artisan.UIDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artisanstate.PhotoBook;
 				PRODUCT_NAME = ASIOSSample;
 			};
 			name = Debug;
@@ -826,10 +896,11 @@
 			baseConfigurationReference = F85B7F651D312123E5EC568B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = UIDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = artisan.UIDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artisanstate.PhotoBook;
 				PRODUCT_NAME = ASIOSSample;
 			};
 			name = Release;

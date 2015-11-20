@@ -60,8 +60,6 @@
     [super viewWillAppear: animated];
     [UIApplication sharedApplication].statusBarStyle =   UIStatusBarStyleLightContent;
     self.navigationController.navigationBarHidden = YES;
-
-    [[UIDevice currentDevice] setValue: [NSNumber numberWithInteger:UIDeviceOrientationPortrait] forKey:@"orientation"];
     [_viewModel setActive: TRUE];
 
     
@@ -305,8 +303,8 @@
 }
 
 - (void)goToPrints {
-    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"bookProduct" andParameters:nil];
-    [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"album" andParameters:nil];
+    [[ASNavigator shareModalCenter] presentViewController:reform.controller parameters:reform.modalParamter isAnimation:YES completion:nil];
 }
 - (void)goToUploadPhotos{
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"uploadPhotos" andParameters:nil];

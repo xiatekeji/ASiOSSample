@@ -16,7 +16,7 @@
  */
 static NSArray* _suppressedViewControllerClasses;
 	
-@interface ASTrialViewController()<UIViewControllerAnimatedTransitioning> {
+@interface ASTrialViewController() {
 
 	
 	UIView* _fromView;

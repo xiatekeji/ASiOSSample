@@ -13,7 +13,14 @@
 @end
 
 @implementation ASNavigationController
-
+- (void)skipPageProtocol:(NSDictionary *)parameters{
+    if (parameters ) {
+        UIViewController <ASNavigatable>*VC = self.topViewController;
+        if ([VC respondsToSelector:@selector(skipPageProtocol:)]) {
+            [VC skipPageProtocol:parameters];
+        }
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

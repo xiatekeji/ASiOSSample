@@ -7,7 +7,9 @@
 //
 
 #import "ASFrameProductViewController.h"
-
+#import "DemoButton.h"
+#import "ASNavigator.h"
+#import "ModalCenterReform.h"
 @interface ASFrameProductViewController ()
 
 @end
@@ -21,7 +23,11 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    DemoButton *demo = [[DemoButton alloc]initButtonWithDemo:@"Frame Size" action:^{
+        ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"frameSize" andParameters:nil];
+        [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:YES];
+    }];
+    [self.view addSubview:demo];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -37,7 +37,7 @@
 		<key>class</key>
 		<string>ASPrintsViewController</string>
 		<key>title</key>
-		<string></string>
+		<string>Prints</string>
 	</dict>
 	<key>uploadPhotos</key>
 	<dict>
@@ -56,9 +56,9 @@
 	<key>bookEdit</key>
 	<dict>
 		<key>class</key>
-		<string>ASPhotoEditViewController</string>
+		<string>ASBookEditViewController</string>
 		<key>title</key>
-		<string></string>
+		<string>Book Edit</string>
 	</dict>
 	<key>frameEdit</key>
 	<dict>
@@ -67,12 +67,49 @@
 		<key>title</key>
 		<string></string>
 	</dict>
+	<key>canvasEdit</key>
+	<dict>
+		<key>class</key>
+		<string>ASCanvasEditViewController</string>
+		<key>title</key>
+		<string>Canvas Edit</string>
+	</dict>
 	<key>tableTopProduct</key>
 	<dict>
 		<key>class</key>
 		<string>ASTableTopProductViewController</string>
 		<key>title</key>
 		<string>Select TableTop Type</string>
+	</dict>
+	<key>bookSize</key>
+	<dict>
+		<key>class</key>
+		<string>ASBookSizeViewController</string>
+		<key>title</key>
+		<string>Select Book Size</string>
+	</dict>
+	<key>frameSize</key>
+	<dict>
+		<key>class</key>
+		<string>ASFrameSizeViewController</string>
+		<key>title</key>
+		<string>Select Frame Size</string>
+	</dict>
+	<key>canvasSize</key>
+	<dict>
+		<key>class</key>
+		<string>ASCanvasSizeViewController</string>
+		<key>title</key>
+		<string>Select Canvas Size</string>
+	</dict>
+	<key>album</key>
+	<dict>
+		<key>rootViewController</key>
+		<string>ASAlbumViewController</string>
+		<key>class</key>
+		<string>ASAlbumNavigationController</string>
+		<key>title</key>
+		<string>Select Photos</string>
 	</dict>
 </dict>
 </plist>
