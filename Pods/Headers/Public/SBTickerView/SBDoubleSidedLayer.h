@@ -1,1 +1,0 @@
-../../../SBTickerView/SBDoubleSidedLayer.h

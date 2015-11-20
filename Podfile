@@ -9,5 +9,4 @@ pod 'MBProgressHUD'
 pod 'QBImagePickerController'
 pod 'ReactiveCocoa'
 pod 'ReactiveViewModel'
-pod 'SBTickerView'
 

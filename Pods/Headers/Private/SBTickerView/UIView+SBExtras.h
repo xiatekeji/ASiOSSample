@@ -1,1 +1,0 @@
-../../../SBTickerView/UIView+SBExtras.h

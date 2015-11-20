@@ -1,1 +1,0 @@
-../../../SBTickerView/SBGradientOverlayLayer.h
