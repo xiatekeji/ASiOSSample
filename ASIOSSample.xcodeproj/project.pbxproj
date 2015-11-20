@@ -83,6 +83,7 @@
 		A72BDBF01BFEF1E9006E84FB /* ASSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A72BDBEB1BFEF1E9006E84FB /* ASSignInViewController.xib */; };
 		A72BDBF11BFEF1E9006E84FB /* ASSignInViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBED1BFEF1E9006E84FB /* ASSignInViewModel.m */; };
 		A72BDBF41BFEF212006E84FB /* ASSignOutViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBF31BFEF212006E84FB /* ASSignOutViewModel.m */; };
+		A72BDC1B1BFF1678006E84FB /* ASTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDC1A1BFF1678006E84FB /* ASTickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -229,6 +230,8 @@
 		A72BDBED1BFEF1E9006E84FB /* ASSignInViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInViewModel.m; sourceTree = "<group>"; };
 		A72BDBF21BFEF212006E84FB /* ASSignOutViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignOutViewModel.h; sourceTree = "<group>"; };
 		A72BDBF31BFEF212006E84FB /* ASSignOutViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignOutViewModel.m; sourceTree = "<group>"; };
+		A72BDC191BFF1678006E84FB /* ASTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTickerView.h; sourceTree = "<group>"; };
+		A72BDC1A1BFF1678006E84FB /* ASTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTickerView.m; sourceTree = "<group>"; };
 		BD6FF95CFFD6D06D77BAD364 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F85B7F651D312123E5EC568B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -382,6 +385,8 @@
 				303856941BFC420D00D7FFC4 /* ASHomeAdverScrollView.m */,
 				303856951BFC420D00D7FFC4 /* ASSidebarLayout.h */,
 				303856961BFC420D00D7FFC4 /* ASSidebarLayout.m */,
+				A72BDC191BFF1678006E84FB /* ASTickerView.h */,
+				A72BDC1A1BFF1678006E84FB /* ASTickerView.m */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -779,6 +784,7 @@
 				303856841BFC150300D7FFC4 /* ASHomeViewModel.m in Sources */,
 				307DEE8C1BEB4B3400BF1CCF /* ModalCenterReform.m in Sources */,
 				303856891BFC150300D7FFC4 /* ASTrialViewModel.m in Sources */,
+				A72BDC1B1BFF1678006E84FB /* ASTickerView.m in Sources */,
 				303856AC1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m in Sources */,
 				307DEE5B1BEAFE6A00BF1CCF /* ViewController.m in Sources */,
 				A72BDBD01BFEAFD4006E84FB /* ASSignInFailureEvent.m in Sources */,

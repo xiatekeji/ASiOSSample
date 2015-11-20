@@ -54,39 +54,51 @@
 }
 
 - (void)displayOrHideProgressHudInTheFuture {
+	@weakify(self)
+	
 	[
 		[RACObserve(self, viewModel.inProgress) deliverOn: [RACScheduler mainThreadScheduler]]
 		subscribeNext: ^(id x) {
+			@strongify(self)
+			
 			BOOL inProgress = [x boolValue];
 			if(inProgress) {
 				UIView* container = [[UIApplication sharedApplication] keyWindow];
 				
 				MBProgressHUD* progressHud = [MBProgressHUD showHUDAddedTo: container animated: TRUE];
 				[progressHud setRemoveFromSuperViewOnHide: TRUE];
-				_progressHud = progressHud;
+				self->_progressHud = progressHud;
 			}
 			else {
-				[_progressHud hide: TRUE];
-				_progressHud = nil;
+				[self->_progressHud hide: TRUE];
+				self->_progressHud = nil;
 			}
 		}
 	];
 }
 
 - (void)setProgressMessageInTheFuture {
+	@weakify(self)
+	
 	[
 		[RACObserve(self, viewModel.progressMessage) deliverOn: [RACScheduler mainThreadScheduler]]
 		subscribeNext: ^(id x) {
+			@strongify(self)
+			
 			NSString* progressMessage = x;
-			[_progressHud setLabelText: progressMessage];
+			[self->_progressHud setLabelText: progressMessage];
 		}
 	];
 }
 
 - (void)showAlertWithMessageInTheFuture {
+	@weakify(self)
+	
 	[
 		[RACObserve(self, viewModel.alertMessage) deliverOn: [RACScheduler mainThreadScheduler]]
 		subscribeNext: ^(id x) {
+			@strongify(self)
+			
 			NSString* progressMessage = x;
 			if(progressMessage != nil) {
 				UIAlertController* alertController = [UIAlertController alertControllerWithTitle: nil message: progressMessage preferredStyle: UIAlertControllerStyleAlert];
@@ -117,6 +129,12 @@
 - (IBAction)handleButton: (UIButton*)button {
 	if(button == _signInButton) {
 		[_viewModel doSignIn];
+		
+		return;
+	}
+	
+	if(button == _cancelButton) {
+		[[ASNavigator shareModalCenter] dismissCurrentModalViewControlleAnimation: TRUE completion: nil];
 		
 		return;
 	}

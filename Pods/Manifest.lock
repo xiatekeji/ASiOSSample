@@ -13,6 +13,7 @@ PODS:
     - ReactiveCocoa/Core
   - ReactiveViewModel (0.3):
     - ReactiveCocoa (~> 2.4)
+  - SBTickerView (1.0.0)
 
 DEPENDENCIES:
   - IQKeyboardManager
@@ -22,6 +23,7 @@ DEPENDENCIES:
   - QBImagePickerController
   - ReactiveCocoa
   - ReactiveViewModel
+  - SBTickerView
 
 SPEC CHECKSUMS:
   IQKeyboardManager: ac803e61e5b50efae6b3aeedd95a02c7c7d3b2b3
@@ -31,5 +33,6 @@ SPEC CHECKSUMS:
   QBImagePickerController: 75b3857b1307a3c01ce486559bc294f802ddec6c
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
+  SBTickerView: 981ebcf79ae8bde172df46467e08e57c6c386eda
 
 COCOAPODS: 0.38.2
