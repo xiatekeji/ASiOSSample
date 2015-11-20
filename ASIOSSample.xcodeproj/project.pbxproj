@@ -77,6 +77,11 @@
 		A72BDBCA1BFEAB4D006E84FB /* ASCommandEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBC91BFEAB4D006E84FB /* ASCommandEvent.m */; };
 		A72BDBCD1BFEAFC6006E84FB /* ASSignInSuccessEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBCC1BFEAFC6006E84FB /* ASSignInSuccessEvent.m */; };
 		A72BDBD01BFEAFD4006E84FB /* ASSignInFailureEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBCF1BFEAFD4006E84FB /* ASSignInFailureEvent.m */; };
+		A72BDBDA1BFED021006E84FB /* ASSignOutEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBD91BFED021006E84FB /* ASSignOutEvent.m */; };
+		A72BDBDD1BFED035006E84FB /* ASSignOutSuccessEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBDC1BFED035006E84FB /* ASSignOutSuccessEvent.m */; };
+		A72BDBE01BFED066006E84FB /* ASSignOutFailureEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBDF1BFED066006E84FB /* ASSignOutFailureEvent.m */; };
+		A72BDBE41BFED10C006E84FB /* ASSignOutCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBE31BFED10C006E84FB /* ASSignOutCommand.m */; };
+		A72BDBE71BFEE42B006E84FB /* ASSignInViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BDBE61BFEE42B006E84FB /* ASSignInViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -211,6 +216,16 @@
 		A72BDBCC1BFEAFC6006E84FB /* ASSignInSuccessEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInSuccessEvent.m; sourceTree = "<group>"; };
 		A72BDBCE1BFEAFD4006E84FB /* ASSignInFailureEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignInFailureEvent.h; sourceTree = "<group>"; };
 		A72BDBCF1BFEAFD4006E84FB /* ASSignInFailureEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInFailureEvent.m; sourceTree = "<group>"; };
+		A72BDBD81BFED021006E84FB /* ASSignOutEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignOutEvent.h; sourceTree = "<group>"; };
+		A72BDBD91BFED021006E84FB /* ASSignOutEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignOutEvent.m; sourceTree = "<group>"; };
+		A72BDBDB1BFED035006E84FB /* ASSignOutSuccessEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignOutSuccessEvent.h; sourceTree = "<group>"; };
+		A72BDBDC1BFED035006E84FB /* ASSignOutSuccessEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignOutSuccessEvent.m; sourceTree = "<group>"; };
+		A72BDBDE1BFED066006E84FB /* ASSignOutFailureEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignOutFailureEvent.h; sourceTree = "<group>"; };
+		A72BDBDF1BFED066006E84FB /* ASSignOutFailureEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignOutFailureEvent.m; sourceTree = "<group>"; };
+		A72BDBE21BFED10C006E84FB /* ASSignOutCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignOutCommand.h; sourceTree = "<group>"; };
+		A72BDBE31BFED10C006E84FB /* ASSignOutCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignOutCommand.m; sourceTree = "<group>"; };
+		A72BDBE51BFEE42B006E84FB /* ASSignInViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSignInViewModel.h; sourceTree = "<group>"; };
+		A72BDBE61BFEE42B006E84FB /* ASSignInViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSignInViewModel.m; sourceTree = "<group>"; };
 		BD6FF95CFFD6D06D77BAD364 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F85B7F651D312123E5EC568B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -342,6 +357,8 @@
 				303856731BFC150300D7FFC4 /* ASSignInViewController.h */,
 				303856741BFC150300D7FFC4 /* ASSignInViewController.m */,
 				303856751BFC150300D7FFC4 /* ASSignInViewController.xib */,
+				A72BDBE51BFEE42B006E84FB /* ASSignInViewModel.h */,
+				A72BDBE61BFEE42B006E84FB /* ASSignInViewModel.m */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -564,6 +581,7 @@
 			isa = PBXGroup;
 			children = (
 				A72A572B1BFC6FDF00A334FE /* Sign In */,
+				A72BDBE11BFED0FC006E84FB /* Sign Out */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -572,6 +590,7 @@
 			isa = PBXGroup;
 			children = (
 				A72A57121BFC6E2900A334FE /* Sign In */,
+				A72BDBD71BFED00B006E84FB /* Sign Out */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -596,6 +615,28 @@
 				A72A572D1BFC6FE900A334FE /* ASSignInCommand.m */,
 			);
 			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		A72BDBD71BFED00B006E84FB /* Sign Out */ = {
+			isa = PBXGroup;
+			children = (
+				A72BDBD81BFED021006E84FB /* ASSignOutEvent.h */,
+				A72BDBD91BFED021006E84FB /* ASSignOutEvent.m */,
+				A72BDBDB1BFED035006E84FB /* ASSignOutSuccessEvent.h */,
+				A72BDBDC1BFED035006E84FB /* ASSignOutSuccessEvent.m */,
+				A72BDBDE1BFED066006E84FB /* ASSignOutFailureEvent.h */,
+				A72BDBDF1BFED066006E84FB /* ASSignOutFailureEvent.m */,
+			);
+			path = "Sign Out";
+			sourceTree = "<group>";
+		};
+		A72BDBE11BFED0FC006E84FB /* Sign Out */ = {
+			isa = PBXGroup;
+			children = (
+				A72BDBE21BFED10C006E84FB /* ASSignOutCommand.h */,
+				A72BDBE31BFED10C006E84FB /* ASSignOutCommand.m */,
+			);
+			path = "Sign Out";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -713,6 +754,7 @@
 			files = (
 				3038569E1BFC4CAD00D7FFC4 /* ASFrameProductViewController.m in Sources */,
 				307DEE801BEB484600BF1CCF /* UISizeViewController.m in Sources */,
+				A72BDBDA1BFED021006E84FB /* ASSignOutEvent.m in Sources */,
 				307ECA061BFC84940018F38C /* ASAlbumNavigationController.m in Sources */,
 				303856851BFC150300D7FFC4 /* ASProductCell.m in Sources */,
 				3086546A1BFD6E55000B72C6 /* ASPrintsViewController.m in Sources */,
@@ -732,6 +774,7 @@
 				30EEEB991BF438CE009E3029 /* HTML5ViewController.m in Sources */,
 				A702615B1BFD611200A83034 /* ASUserLocator.m in Sources */,
 				303856A11BFC4CBF00D7FFC4 /* ASCanvasProductViewController.m in Sources */,
+				A72BDBE71BFEE42B006E84FB /* ASSignInViewModel.m in Sources */,
 				A72A57071BFC4D0A00A334FE /* XEBPostingThreadState.m in Sources */,
 				307EC9FC1BFC7DCC0018F38C /* ASCanvasSizeViewController.m in Sources */,
 				30005FBF1BF5C536009D2369 /* ASNavigator.m in Sources */,
@@ -743,6 +786,7 @@
 				3038569B1BFC4C5000D7FFC4 /* ASBookProductViewController.m in Sources */,
 				303856881BFC150300D7FFC4 /* ASTrialViewController.m in Sources */,
 				3038567D1BFC150300D7FFC4 /* ASCartViewModel.m in Sources */,
+				A72BDBE41BFED10C006E84FB /* ASSignOutCommand.m in Sources */,
 				307DEE8F1BEB5E9300BF1CCF /* BookViewController.m in Sources */,
 				303856971BFC420D00D7FFC4 /* ASHomeAdverScrollView.m in Sources */,
 				307DEE7D1BEB483B00BF1CCF /* UIBookEditViewController.m in Sources */,
@@ -763,11 +807,13 @@
 				307ECA091BFC84A30018F38C /* ASAlbumViewController.m in Sources */,
 				A72A570A1BFC4D0A00A334FE /* XEBSubscription.m in Sources */,
 				303856801BFC150300D7FFC4 /* ASCustomNaviBar.m in Sources */,
+				A72BDBDD1BFED035006E84FB /* ASSignOutSuccessEvent.m in Sources */,
 				307DEE731BEB1E5100BF1CCF /* RootViewController.m in Sources */,
 				307ECA021BFC804C0018F38C /* ASFrameEditViewController.m in Sources */,
 				3038567F1BFC150300D7FFC4 /* ASContactUsDialog.m in Sources */,
 				307EC9F31BFC68800018F38C /* ASBookSizeViewController.m in Sources */,
 				307EC9F61BFC69CF0018F38C /* ASBookEditViewController.m in Sources */,
+				A72BDBE01BFED066006E84FB /* ASSignOutFailureEvent.m in Sources */,
 				303856981BFC420D00D7FFC4 /* ASSidebarLayout.m in Sources */,
 				A72A57081BFC4D0A00A334FE /* XEBSubscriberMethod.m in Sources */,
 			);

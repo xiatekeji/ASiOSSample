@@ -10,4 +10,6 @@
 
 @interface ASSignOutFailureEvent : NSObject
 
+@property(nonatomic, strong, nonnull) NSError* error;
+
 @end

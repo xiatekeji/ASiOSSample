@@ -59,8 +59,8 @@ static NSInteger _invocationCount = 0;
 }
 
 - (void)signInSucceededWithUser: (ASUser*)user {
-	ASUserLocator* userModelLocator = [ASUserLocator sharedInstance];
-	[userModelLocator setUser: user];
+	ASUserLocator* userLocator = [ASUserLocator sharedInstance];
+	[userLocator setUser: user];
 	
 	ASSignInSuccessEvent* successEvent = [[ASSignInSuccessEvent alloc] init];
 	

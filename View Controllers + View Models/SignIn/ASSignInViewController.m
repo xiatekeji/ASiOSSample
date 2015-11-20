@@ -10,21 +10,17 @@
 #import "ASSignInViewController.h"
 
 #import <MBProgressHUD/MBProgressHUD.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "ASNavigator.h"
-#import "ASSignInEvent.h"
-#import "ASSignInFailureEvent.h"
-#import "ASSignInSuccessEvent.h"
-#import "XEBEventBus.h"
-#import "XEBSubscriber.h"
+#import "ASSignInViewModel.h"
 
-
-@interface ASSignInViewController()<XEBSubscriber> {
+@interface ASSignInViewController() {
 	IBOutlet UITextField* _accountField;
 	IBOutlet UITextField* _passwordField;
 	IBOutlet UIButton* _signInButton;
 	IBOutlet UIButton* _cancelButton;
 	
-	XEBEventBus* _eventBus;
+	ASSignInViewModel* _viewModel;
 	
 	MBProgressHUD* _progressHud;
 }
@@ -35,85 +31,101 @@
 
 @implementation ASSignInViewController
 
-+ (NSArray<Class>*)handleableEventClasses {
-	return @[
-		[ASSignInSuccessEvent class],
-		[ASSignInFailureEvent class]
-	];
-}
-
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	XEBEventBus* eventBus = [XEBEventBus defaultEventBus];
-	[eventBus registerSubscriber: self];
-	_eventBus = eventBus;
+	[self bindWithViewModel];
 }
 
-- (void)dealloc {
-	[_eventBus unregisterSubscriber: self];
+#pragma mark View Model
+
+- (void)bindWithViewModel {
+	if(_viewModel == nil) {
+		_viewModel = [[ASSignInViewModel alloc] init];
+	}
+	
+	RAC(self, viewModel.account) = [_accountField rac_textSignal];
+	RAC(self, viewModel.password) = [_passwordField rac_textSignal];
+	
+	[self displayOrHideProgressHudInTheFuture];
+	[self setProgressMessageInTheFuture];
+	[self showAlertWithMessageInTheFuture];
+	[self dismissInTheFuture];
 }
+
+- (void)displayOrHideProgressHudInTheFuture {
+	[
+		[RACObserve(self, viewModel.inProgress) deliverOn: [RACScheduler mainThreadScheduler]]
+		subscribeNext: ^(id x) {
+			BOOL inProgress = [x boolValue];
+			if(inProgress) {
+				UIView* container = [[UIApplication sharedApplication] keyWindow];
+				
+				MBProgressHUD* progressHud = [MBProgressHUD showHUDAddedTo: container animated: TRUE];
+				[progressHud setRemoveFromSuperViewOnHide: TRUE];
+				_progressHud = progressHud;
+			}
+			else {
+				[_progressHud hide: TRUE];
+				_progressHud = nil;
+			}
+		}
+	];
+}
+
+- (void)setProgressMessageInTheFuture {
+	[
+		[RACObserve(self, viewModel.progressMessage) deliverOn: [RACScheduler mainThreadScheduler]]
+		subscribeNext: ^(id x) {
+			NSString* progressMessage = x;
+			[_progressHud setLabelText: progressMessage];
+		}
+	];
+}
+
+- (void)showAlertWithMessageInTheFuture {
+	[
+		[RACObserve(self, viewModel.alertMessage) deliverOn: [RACScheduler mainThreadScheduler]]
+		subscribeNext: ^(id x) {
+			NSString* progressMessage = x;
+			if(progressMessage != nil) {
+				UIAlertController* alertController = [UIAlertController alertControllerWithTitle: nil message: progressMessage preferredStyle: UIAlertControllerStyleAlert];
+				
+				UIAlertAction* closeAction = [UIAlertAction actionWithTitle: @"Close" style: UIAlertActionStyleCancel handler: NULL];
+				[alertController addAction: closeAction];
+				
+				[self presentViewController: alertController animated: TRUE completion: NULL];
+			}
+		}
+	];
+}
+
+- (void)dismissInTheFuture {
+	[
+		[RACObserve(self, viewModel.completed) deliverOn: [RACScheduler mainThreadScheduler]]
+		subscribeNext: ^(id x) {
+			BOOL completed = [x boolValue];
+			if(completed) {
+				[[ASNavigator shareModalCenter] dismissCurrentModalViewControlleAnimation: TRUE completion: NULL];
+			}
+		}
+	];
+}
+
+#pragma mark Action
 
 - (IBAction)handleButton: (UIButton*)button {
 	if(button == _signInButton) {
-		[self doSignIn];
+		[_viewModel doSignIn];
 		
 		return;
 	}
-}
-
-- (void)doSignIn {
-	NSString* account = [_accountField text];
-	NSString* password = [_passwordField text];
-	
-	ASSignInEvent* signInEvent = [[ASSignInEvent alloc] init];
-	signInEvent.account = account;
-	signInEvent.password = password;
-	
-	XEBEventBus* eventBus = [XEBEventBus defaultEventBus];
-	[eventBus postEvent: signInEvent];
-	
-	MBProgressHUD* progressHud = [MBProgressHUD showHUDAddedTo: [[UIApplication sharedApplication] keyWindow] animated: TRUE];
-	[progressHud setLabelText: @"Please wait..."];
-	_progressHud = progressHud;
-}
-
-- (void)handleSignInSuccessEvent: (ASSignInSuccessEvent*)event {
-	[_progressHud removeFromSuperview];
-	_progressHud = nil;
-	
-	[[ASNavigator shareModalCenter] dismissCurrentModalViewControlleAnimation: TRUE completion: NULL];
-}
-
-- (void)handleSignInFailureEvent: (ASSignInFailureEvent*)event {
-	[_progressHud removeFromSuperview];
-	_progressHud = nil;
-	
-	UIAlertController* alertController = [UIAlertController alertControllerWithTitle: nil message: @"Sign in failed." preferredStyle: UIAlertControllerStyleAlert];
-	[alertController addAction: [UIAlertAction actionWithTitle: @"Close" style: UIAlertActionStyleCancel handler: NULL]];
-	[super presentViewController: alertController animated: TRUE completion: NULL];
 }
 
 #pragma mark ASNavigatable
 
 - (void)skipPageProtocol: (NSDictionary*)parameters{
 	
-}
-
-#pragma mark XEBSubscriber
-
-- (void)onEventMainThread: (id)event {
-	if([event isKindOfClass: [ASSignInSuccessEvent class]]) {
-		[self handleSignInSuccessEvent: event];
-		
-		return;
-	}
-	
-	if([event isKindOfClass: [ASSignInFailureEvent class]]) {
-		[self handleSignInFailureEvent: event];
-		
-		return;
-	}
 }
 
 @end

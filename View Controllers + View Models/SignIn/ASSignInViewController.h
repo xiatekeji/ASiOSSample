@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "ASNavigator.h"
 
-@class ASSignInViewController;
+@class ASSignInViewModel;
 
 @interface ASSignInViewController : UIViewController<ASNavigatable>
+
+@property(nonatomic, strong, nonnull) ASSignInViewModel* viewModel;
 
 @end
