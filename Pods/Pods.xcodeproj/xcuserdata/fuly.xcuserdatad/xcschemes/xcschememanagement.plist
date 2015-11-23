@@ -49,10 +49,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SBTickerView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>0242E9512D346C34F8FEA03C72880820</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>068D76341AE859E72409DCB1CC04ABF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,37 +72,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>1205503B74D68F2BE3C13D2DEE72101A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2C20AB94AE955D34F430860B37BE7E61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2CD22ED608B049E1039A1F831CF944EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4668C9D3A8893DA37FA9FEC24C5F0AA0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D18A1FA5F53DDDCDF115A9171DE5DA8</key>
+		<key>867D59C35D72FEDF5D4B866094D36467</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>64B3F4C6C10E1CCFDB5216C40F429A95</key>
+		<key>88E57486E0DD3BB5B64BF02E4CB2FBF9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ABCB9DA02F474FC52394BF486732F5D7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DB02D5C26F610D779FAA13985DAC21CD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA0DB356E0E6AB48848C53A66D97E493</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F55BBC7E88BADFBFD664DB313F976DE2</key>
+		<key>EE261C869459656FAC5177A26F1510F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

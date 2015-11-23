@@ -38,7 +38,7 @@
     [self.view addSubview:demo];
     
     self.sheetView = [[SBTickerView alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.height/2-200,50 , 400, 200)];
-    self.sheetView.delegate = self;
+//    self.sheetView.delegate = self;
     self.sheetView.backgroundColor = [UIColor lightGrayColor];
     [self.sheetView setDuration:0.7];
     [self.sheetView setAllowedPanDirections:(SBTickerViewAllowedPanDirectionDown | SBTickerViewAllowedPanDirectionUp)];
