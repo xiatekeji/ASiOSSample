@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASNavigator.h"
 
-@interface ASBookEditViewController : UIViewController
+@interface ASBookEditViewController : UIViewController<ASNavigatable>
 
 @end

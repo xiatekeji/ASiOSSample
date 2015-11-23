@@ -28,7 +28,6 @@
 	SBTickerView* enclosedTickerView = [[SBTickerView alloc] init];
 	[enclosedTickerView setTransform: CGAffineTransformMakeRotation(M_PI_2)];
 	[enclosedTickerView setAutoresizingMask: UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
-	[enclosedTickerView setBackgroundColor: [UIColor yellowColor]];
 	[enclosedTickerView setFrame: [super bounds]];
 	[super addSubview: enclosedTickerView];
 	_enclosedTickerView = enclosedTickerView;

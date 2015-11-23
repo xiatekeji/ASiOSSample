@@ -64,6 +64,8 @@
 		A702615B1BFD611200A83034 /* ASUserLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A702615A1BFD611200A83034 /* ASUserLocator.m */; };
 		A702615E1BFD611F00A83034 /* ASUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A702615D1BFD611F00A83034 /* ASUser.m */; };
 		A70261611BFD6D9600A83034 /* AppDelegate+CommandBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = A70261601BFD6D9600A83034 /* AppDelegate+CommandBinding.m */; };
+		A71FF78B1C030B32001864E5 /* ASTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FF78A1C030B32001864E5 /* ASTickerView.m */; };
+		A71FF78D1C03103B001864E5 /* Photos in Resources */ = {isa = PBXBuildFile; fileRef = A71FF78C1C03103B001864E5 /* Photos */; };
 		A72A57031BFC4D0A00A334FE /* ASCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A56EE1BFC4D0A00A334FE /* ASCommand.m */; };
 		A72A57041BFC4D0A00A334FE /* ASCommandCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A56F01BFC4D0A00A334FE /* ASCommandCenter.m */; };
 		A72A57051BFC4D0A00A334FE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A72A56F21BFC4D0A00A334FE /* Info.plist */; };
@@ -192,6 +194,9 @@
 		A702615D1BFD611F00A83034 /* ASUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUser.m; sourceTree = "<group>"; };
 		A702615F1BFD6D9600A83034 /* AppDelegate+CommandBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+CommandBinding.h"; sourceTree = "<group>"; };
 		A70261601BFD6D9600A83034 /* AppDelegate+CommandBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+CommandBinding.m"; sourceTree = "<group>"; };
+		A71FF7891C030B32001864E5 /* ASTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTickerView.h; sourceTree = "<group>"; };
+		A71FF78A1C030B32001864E5 /* ASTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTickerView.m; sourceTree = "<group>"; };
+		A71FF78C1C03103B001864E5 /* Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Photos; sourceTree = "<group>"; };
 		A72A56ED1BFC4D0A00A334FE /* ASCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommand.h; sourceTree = "<group>"; };
 		A72A56EE1BFC4D0A00A334FE /* ASCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCommand.m; sourceTree = "<group>"; };
 		A72A56EF1BFC4D0A00A334FE /* ASCommandCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommandCenter.h; sourceTree = "<group>"; };
@@ -345,6 +350,7 @@
 		303856701BFC150300D7FFC4 /* Photo Book */ = {
 			isa = PBXGroup;
 			children = (
+				A71FF78C1C03103B001864E5 /* Photos */,
 				307D5E681BFF1D8900067616 /* yongshi.jpg */,
 				307D5E641BFF1D8400067616 /* front.jpeg */,
 				307D5E651BFF1D8400067616 /* front@2x.jpeg */,
@@ -396,6 +402,8 @@
 				303856941BFC420D00D7FFC4 /* ASHomeAdverScrollView.m */,
 				303856951BFC420D00D7FFC4 /* ASSidebarLayout.h */,
 				303856961BFC420D00D7FFC4 /* ASSidebarLayout.m */,
+				A71FF7891C030B32001864E5 /* ASTickerView.h */,
+				A71FF78A1C030B32001864E5 /* ASTickerView.m */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -726,6 +734,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71FF78D1C03103B001864E5 /* Photos in Resources */,
 				307D5E671BFF1D8400067616 /* front@2x.jpeg in Resources */,
 				307DEE631BEAFE6A00BF1CCF /* LaunchScreen.storyboard in Resources */,
 				3038567E1BFC150300D7FFC4 /* File.xml in Resources */,
@@ -797,6 +806,7 @@
 				303856841BFC150300D7FFC4 /* ASHomeViewModel.m in Sources */,
 				307DEE8C1BEB4B3400BF1CCF /* ModalCenterReform.m in Sources */,
 				303856891BFC150300D7FFC4 /* ASTrialViewModel.m in Sources */,
+				A71FF78B1C030B32001864E5 /* ASTickerView.m in Sources */,
 				303856AC1BFC4F2000D7FFC4 /* ASUploadPhotosViewController.m in Sources */,
 				307DEE5B1BEAFE6A00BF1CCF /* ViewController.m in Sources */,
 				A72BDBD01BFEAFD4006E84FB /* ASSignInFailureEvent.m in Sources */,

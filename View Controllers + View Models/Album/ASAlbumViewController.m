@@ -57,7 +57,7 @@
 - (void)next{
     ModalCenterReform *reform = [[ModalCenterReform alloc]initWithIdentifer:@"bookEdit" andParameters:nil];
     [[ASNavigator shareModalCenter]dismissCurrentModalViewControlleAnimation:NO completion:^{
-        [[ASNavigator shareModalCenter]pushViewController:reform.controller parameters:reform.modalParamter isAnimation:NO];
+		[[ASNavigator shareModalCenter] presentViewController: reform.controller parameters: reform.modalParamter isAnimation: TRUE completion: NULL];
     }];
 }
 
