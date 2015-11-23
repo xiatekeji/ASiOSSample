@@ -6,9 +6,9 @@
 //  Copyright © 2015年 XiaoSong. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ASBaseViewModel.h"
 
-@interface ASSignOutViewModel : NSObject
+@interface ASSignOutViewModel : ASBaseViewModel
 
 @property(nonatomic, readonly) BOOL inProgress;
 @property(nonatomic, copy, readonly, nullable) NSString* progressMessage;

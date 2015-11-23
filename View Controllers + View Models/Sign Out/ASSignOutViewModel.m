@@ -11,12 +11,8 @@
 #import "ASSignOutEvent.h"
 #import "ASSignOutFailureEvent.h"
 #import "ASSignOutSuccessEvent.h"
-#import "XEBEventBus.h"
-#import "XEBSubscriber.h"
 
-@interface ASSignOutViewModel()<XEBSubscriber> {
-	XEBEventBus* _eventBus;
-}
+@interface ASSignOutViewModel()
 
 @property(nonatomic) BOOL inProgress;
 @property(nonatomic, copy, nullable) NSString* progressMessage;
@@ -27,32 +23,9 @@
 
 @implementation ASSignOutViewModel
 
-+ (NSArray<Class>*)handleableEventClasses {
-	return @[
-		[ASSignOutSuccessEvent class],
-		[ASSignOutFailureEvent class]
-	];
-}
-
-- (instancetype)init {
-	self = [super init];
-	
-	XEBEventBus* eventBus = [XEBEventBus defaultEventBus];
-	[eventBus registerSubscriber: self];
-	_eventBus = eventBus;
-	
-	return self;
-}
-
-- (void)dealloc {
-	[_eventBus unregisterSubscriber: self];
-}
-
 - (void)doSignOut {
 	ASSignOutEvent* signOutEvent = [[ASSignOutEvent alloc] init];
-	
-	XEBEventBus* eventBus = [XEBEventBus defaultEventBus];
-	[eventBus postEvent: signOutEvent];
+	[super postEvent: signOutEvent];
 	
 	[self setInProgress: TRUE];
 	[self setProgressMessage: @"Please wait..."];
@@ -66,22 +39,6 @@
 - (void)handleSignOutFailureEvent: (ASSignOutFailureEvent*)event {
 	[self setInProgress: FALSE];
 	[self setProgressMessage: nil];
-}
-
-#pragma mark XEBSubscriber
-
-- (void)onEvent: (id)event {
-	if([event isKindOfClass: [ASSignOutSuccessEvent class]]) {
-		[self handleSignOutSuccessEvent: event];
-		
-		return;
-	}
-	
-	if([event isKindOfClass: [ASSignOutFailureEvent class]]) {
-		[self handleSignOutFailureEvent: event];
-		
-		return;
-	}
 }
 
 @end

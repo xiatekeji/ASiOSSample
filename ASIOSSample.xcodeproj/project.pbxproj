@@ -66,6 +66,7 @@
 		A70261611BFD6D9600A83034 /* AppDelegate+CommandBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = A70261601BFD6D9600A83034 /* AppDelegate+CommandBinding.m */; };
 		A71FF78B1C030B32001864E5 /* ASTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FF78A1C030B32001864E5 /* ASTickerView.m */; };
 		A71FF78D1C03103B001864E5 /* Photos in Resources */ = {isa = PBXBuildFile; fileRef = A71FF78C1C03103B001864E5 /* Photos */; };
+		A71FF7901C031471001864E5 /* ASBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A71FF78F1C031471001864E5 /* ASBaseViewModel.m */; };
 		A72A57031BFC4D0A00A334FE /* ASCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A56EE1BFC4D0A00A334FE /* ASCommand.m */; };
 		A72A57041BFC4D0A00A334FE /* ASCommandCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A56F01BFC4D0A00A334FE /* ASCommandCenter.m */; };
 		A72A57051BFC4D0A00A334FE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A72A56F21BFC4D0A00A334FE /* Info.plist */; };
@@ -197,6 +198,8 @@
 		A71FF7891C030B32001864E5 /* ASTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTickerView.h; sourceTree = "<group>"; };
 		A71FF78A1C030B32001864E5 /* ASTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTickerView.m; sourceTree = "<group>"; };
 		A71FF78C1C03103B001864E5 /* Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Photos; sourceTree = "<group>"; };
+		A71FF78E1C031471001864E5 /* ASBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBaseViewModel.h; sourceTree = "<group>"; };
+		A71FF78F1C031471001864E5 /* ASBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBaseViewModel.m; sourceTree = "<group>"; };
 		A72A56ED1BFC4D0A00A334FE /* ASCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommand.h; sourceTree = "<group>"; };
 		A72A56EE1BFC4D0A00A334FE /* ASCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCommand.m; sourceTree = "<group>"; };
 		A72A56EF1BFC4D0A00A334FE /* ASCommandCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommandCenter.h; sourceTree = "<group>"; };
@@ -274,6 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				307ECA031BFC847C0018F38C /* Album */,
+				A71FF78E1C031471001864E5 /* ASBaseViewModel.h */,
+				A71FF78F1C031471001864E5 /* ASBaseViewModel.m */,
 				3038565A1BFC150300D7FFC4 /* Canvas */,
 				3038565B1BFC150300D7FFC4 /* Cart */,
 				303856611BFC150300D7FFC4 /* Frame */,
@@ -845,6 +850,7 @@
 				A72BDBCA1BFEAB4D006E84FB /* ASCommandEvent.m in Sources */,
 				A72A57091BFC4D0A00A334FE /* XEBSubscriberMethodFinder.m in Sources */,
 				307ECA091BFC84A30018F38C /* ASAlbumViewController.m in Sources */,
+				A71FF7901C031471001864E5 /* ASBaseViewModel.m in Sources */,
 				A72A570A1BFC4D0A00A334FE /* XEBSubscription.m in Sources */,
 				303856801BFC150300D7FFC4 /* ASCustomNaviBar.m in Sources */,
 				A72BDBDD1BFED035006E84FB /* ASSignOutSuccessEvent.m in Sources */,

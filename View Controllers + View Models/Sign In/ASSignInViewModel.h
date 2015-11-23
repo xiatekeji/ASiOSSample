@@ -6,9 +6,9 @@
 //  Copyright © 2015年 XiaoSong. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ASBaseViewModel.h"
 
-@interface ASSignInViewModel : NSObject
+@interface ASSignInViewModel : ASBaseViewModel
 
 @property(nonatomic, copy, nullable) NSString* account;
 @property(nonatomic, copy, nullable) NSString* password;
