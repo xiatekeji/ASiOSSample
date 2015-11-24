@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ASNavigator.h"
-
+#import "ASBookEditViewModel.h"
 @interface ASBookEditViewController : UIViewController<ASNavigatable>
-
+@property (strong ,nonatomic) ASBookEditViewModel *viewModel;
 @end
