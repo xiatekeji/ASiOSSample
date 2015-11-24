@@ -10,7 +10,10 @@
 #import "ASNavigator.h"
 #import "ASTickerView.h"
 #import "ModalCenterReform.h"
-
+#import "ASOptionsView.h"
+@interface ASBookEditViewController ()
+@property (strong, nonatomic)  ASOptionsView *optionView;
+@end
 @interface ASBookEditViewController()<ASTickerViewDelegate> {
 	ASTickerView* _tickerView;
 	NSInteger _currentPageIndex;
@@ -24,7 +27,8 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
+    self.viewModel = [[ASBookEditViewModel alloc]init];
+    self.optionView = [[ASOptionsView alloc]initWithOptionViewModel:self.viewModel.options frame:CGRectMake(0, self.view.frame.size.width, self.view.frame.size.height,self.view.frame.size.width/2-30 )];
 	UIView* rootView = [super view];
 	CGRect rootBounds = [rootView bounds];
 	
@@ -42,10 +46,43 @@
 	_tickerView = tickerView;
 	
 	[tickerView setFrontView: [self viewForPageIndex: 0]];
+    
+    UIButton *size = [UIButton buttonWithType:UIButtonTypeCustom];
+    size.frame = CGRectMake(300, 300, 50, 50);
+    [size addTarget:self action:@selector(size:) forControlEvents:UIControlEventTouchUpInside];
+    [size setTitle:@"Size" forState:UIControlStateNormal];
+    [size setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.view addSubview:size];
+    
+    UIButton *color = [UIButton buttonWithType:UIButtonTypeCustom];
+    color.frame = CGRectMake(0, 300, 50, 50);
+    [color addTarget:self action:@selector(color:) forControlEvents:UIControlEventTouchUpInside];
+    [color setTitle:@"Color" forState:UIControlStateNormal];
+    [color setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.view addSubview:color];
+    
+    
+    UIButton *cover = [UIButton buttonWithType:UIButtonTypeCustom];
+    cover.frame = CGRectMake(570, 300, 50, 50);
+    [cover addTarget:self action:@selector(cover:) forControlEvents:UIControlEventTouchUpInside];
+    [cover setTitle:@"Cover" forState:UIControlStateNormal];
+    [cover setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.view addSubview:cover];
+    [self.view addSubview:self.optionView];
 }
-
+- (void)size:(id)sender {
+    [self.optionView selectOptionWithType:ASSizeOption];
+}
+- (void)color:(id)sender {
+    [self.optionView selectOptionWithType:ASColorOption];
+}
+- (void)cover:(id)sender {
+    [self.optionView selectOptionWithType:ASCoverOption];
+}
 - (void)goBack {
-	[[ASNavigator shareModalCenter] dismissCurrentModalViewControlleAnimation: TRUE completion: NULL];
+	[[ASNavigator shareModalCenter] dismissCurrentModalViewControlleAnimation:NO completion:^{
+        
+    }];
 }
 
 - (UIView*)viewForPageIndex: (NSInteger)index {
