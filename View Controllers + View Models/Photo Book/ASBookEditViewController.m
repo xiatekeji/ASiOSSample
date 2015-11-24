@@ -32,7 +32,7 @@
 	UIView* rootView = [super view];
 	CGRect rootBounds = [rootView bounds];
 	
-	UIButton* backButton = [[UIButton alloc] initWithFrame: CGRectMake(20, 20, 40, 20)];
+	UIButton* backButton = [[UIButton alloc] initWithFrame: CGRectMake(20, 20, 60, 20)];
 	[backButton addTarget: self action: @selector(goBack) forControlEvents: UIControlEventTouchUpInside];
 	[backButton setTitle: @"Back" forState: UIControlStateNormal];
 	[backButton setTitleColor: [UIColor blueColor] forState: UIControlStateNormal];
@@ -86,7 +86,7 @@
 }
 
 - (UIView*)viewForPageIndex: (NSInteger)index {
-	UIImage* image = [UIImage imageNamed: [[NSString alloc] initWithFormat: @"photos/%d.jpg", (int)index]];
+	UIImage* image = [UIImage imageNamed: [[NSString alloc] initWithFormat: @"Photos/%d.jpg", (int)index]];
 	
 	UIImageView* imageView = [[UIImageView alloc] initWithFrame: [_tickerView bounds]];
 	[imageView setAutoresizingMask: UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
